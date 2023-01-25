@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230125211348">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230125211348">
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<!-- HEADER -->
+		<header class="header">
+			<div class="header__container">
+				<!-- HEADER BODY -->
+				<div class="header__body">
+					<!-- HEADER LOGO -->
+					<div class="header__logo">
+						<div class="header__logo-ball element-animation -ibg">
+							<a href="#" class="header__logo-link">
+								<img src="img/RUNA/LOGO/runa-full-white.svg" alt="Лого UBA">
+							</a>
+						</div>
+						<div class="header__logo-text element-animation -ibg">
+							<svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 75.245 50.969" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 76 51" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" data-type="ugc" role="presentation" aria-hidden="true" aria-labelledby="svgcid-vt4020aejtpx">
+								<title id="svgcid-vt4020aejtpx"></title>
+								<g>
+									<path d="M64 20.807V3.89h7.108v10.963L64 20.807zm7.108-1.087v5.564L64 31.237v-5.563l7.108-5.954zM59.862 0v50.969H64V36.105l7.108-5.954v20.818h4.137V0H59.862z" fill="#ffffff" fill-rule="nonzero"></path>
+									<path d="M44.045 31.237v-5.563l7.108-5.954v5.564l-7.108 5.953zm7.108-16.384-7.108 5.954V0h-4.136v50.969h4.136V36.105l7.108-5.954v20.818h4.138V0h-4.138v14.853z" fill="#ffffff" fill-rule="nonzero"></path>
+									<path d="M31.199 30.151v16.927h-7.108V36.105l7.108-5.954zm0-15.298-7.108 5.954V0h-4.136v29.137l11.244-9.417v5.564l-11.17 9.355-.074.061v16.269h15.381V0h-4.137v14.853z" fill="#ffffff" fill-rule="nonzero"></path>
+									<path d="M11.245 19.72v5.564l-7.108 5.953v-5.563l7.108-5.954zm-7.108 1.087V3.89h7.108v10.963l-7.108 5.954zM0 50.969h4.137V36.105l11.17-9.356.075-.062V0H0v50.969z" fill="#ffffff" fill-rule="nonzero"></path>
+								</g>
+							</svg>
+							<!-- <img src="img/UBA/UBA_text-white.svg" alt="Лого UBA"> -->
+						</div>
+					</div>
+					<!-- HEADER TOP -->
+					<div class="header__top">
+						<!-- HEADER SEARCH -->
+						<div class="header__search-form">
+							<!-- <button type="button" class="header__search-form-btn -ibg">
+						<img src="img/icon/search-w.svg" alt="">
+					</button> -->
+							<form action="#" class="header__search-form-item">
+								<input autocomplete="off" type="text" name="form[]" placeholder="Поиск" class="header__search-form-input" data-placeholder="Поиск">
+								<div class="header__search-form-btn-box">
+									<button type="submit" class="header__search-form-btn-1 -ibg">
+										<img src="img/icon/search-w.svg" alt="">
+									</button>
+								</div>
+							</form>
+						</div>
+						<!-- HEADER SOCIAL ICONS -->
+						<div data-da=".header__menu, 991.98,2" class="header__icons">
+							<ul class="header__icons-list">
+								<!-- <li class="header__icons-item"><a href="#" class="header__icons-link">
+								<img src="img/icon/twitter-1-white.svg" alt="иконка Твиттер"></a>
+						</li> -->
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/vk-1-white.svg" alt="иконка ВКонтакте"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/telegram-1-white.svg" alt="иконка Телеграм"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/instagram-1-white 1.svg" alt="иконка Инстаграм"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/tiktok-1-white.svg" alt="иконка Тик-Ток"></a>
+								</li>
+								<li class="header__icons-item"><a href="#" class="header__icons-link">
+										<img src="img/icon/youtube-1-white.svg" alt="иконка Ютуб"></a>
+								</li>
+							</ul>
+						</div>
+						<!-- <form data-da=".header__body, 991.98,2" action="#" class="header__form">
+					<div class="header__form-line">
+						<div class="select header__form-select-lang _select-active" data-id="1"><select id="select-lang"
+								name="form[]" class="header__form-list" hidden="" data-id="1" data-speed="150">
+								<option class="header__form-item" value="1" selected="selected">RU</option>
+								<option class="header__form-item" value="2">ENG</option>
+							</select>
+						</div>
+					</div>
+				</form> -->
+					</div>
+					<!-- BURGER BUTTON -->
+					<button type="button" class="header__menu-burger icon-menu"><span></span></button>
+					<!-- HEADER MENU -->
+					<nav class="header__menu">
+						<ul class="header__menu-list">
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Билеты</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Новости</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Команды</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Календарь</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">Магазин</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">ДЮБК Руна-Баскет</a></li>
+							<li class="header__menu-item"><a href="#" class="header__menu-link">О нас</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+		</main>
+		<!-- FOOTER -->
+		<footer class="footer" id="site-footer">
+			<div class="footer__container">
+				<!-- FOOTER TOP SECTION -->
+				<section class="footer__section footer__top-section" id="footer-top-section">
+					<!-- FOOTER LOGO -->
+					<a href="#" class="footer__logo -ibg">
+						<img src="img/RUNA/LOGO/runa-mini-white.svg" alt="лого Руна">
+					</a>
+					<!-- FOOTER TOP MENU -->
+					<div class="footer__top-menu" id="footer-top-menu-container" role="menubar">
+						<ul class="footer__top-menu-list" id="footer-top-menu" role="menu">
+
+							<!-- <li class="footer__top-menu-item" role="menuitem">
+						<a href="#" class="footer__top-menu-link">Группа поддержки</a>
+					</li> -->
+							<li class="footer__top-menu-item footer__top-menu-item-active" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Билеты</a>
+							</li>
+							<li class="footer__top-menu-item" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Магазин</a>
+							</li>
+							<li class="footer__top-menu-item" role="menuitem">
+								<a href="#" class="footer__top-menu-link">Медиа</a>
+							</li>
+						</ul>
+					</div>
+					<!-- FOOTER CALL BUTTON -->
+					<button type="button" class="footer__top-menu-btn" id="footer-buttons-container">
+						Купить Абонемент
+					</button>
+				</section>
+				<!-- FOOTER MIDDLE SECTION -->
+				<section class="footer__section footer__middle-section" id="footer-middle-section">
+					<!-- FOOTER MIDDLE SECTION - FIRST COLUMN -->
+					<div id="footer-about" class="footer__columns footer__first-column">
+						<h1 class="footer__title-1">ОФИС PBC RUNA</h1>
+						<address class="footer__address">
+							<p><img class="footer__icon" src="img/icon/location-w.svg" alt="иконка локация">Москва,
+								улица Лавочкина, 32
+							</p>
+							<p><img class="footer__icon" src="img/icon/tel-w.svg" alt="иконка телефон">+7 (999) 999-99-99</p>
+							<p><img class="footer__icon" src="img/icon/mail-w.svg" alt="иконка почта">office@pbcruna.ru</p>
+						</address>
+						<h1 class="footer__title-1">АРЕНА</h1>
+						<address class="footer__address">
+							<p><img class="footer__icon" src="img/icon/home-w.svg" alt="иконка дворец спорта">Дворец Спорта Динамо
+							</p>
+							<p><img class="footer__icon" src="img/icon/location-w.svg" alt="иконка почта">Москва,
+								улица Лавочкина, 32</p>
+						</address>
+					</div>
+					<!-- FOOTER MIDDLE SECTION - SECOND COLUMN -->
+					<div class=" footer__columns footer__second-column">
+						<h1 class="footer__title">КОМАНДЫ</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Суперлига мужчины</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Суперлига женщины</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Молодёжная Лига ВТБ</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">ДЮБЛ юноши</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">ДЮБЛ девушки</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footer__columns footer__second-column">
+						<h1 class="footer__title">КЛУБ</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Календарь</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Фан-Зона</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">ДЮБК Руна-Баскет</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Руна 3х3</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Группа поддержки</a>
+							</li>
+						</ul>
+					</div>
+					<div class=" footer__columns footer__second-column">
+						<h1 class="footer__title">О НАС</h1>
+						<ul class="footer__column-menu-list" role="menu">
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Администрация</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Партнеры</a>
+							</li>
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">История</a>
+							</li>
+							<li class="footer__column-menu-item">
+								<a href="#" class="footer__column-menu-link" role="menuitem">Рекорды</a>
+							</li>
+
+							<li class="footer__column-menu-item" role="menuitem">
+								<a href="#" class="footer__column-menu-link">Контакты</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<!-- FOOTER BOTTOM SECTION -->
+				<section class=" footer__section footer__bottom-section" id="footer-bottom-section">
+					<!-- FOOTER COPYRIGHT -->
+					<div class="footer__copyright" id="footer-copyright-info">
+						&copy; Pro Basketball Club Runa 2023. Все права защищены.
+					</div>
+					<!-- FOOTER SOCIAL ICONS -->
+					<div class="footer__icons element-animation">
+						<ul class="footer__icons-list">
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/telegram-1-white.svg" alt="иконка Телеграм"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/vk-1-white.svg" alt="иконка ВКонтакте"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/instagram-1-white 1.svg" alt="иконка Телеграм"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/tiktok-1-white.svg" alt="иконка Тик-Ток"></a>
+							</li>
+							<li><a href="#" class="footer__icons-link -ibg">
+									<img src="img/icon/youtube-1-white.svg" alt="иконка Ютуб"></a>
+							</li>
+
+						</ul>
+					</div>
+					<!-- FOOTER SITE DEVELOPER -->
+					<div class="footer__site-developer">
+						<a href="#" class="footer__column-menu-link">Разработано: jumpball</a>
+					</div>
+				</section>
+			</div>
+		</footer>
+	</div>
+	<div id="go-to-game" aria-hidden="true" class="popup game-popup">
+		<div class="popup__wrapper game-popup__wrapper">
+			<div class="popup__content game-popup__content">
+
+				<div class="popup__header game-popup__header">
+					<div class="game-popup__logo element-animation -ibg">
+						<img src="img/UBA/UBA.svg" alt="">
+					</div>
+					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
+						<h3 class="time-count__title">до матча</h3>
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">дней</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">часов</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">минут</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__seconds">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">секунд</span>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
+						<img src="img/icon/x-main.svg" alt="">
+					</button>
+				</div>
+
+
+
+				<div class="popup__text game-popup__text">
+				</div>
+
+				<div class="game-card__body">
+					<h3 class="game-card__time">19:30</h3>
+					<div class="game-card__date">
+						<h4 class="game-card__day">24</h4>
+						<div class="game-card__label">
+							<div class="game-card__months">августа</div>
+							<div class="game-card__months-1">фев</div>
+							<div class="game-card__week">суббота</div>
+							<div class="game-card__week-1">сб</div>
+						</div>
+
+					</div>
+					<div class="game-card__team-name">
+						<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
+						<h3 class="game-card__title">-</h3>
+						<h3 class="game-card__title game-card__title-l">БК Московский</h3>
+					</div>
+					<div class="game-card__teams">
+						<div class="game-card__team -ibg">
+							<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+						</div>
+						<div class="game-card__score">
+							<h3 class="game-card__team-score game-card__title-r">0</h3>
+							<p class="game-card__team-score-1">-</p>
+							<h3 class="game-card__team-score game-card__title-l">0</h3>
+						</div>
+						<div class="game-card__team -ibg">
+							<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+						</div>
+					</div>
+					<div class="game-card__content">
+						<span>UBA</span>
+						<p>Playground Савеловская</p>
+						<p>Москва, Россия</p>
+						<button type="button" class="game-card__btn">статистика</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div id="go-to-video" aria-hidden="true" class="popup game-popup">
+		<div class="popup__wrapper game-popup__wrapper">
+			<div class="popup__content game-popup__content">
+
+				<div class="popup__header game-popup__header">
+					<div class="game-popup__logo element-animation -ibg">
+						<img src="img/UBA/UBA.svg" alt="">
+					</div>
+					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
+						<h3 class="time-count__title">до матча</h3>
+						<div class="time-count__content">
+							<div class="time-count__item time-count__days">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">дней</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__hours">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">часов</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__minutes">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">минут</span>
+							</div>
+							<div class="time-count__separator">:</div>
+							<div class="time-count__item time-count__seconds">
+								<div class="time-count__val">00</div>
+								<span class="time-count__text">секунд</span>
+							</div>
+						</div>
+					</div>
+					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
+						<img src="img/icon/x-main.svg" alt="">
+					</button>
+				</div>
+
+
+
+				<div class="popup__text game-popup__text">
+				</div>
+
+				<!-- <div class="game-card__body">
+				<h3 class="game-card__time">19:30</h3>
+				<div class="game-card__date">
+					<h4 class="game-card__day">24</h4>
+					<div class="game-card__label">
+						<div class="game-card__months">августа</div>
+						<div class="game-card__months-1">фев</div>
+						<div class="game-card__week">суббота</div>
+						<div class="game-card__week-1">сб</div>
+					</div>
+
+				</div>
+				<div class="game-card__team-name">
+					<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
+					<h3 class="game-card__title">-</h3>
+					<h3 class="game-card__title game-card__title-l">БК Московский</h3>
+				</div>
+				<div class="game-card__teams">
+					<div class="game-card__team -ibg">
+						<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
+					</div>
+					<div class="game-card__score">
+						<h3 class="game-card__team-score game-card__title-r">0</h3>
+						<p class="game-card__team-score-1">-</p>
+						<h3 class="game-card__team-score game-card__title-l">0</h3>
+					</div>
+					<div class="game-card__team -ibg">
+						<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
+					</div>
+				</div>
+				<div class="game-card__content">
+					<span>UBA</span>
+					<p>Playground Савеловская</p>
+					<p>Москва, Россия</p>
+					<button type="button" class="game-card__btn">статистика</button>
+				</div>
+			</div> -->
+			</div>
+		</div>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230125211348"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230125211348"></script>
+	<script src="js/app.min.js?_v=20230125211348"></script>
+</body>
+
+</html>
