@@ -7683,32 +7683,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .player-card-1__photo {
-    border-bottom: 0.25rem solid #0f524d;
+    width: 13.75rem;
+    height: 13.75rem;
   }
-
-@supports (height: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem )) {
-    .player-card-1__photo {
-      height: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem );
-    }
-}
-
-@supports not (height: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem )) {
-    .player-card-1__photo {
-      height: calc(12.5rem + 0 * (100vw - 22.5rem) / 6.24875);
-    }
-}
-
-@supports (width: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem )) {
-    .player-card-1__photo {
-      width: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem );
-    }
-}
-
-@supports not (width: clamp( 12.5rem , 12.5rem  +  0vw , 12.5rem )) {
-    .player-card-1__photo {
-      width: calc(12.5rem + 0 * (100vw - 22.5rem) / 6.24875);
-    }
-}
 
   .player-card-1__main {
     gap: 1.5rem;
@@ -7919,7 +7896,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .team-leaders-slider {
-    height: 42.5rem;
+    height: 46.25rem;
   }
 }
 
