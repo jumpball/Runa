@@ -2330,6 +2330,7 @@ body::after {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  gap: 1.25rem;
 }
 
 .team-leaders__leader-box {
@@ -7918,7 +7919,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .team-leaders-slider {
-    height: 40.625rem;
+    height: 42.5rem;
   }
 }
 
