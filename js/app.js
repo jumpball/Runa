@@ -20000,38 +20000,38 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
-        new Swiper(".sidebar-banner-slider", {
+        new Swiper(".team-leaders-slider", {
             slidesPerView: "auto",
-            spaceBetween: 20,
+            spaceBetween: 10,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
             direction: "vertical",
-            autoplay: {
-                delay: 7e3,
-                stopOnLastSlide: false,
-                disableOnInteraction: false
-            },
-            loop: true,
             slideToClickedSlide: true,
             navigation: {
-                prevEl: ".banner-slider__nav-prev",
-                nextEl: ".banner-slider__nav-next"
+                prevEl: ".team-leaders__nav-prev",
+                nextEl: ".team-leaders__nav-next"
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true
             },
             breakpoints: {
                 300: {
-                    slidesPerView: 1,
+                    slidesPerView: 2
+                },
+                459.98: {
+                    slidesPerView: 4,
+                    direction: "vertical"
+                },
+                909.98: {
+                    slidesPerView: "auto",
                     spaceBetween: 20,
                     direction: "horizontal"
                 },
-                600: {
-                    slidesPerView: 2,
-                    spaceBetween: 20,
-                    direction: "horizontal"
-                },
-                991.98: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
+                1239.98: {
+                    slidesPerView: 4
                 }
             }
         });
