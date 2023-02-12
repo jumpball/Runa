@@ -19961,7 +19961,7 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
-        var compBestPlayersSwiper = new Swiper(".stats-menu-slider", {
+        new Swiper(".stats-menu-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
             observer: true,
@@ -19999,7 +19999,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
-        window.sss = compBestPlayersSwiper;
         new Swiper(".video-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
@@ -20035,20 +20034,17 @@ PERFORMANCE OF THIS SOFTWARE.
         });
         new Swiper(".team-leaders-slider", {
             slidesPerView: "auto",
+            slidesPerGroup: 1,
             spaceBetween: 10,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
             direction: "vertical",
-            slideToClickedSlide: true,
+            centeredSlides: false,
+            stopOnLastSlide: true,
             navigation: {
-                prevEl: ".team-leaders__nav-prev",
-                nextEl: ".team-leaders__nav-next"
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-                clickable: true
+                prevEl: ".team-leaders-slider__nav-prev",
+                nextEl: ".team-leaders-slider__nav-next"
             },
             breakpoints: {
                 300: {
@@ -20058,12 +20054,12 @@ PERFORMANCE OF THIS SOFTWARE.
                     slidesPerView: 4,
                     direction: "vertical"
                 },
-                909.98: {
-                    slidesPerView: "auto",
+                959.98: {
+                    slidesPerView: 3,
                     spaceBetween: 20,
                     direction: "horizontal"
                 },
-                1239.98: {
+                1429.98: {
                     slidesPerView: 4
                 }
             }
