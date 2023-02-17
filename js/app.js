@@ -15847,7 +15847,8 @@ PERFORMANCE OF THIS SOFTWARE.
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
-                clickable: true
+                clickable: true,
+                dynamicBullets: true
             },
             navigation: {
                 prevEl: ".calendar-slider__nav-prev",
@@ -15915,11 +15916,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 delay: 7e3,
                 stopOnLastSlide: false,
                 disableOnInteraction: false
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-                clickable: true
             },
             navigation: {
                 prevEl: ".banner-slider__nav-prev",
@@ -16116,7 +16112,8 @@ PERFORMANCE OF THIS SOFTWARE.
             pagination: {
                 el: ".swiper-pagination",
                 type: "bullets",
-                clickable: true
+                clickable: true,
+                dynamicBullets: true
             },
             navigation: {
                 prevEl: ".video-slider__nav-prev",
