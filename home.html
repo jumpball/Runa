@@ -7,10 +7,10 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230217041939"> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230217041939">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230217164958">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230217164958">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230217041939" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230217164958" rel="stylesheet" />
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -367,7 +367,7 @@
 						<div class="person-stats__nav">
 							<form action="#" class="person-stats__form">
 								<div class="person-stats__box">
-									<label class="person-stats__label" for="select-team">Выбрать команду</label>
+									<label class="person-stats__label person-stats__label-white" for="select-team">Выбрать команду</label>
 									<select data-label data-scroll data-show name="form[]" id="select-team" class="person-stats__list">
 										<option class="person-stats__item" value="1" selected="selected">все команды</option>
 										<option class="person-stats__item" value="2">мужская суперлига</option>
@@ -724,7 +724,7 @@
 									<button type="button" class="publication-selector__btn" data-view="pub-news">Новости</button>
 								</div>
 								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="publication-selector__btn" data-view="pub-nterview">Интервью</button>
+									<button type="button" class="publication-selector__btn" data-view="pub-interview">Интервью</button>
 								</div>
 								<div class="pub-menu-slider__item swiper-slide">
 									<button type="button" class="publication-selector__btn" data-view="pub-article">Статьи</button>
@@ -740,97 +740,230 @@
 						</div>
 					</div>
 					<!-- === SLIDER - PUBLICATION CARDS === -->
-					<ul class="publication-selector__list">
-						<li class="publication-selector__item pub-nterview">
-							<article class="card">
-								<div class="card__thumb">
-									<a href="#"><picture><source data-srcset="img/RUNA/publications/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/1.webp" alt=""></picture></a>
+					<div class="pub-cards-slider__navigation">
+						<div class="pub-cards-slider__nav-prev -ibg">
+							<img src="img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
+						</div>
+						<div class="pub-cards-slider__nav-next -ibg">
+							<img src="img/RUNA/icons/arrow-mini-right-green.svg" alt="стрелка вперед">
+						</div>
+					</div>
+					<div class="pub-cards-slider swiper">
+						<div class="pub-cards-slider__wrapper swiper-wrapper">
+							<!-- Слайд -->
+							<div class="pub-cards-slider__slide swiper-slide">
+								<div class="publication-selector__item pub-interview">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/RUNA/publications/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/1.webp" alt=""></picture></a>
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Интервью</a></div>
+											<h5 class="card__title"><a href="#">Сергей Юхневич: «Главная цель – «Финал четырех» Евролиги».</a>
+											</h5>
+											<div class="card__subtitle">ПБК Руна</div>
+											<p class="card__description">Наш генеральный менеджер – самый молодой руководитель профессионального
+												баскетбольного клуба в России. Сергей Юхневич
+												уже несколько лет возглавляет структуры «Руны».
+											</p>
+											<!-- <ul class="card__tags-list">
+								<li class="card__tags-item"><a href="#">ПБК Руна</a></li>
+								<li class="card__tags-item"><a href="#">Сергей Юхневич</a></li>
+								<li class="card__tags-item"><a href="#">kraftway</a></li>
+								<li class="card__tags-item"><a href="#">мужская суперлига</a></li>
+								<li class="card__tags-item"><a href="#">единая лига втб</a></li>
+							</ul> -->
+										</div>
+										<footer class="card__footer">
+											<span class="date">23 января 2023</span>
+										</footer>
+									</article>
 								</div>
-								<div class="card__body">
-									<div class="card__category"><a href="#">Интервью</a></div>
-									<h5 class="card__title"><a href="#">Сергей Юхневич: «Главная цель – «Финал четырех» Евролиги».</a></h5>
-									<div class="card__subtitle">ПБК Руна</div>
-									<p class="card__description">Наш генеральный менеджер – самый молодой руководитель профессионального
-										баскетбольного клуба в России. Сергей Юхневич
-										уже несколько лет возглавляет структуры «Руны».
-									</p>
-									<!-- <ul class="card__tags-list">
-					<li class="card__tags-item"><a href="#">ПБК Руна</a></li>
-					<li class="card__tags-item"><a href="#">Сергей Юхневич</a></li>
-					<li class="card__tags-item"><a href="#">kraftway</a></li>
-					<li class="card__tags-item"><a href="#">мужская суперлига</a></li>
-					<li class="card__tags-item"><a href="#">единая лига втб</a></li>
-				</ul> -->
-								</div>
-								<footer class="card__footer">
-									<span class="date">23 января 2023</span>
-								</footer>
-							</article>
-						</li>
-						<li class="publication-selector__item pub-article">
-							<article class="card">
-								<div class="card__thumb">
-									<a href="#"><picture><source data-srcset="img/RUNA/publications/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/3.webp" alt=""></picture></a>
-								</div>
-								<div class="card__body">
-									<div class="card__category"><a href="#">Статьи</a></div>
-									<h5 class="card__title"><a href="#">Камбэк и победа в овертайме</a></h5>
-									<div class="card__subtitle">Женская суперлига</div>
+							</div>
+							<div class="pub-cards-slider__slide swiper-slide">
+								<div class="publication-selector__item pub-article">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/RUNA/publications/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/3.webp" alt=""></picture></a>
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Статьи</a></div>
+											<h5 class="card__title"><a href="#">Камбэк и победа в овертайме</a></h5>
+											<div class="card__subtitle">Женская суперлига</div>
 
-									<p class="card__description">«Руна» одержала волевую победу над «Ставропольчанкой-СКФУ». Наши девушки
-										выиграли в дополнительное время и закрепились в
-										зоне плей-офф Суперлиги.
-									</p>
+											<p class="card__description">«Руна» одержала волевую победу над «Ставропольчанкой-СКФУ». Наши девушки
+												выиграли в дополнительное время и закрепились в
+												зоне плей-офф Суперлиги.
+											</p>
 
+										</div>
+										<footer class="card__footer">
+											<span class="card__pub-date">22 января 2023</span>
+										</footer>
+									</article>
 								</div>
-								<footer class="card__footer">
-									<span class="card__pub-date">22 января 2023</span>
-								</footer>
-							</article>
-						</li>
-						<li class="publication-selector__item pub-news">
-							<article class="card">
-								<div class="card__thumb">
-									<a href="#"><picture><source data-srcset="img/RUNA/publications/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/4.webp" alt=""></picture></a>
-								</div>
-								<div class="card__body">
-									<div class="card__category"><a href="#">Новости</a></div>
-									<h5 class="card__title"><a href="#">Павел Ганькевич – в сборной России!</a>
-									</h5>
-									<div class="card__subtitle">сборная россии</div>
+							</div>
+							<div class="pub-cards-slider__slide swiper-slide">
+								<div class="publication-selector__item pub-news">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/RUNA/publications/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/4.webp" alt=""></picture></a>
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Новости</a></div>
+											<h5 class="card__title"><a href="#">Павел Ганькевич – в сборной России!</a>
+											</h5>
+											<div class="card__subtitle">сборная россии</div>
 
-									<p class="card__description">Форвард «Руны-2» Павел Ганькевич (19 лет, 201 см) вошел в расширенный состав
-										сборной России.
-									</p>
+											<p class="card__description">Форвард «Руны-2» Павел Ганькевич (19 лет, 201 см) вошел в расширенный
+												состав
+												сборной России.
+											</p>
+										</div>
+										<footer class="card__footer">
+											<span class="date">20 января 2023</span>
+										</footer>
+									</article>
 								</div>
-								<footer class="card__footer">
-									<span class="date">20 января 2023</span>
-								</footer>
-							</article>
-						</li>
-						<li class="publication-selector__item pub-video">
-							<article class="card">
-								<div class="card__thumb">
-									<a href="#"><picture><source data-srcset="img/RUNA/publications/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/8.webp" alt=""></picture></a>
-								</div>
-								<div class="card__body">
-									<div class="card__category"><a href="#">Видео</a></div>
-									<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
-									<div class="card__subtitle">мужская суперлига</div>
+							</div>
+							<div class="pub-cards-slider__slide swiper-slide">
+								<div class="publication-selector__item pub-video">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/RUNA/publications/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/8.webp" alt=""></picture></a>
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Видео</a></div>
+											<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
+											<div class="card__subtitle">мужская суперлига</div>
 
-									<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке. Это 10-я
-										победа подряд в Суперлиге для викингов.
-									</p>
+											<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке. Это
+												10-я
+												победа подряд в Суперлиге для викингов.
+											</p>
 
+										</div>
+										<footer class="card__footer">
+											<span class="date">24 августа 2022</span>
+										</footer>
+									</article>
 								</div>
-								<footer class="card__footer">
-									<span class="date">24 августа 2022</span>
-								</footer>
-							</article>
-						</li>
-					</ul>
+							</div>
+							<div class="pub-cards-slider__slide swiper-slide">
+								<div class="publication-selector__item pub-event">
+									<article class="card">
+										<div class="card__thumb">
+											<a href="#"><picture><source data-srcset="img/RUNA/publications/5.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/5.webp" alt=""></picture></a>
+										</div>
+										<div class="card__body">
+											<div class="card__category"><a href="#">Видео</a></div>
+											<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
+											<div class="card__subtitle">мужская суперлига</div>
+
+											<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке. Это
+												10-я
+												победа подряд в Суперлиге для викингов.
+											</p>
+
+										</div>
+										<footer class="card__footer">
+											<span class="date">24 августа 2022</span>
+										</footer>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="pub-cards-slider__pagination swiper-pagination"></div>
+					</div>
+
+
+
+
+					<!-- <ul class="publication-selector__list">
+	<li class="publication-selector__item pub-nterview">
+		<article class="card">
+			<div class="card__thumb">
+				<a href="#"><picture><source data-srcset="img/RUNA/publications/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/1.webp" alt=""></picture></a>
+			</div>
+			<div class="card__body">
+				<div class="card__category"><a href="#">Интервью</a></div>
+				<h5 class="card__title"><a href="#">Сергей Юхневич: «Главная цель – «Финал четырех» Евролиги».</a></h5>
+				<div class="card__subtitle">ПБК Руна</div>
+				<p class="card__description">Наш генеральный менеджер – самый молодой руководитель профессионального
+					баскетбольного клуба в России. Сергей Юхневич
+					уже несколько лет возглавляет структуры «Руны».
+				</p>
+				
+			</div>
+			<footer class="card__footer">
+				<span class="date">23 января 2023</span>
+			</footer>
+		</article>
+	</li>
+	<li class="publication-selector__item pub-article">
+		<article class="card">
+			<div class="card__thumb">
+				<a href="#"><picture><source data-srcset="img/RUNA/publications/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/3.webp" alt=""></picture></a>
+			</div>
+			<div class="card__body">
+				<div class="card__category"><a href="#">Статьи</a></div>
+				<h5 class="card__title"><a href="#">Камбэк и победа в овертайме</a></h5>
+				<div class="card__subtitle">Женская суперлига</div>
+
+				<p class="card__description">«Руна» одержала волевую победу над «Ставропольчанкой-СКФУ». Наши девушки
+					выиграли в дополнительное время и закрепились в
+					зоне плей-офф Суперлиги.
+				</p>
+
+			</div>
+			<footer class="card__footer">
+				<span class="card__pub-date">22 января 2023</span>
+			</footer>
+		</article>
+	</li>
+	<li class="publication-selector__item pub-news">
+		<article class="card">
+			<div class="card__thumb">
+				<a href="#"><picture><source data-srcset="img/RUNA/publications/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/4.webp" alt=""></picture></a>
+			</div>
+			<div class="card__body">
+				<div class="card__category"><a href="#">Новости</a></div>
+				<h5 class="card__title"><a href="#">Павел Ганькевич – в сборной России!</a>
+				</h5>
+				<div class="card__subtitle">сборная россии</div>
+
+				<p class="card__description">Форвард «Руны-2» Павел Ганькевич (19 лет, 201 см) вошел в расширенный состав
+					сборной России.
+				</p>
+			</div>
+			<footer class="card__footer">
+				<span class="date">20 января 2023</span>
+			</footer>
+		</article>
+	</li>
+	<li class="publication-selector__item pub-video">
+		<article class="card">
+			<div class="card__thumb">
+				<a href="#"><picture><source data-srcset="img/RUNA/publications/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/8.webp" alt=""></picture></a>
+			</div>
+			<div class="card__body">
+				<div class="card__category"><a href="#">Видео</a></div>
+				<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
+				<div class="card__subtitle">мужская суперлига</div>
+
+				<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке. Это 10-я
+					победа подряд в Суперлиге для викингов.
+				</p>
+
+			</div>
+			<footer class="card__footer">
+				<span class="date">24 августа 2022</span>
+			</footer>
+		</article>
+	</li>
+</ul> -->
 					<!-- === BUTTON - DOWNLOAD MORE === -->
-					<button type="button" class="publication-selector__btn">Загрузить больше</button>
+					<!-- <button type="button" class="publication-selector__btn">Загрузить больше</button> -->
 				</div>
 				<div class="site-bg-img-1">
 					<img src="img/RUNA/LOGO/runa-mini-green.svg" alt="">
@@ -878,54 +1011,54 @@
 				<div class="section__container">
 					<div class="publication-selector__title-block">
 						<h2 class="section-title section-title-h2 section-title-green element-animation">команды</h2>
-						<div class="stats-menu-slider__navigation">
-							<div class="stats-menu-slider__nav-prev -ibg">
+						<div class="roster-menu-slider__navigation">
+							<div class="roster-menu-slider__nav-prev -ibg">
 								<img src="img/RUNA/icons/arrow-mini-left-green.svg" alt="">
 							</div>
-							<div class="stats-menu-slider__nav-next -ibg">
+							<div class="roster-menu-slider__nav-next -ibg">
 								<img src="img/RUNA/icons/arrow-mini-right-green.svg" alt="">
 							</div>
 						</div>
 					</div>
-					<!-- === STATS SELECTOR === -->
+					<!-- === ROSTER SELECTOR === -->
 
 
 					<!-- === BUTTON SLIDER NAVIGATION === -->
-					<div class="stats-menu-slider__box">
-						<div class="stats-menu-slider">
-							<!-- === STATS MENU SLIDER === -->
-							<div class="swiper-wrapper stats-menu-slider__wrapper stats-selector__menu">
-								<!-- <div class="stats-menu-slider__item swiper-slide">
-				<button type="button" class="stats-selector__btn publication-selector__btn-active"
+					<div class="roster-menu-slider__box">
+						<div class="roster-menu-slider">
+							<!-- === ROSTER MENU SLIDER === -->
+							<div class="swiper-wrapper roster-menu-slider__wrapper roster-selector__menu">
+								<!-- <div class="roster-menu-slider__item swiper-slide">
+				<button type="button" class="roster-selector__btn publication-selector__btn-active"
 					data-view="all-players">Все</button>
 			</div> -->
-								<div class="stats-menu-slider__item swiper-slide">
-									<button type="button" class="stats-selector__btn-1 stats-selector__btn-1-active" data-view="superliga-men">мужская суперлига</button>
+								<div class="roster-menu-slider__item swiper-slide">
+									<button type="button" class="roster-selector__btn roster-selector__btn-active" data-view="superliga-men">мужская суперлига</button>
 								</div>
-								<div class="stats-menu-slider__item swiper-slide">
-									<button type="button" class="stats-selector__btn-1" data-view="superliga-women">женская суперлига</button>
+								<div class="roster-menu-slider__item swiper-slide">
+									<button type="button" class="roster-selector__btn" data-view="superliga-women">женская суперлига</button>
 								</div>
-								<div class="stats-menu-slider__item swiper-slide">
-									<button type="button" class="stats-selector__btn-1" data-view="junior-league-vtb">молодежная лига
+								<div class="roster-menu-slider__item swiper-slide">
+									<button type="button" class="roster-selector__btn" data-view="junior-league-vtb">молодежная лига
 										ВТБ</button>
 								</div>
-								<div class="stats-menu-slider__item swiper-slide">
-									<button type="button" class="stats-selector__btn-1" data-view="dubl-men">дюбл юноши</button>
+								<div class="roster-menu-slider__item swiper-slide">
+									<button type="button" class="roster-selector__btn" data-view="dubl-men">дюбл юноши</button>
 								</div>
-								<div class="stats-menu-slider__item swiper-slide">
-									<button type="button" class="stats-selector__btn-1" data-view="dubl-women">дюбл девушки</button>
+								<div class="roster-menu-slider__item swiper-slide">
+									<button type="button" class="roster-selector__btn" data-view="dubl-women">дюбл девушки</button>
 								</div>
-								<div class="stats-menu-slider__item swiper-slide">
-									<button type="button" class="stats-selector__btn-1" data-view="runa-3x3">руна 3х3</button>
+								<div class="roster-menu-slider__item swiper-slide">
+									<button type="button" class="roster-selector__btn" data-view="runa-3x3">руна 3х3</button>
 								</div>
 
 							</div>
 						</div>
 					</div>
-					<!-- === STATS SELECTOR LIST === -->
-					<ul class="stats-selector__list">
-						<!-- === STATS SELECTOR ITEM === -->
-						<li class="stats-selector__item superliga-men">
+					<!-- === ROSTER SELECTOR LIST === -->
+					<ul class="roster-selector__list">
+						<!-- === ROSTER SELECTOR ITEM === -->
+						<li class="roster-selector__item superliga-men">
 							<!-- === TEAM SLIDER - ROSTER === -->
 							<div class="team-slider">
 								<div class="swiper-wrapper team-slider__wrapper">
@@ -1096,20 +1229,20 @@
 			</div> -->
 							</div>
 						</li>
-						<li class="stats-selector__item superliga-women">
-							<div class="stats-selector__demo">слайдер - игроки женской суперлиги</div>
+						<li class="roster-selector__item superliga-women">
+							<div class="roster-selector__demo">слайдер - игроки женской суперлиги</div>
 						</li>
-						<li class="stats-selector__item junior-league-vtb">
-							<div class="stats-selector__demo">слайдер - игроки молодежной лиги ВТБ</div>
+						<li class="roster-selector__item junior-league-vtb">
+							<div class="roster-selector__demo">слайдер - игроки молодежной лиги ВТБ</div>
 						</li>
-						<li class="stats-selector__item dubl-men">
-							<div class="stats-selector__demo">слайдер - игроки ДЮБЛ юноши</div>
+						<li class="roster-selector__item dubl-men">
+							<div class="roster-selector__demo">слайдер - игроки ДЮБЛ юноши</div>
 						</li>
-						<li class="stats-selector__item dubl-women">
-							<div class="stats-selector__demo">слайдер - игроки ДЮБЛ девушки</div>
+						<li class="roster-selector__item dubl-women">
+							<div class="roster-selector__demo">слайдер - игроки ДЮБЛ девушки</div>
 						</li>
-						<li class="stats-selector__item runa-3x3">
-							<div class="stats-selector__demo">слайдер - игроки Руна 3х3</div>
+						<li class="roster-selector__item runa-3x3">
+							<div class="roster-selector__demo">слайдер - игроки Руна 3х3</div>
 						</li>
 					</ul>
 				</div>
@@ -2495,9 +2628,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230217041939"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230217041939"></script>
-	<script src="js/app.min.js?_v=20230217041939"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230217164958"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230217164958"></script>
+	<script src="js/app.min.js?_v=20230217164958"></script>
 </body>
 
 </html>
