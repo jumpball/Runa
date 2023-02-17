@@ -19778,6 +19778,27 @@ PERFORMANCE OF THIS SOFTWARE.
                 }));
             }));
         }
+        let person_selector_boxs = document.querySelectorAll(".person-selector__item");
+        let person_selector_menu = document.querySelector(".person-selector__menu");
+        let person_selector_btns = document.querySelectorAll(".person-selector__btn-1");
+        if (person_selector_menu && person_selector_btns) {
+            person_selector_btns.forEach((elem => {
+                elem.addEventListener("click", (function(event) {
+                    person_selector_btns.forEach((btn => {
+                        btn.classList.remove("person-selector__btn-1-active");
+                    }));
+                    elem.classList.add("person-selector__btn-1-active");
+                }));
+            }));
+            person_selector_menu.addEventListener("click", (function(event) {
+                if ("BUTTON" != event.target.tagName) return false;
+                let target = event.target.dataset["view"];
+                if (person_selector_boxs) person_selector_boxs.forEach((function(el) {
+                    el.classList.remove("hide");
+                    if (!el.classList.contains(target) && "all-persons" != target) el.classList.add("hide");
+                }));
+            }));
+        }
         new Swiper(".blog-slider", {
             effect: "fade",
             loop: true,
@@ -19995,6 +20016,34 @@ PERFORMANCE OF THIS SOFTWARE.
                 },
                 1360: {
                     slidesPerView: 6,
+                    spaceBetween: 20
+                }
+            }
+        });
+        new Swiper(".person-menu-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            slideToClickedSlide: true,
+            nested: true,
+            navigation: {
+                prevEl: ".person-menu-slider__nav-prev",
+                nextEl: ".person-menu-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                349.98: {
+                    slidesPerView: 2
+                },
+                559.98: {
+                    slidesPerView: 3
+                },
+                767.98: {
+                    slidesPerView: 4,
                     spaceBetween: 20
                 }
             }
