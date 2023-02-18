@@ -16133,33 +16133,30 @@ PERFORMANCE OF THIS SOFTWARE.
         });
         new Swiper(".team-leaders-slider", {
             slidesPerView: "auto",
-            slidesPerGroup: 1,
-            spaceBetween: 10,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
-            direction: "vertical",
             centeredSlides: false,
-            stopOnLastSlide: true,
             navigation: {
                 prevEl: ".team-leaders-slider__nav-prev",
                 nextEl: ".team-leaders-slider__nav-next"
             },
             breakpoints: {
                 300: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                479.98: {
                     slidesPerView: 2
                 },
-                459.98: {
-                    slidesPerView: 4,
-                    direction: "vertical"
-                },
-                959.98: {
+                1149.98: {
                     slidesPerView: 3,
                     spaceBetween: 20,
                     direction: "horizontal"
                 },
                 1429.98: {
-                    slidesPerView: 4
+                    slidesPerView: 4,
+                    direction: "vertical"
                 }
             }
         });
