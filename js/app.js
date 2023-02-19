@@ -16133,6 +16133,7 @@ PERFORMANCE OF THIS SOFTWARE.
         });
         new Swiper(".team-leaders-slider", {
             slidesPerView: "auto",
+            spaceBetween: 10,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
@@ -16262,11 +16263,6 @@ PERFORMANCE OF THIS SOFTWARE.
             observeParents: true,
             observeSlideChildren: true,
             loop: true,
-            autoplay: {
-                delay: 5e3,
-                stopOnLastSlide: false,
-                disableOnInteraction: false
-            },
             pagination: {
                 el: ".team-sliderpagination",
                 type: "bullets",
@@ -16279,11 +16275,11 @@ PERFORMANCE OF THIS SOFTWARE.
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1,
-                    spaceBetween: 20,
+                    slidesPerView: 2,
+                    spaceBetween: 10,
                     autoHeight: true
                 },
-                609.98: {
+                509.98: {
                     slidesPerView: 2,
                     spaceBetween: 20
                 },

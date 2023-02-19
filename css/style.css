@@ -1023,6 +1023,7 @@ body::after {
 
 .person-menu-slider__nav-prev,
 .person-menu-slider__nav-next {
+  opacity: 0.3;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
   transition: all 0.5s ease 0s;
@@ -2145,79 +2146,103 @@ body::after {
   transform: translateY(0);
 }
 
-.player-card__body {
+.player-card-roster {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  background-color: #ffffff;
+  border-radius: 3px;
+  border: 1px solid #a4a9ad;
+}
+
+.player-card-roster:hover {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #0f524d;
+}
+
+.player-card-roster:hover .player-card-roster__name {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  color: #0f524d;
+}
+
+.player-card-roster:hover .player-card-roster__tournament-logo {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  opacity: 0.5;
+}
+
+.player-card-roster:hover .player-card-roster__image {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.player-card-roster__body {
   position: relative;
   min-width: 270px;
   width: 100%;
-  height: 480px;
-  border-radius: 3px;
-  overflow: hidden;
-  border: 1px solid #0f524d;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+
+.player-card-roster__corner {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
   z-index: 2;
-  background-color: #ffffff;
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 120px solid #0f524d;
+  border-bottom: 120px solid transparent;
 }
 
-.player-card__body:hover {
-  -webkit-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  /*%% Card on hover %%*/
-}
-
-.player-card__body:hover .player-card__title {
-  color: #0f524d;
-}
-
-.player-card__body:hover .player-card__number {
-  color: #0f524d;
-}
-
-.player-card__body:hover .player-card__stats {
-  color: #ffffff;
-}
-
-.player-card__body:hover .player-card__stats-bage {
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.player-card__stats-bage {
-  width: 100%;
-  padding: 10px 10px 10px 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+.player-card-roster__corner-num {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  display: inline-block;
+  width: 3.125rem;
+  position: absolute;
+  top: 0.5rem;
+  left: -7rem;
   text-align: center;
-  -webkit-transition: all 0.5s ease 0s;
-  -o-transition: all 0.5s ease 0s;
-  transition: all 0.5s ease 0s;
-}
-
-.player-card__number {
-  font-size: 40px;
+  color: #ffffff;
+  font-family: "Oswald", sans-serif;
+  font-size: 2.625rem;
   font-weight: 900;
-  color: #3a3a3a;
+  z-index: 2;
 }
 
-.player-card__stats {
-  font-size: 14px;
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: 0.09375rem;
-  color: #0f524d;
+.player-card-roster__tournament-logo {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  opacity: 0.1;
+  z-index: 2;
 }
 
-.player-card__logo {
+.player-card-roster__logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -2227,34 +2252,64 @@ body::after {
   position: relative;
 }
 
-.player-card__logo img {
+.player-card-roster__logo img {
   padding: 0.125rem;
 }
 
-.player-card__photo {
+.player-card-roster__photo {
   position: relative;
-  left: 50%;
-  top: -12px;
-  -webkit-transform: translateX(-50%);
-      -ms-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin: 20px 0px 0px 0px;
   height: 16.875rem;
   width: 16.875rem;
   overflow: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
 }
 
-.player-card__photo::after {
+.player-card-roster__photo::after {
   content: "";
   background: #ffffff;
-  background-image: url("../img/RUNA/border/border-1-green.svg");
+  background-image: url("../img/RUNA/border/border-270-20-green.svg");
   position: absolute;
-  left: 0;
   bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   height: 1.25rem;
 }
 
-.player-card__content {
+.player-card-roster__image {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-filter: drop-shadow(-5px 13px 15px rgba(5, 5, 5, 0.5019607843));
+  filter: drop-shadow(-5px 13px 14px rgba(5, 5, 5, 0.5));
+}
+
+.player-card-roster__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.player-card-roster__info {
+  margin: 8px 0px 0px 0px;
+  padding: 0px 10px 0px 10px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2269,38 +2324,67 @@ body::after {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-  padding: 0 20px;
-  color: #0f524d;
+  color: #3a3a3a;
   z-index: 1;
 }
 
-.player-card__content span {
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin: 4px 0px 0px 0px;
-  padding-top: 0.25rem;
-  line-height: 24px;
-  font-weight: 700;
-  color: #0f524d;
-}
-
-.player-card__content p {
-  margin: 4px 0;
-  font-size: 12px;
-  line-height: 14px;
+.player-card-roster__name {
   color: #3a3a3a;
-}
-
-.player-card__title {
-  color: #3a3a3a;
-  margin-bottom: 0;
-  font-size: 20px;
-  line-height: 24px;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+.player-card-roster__name span {
+  font-size: 16px;
+  line-height: 18px;
   letter-spacing: 1px;
+}
+
+.player-card-roster__name h3 {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.player-card-roster__desc {
+  margin: 6px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+}
+
+.player-card-roster__desc span {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.125rem;
+}
+
+.player-card-roster__desc p {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.125rem;
+}
+
+.player-card-roster__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.25rem;
 }
 
 .leader-card__body {
@@ -2521,15 +2605,15 @@ body::after {
   letter-spacing: 0.0625rem;
 }
 
-@supports (font-size: clamp( 0.875rem , -0.1517678571rem  +  1.4285714286vw , 1.125rem )) {
+@supports (font-size: clamp( 0.875rem , 0.3616160714rem  +  0.7142857143vw , 1rem )) {
   .player-card-vh-slider__name span {
-    font-size: clamp( 0.875rem , -0.1517678571rem  +  1.4285714286vw , 1.125rem );
+    font-size: clamp( 0.875rem , 0.3616160714rem  +  0.7142857143vw , 1rem );
   }
 }
 
-@supports not (font-size: clamp( 0.875rem , -0.1517678571rem  +  1.4285714286vw , 1.125rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.3616160714rem  +  0.7142857143vw , 1rem )) {
   .player-card-vh-slider__name span {
-    font-size: calc(0.875rem + 0.25 * (100vw - 71.87375rem) / 17.5);
+    font-size: calc(0.875rem + 0.125 * (100vw - 71.87375rem) / 17.5);
   }
 }
 
@@ -2538,15 +2622,15 @@ body::after {
   letter-spacing: 0.0625rem;
 }
 
-@supports (font-size: clamp( 1rem , -0.2834598214rem  +  1.7857142857vw , 1.3125rem )) {
+@supports (font-size: clamp( 1rem , 0.2299241071rem  +  1.0714285714vw , 1.1875rem )) {
   .player-card-vh-slider__name h2 {
-    font-size: clamp( 1rem , -0.2834598214rem  +  1.7857142857vw , 1.3125rem );
+    font-size: clamp( 1rem , 0.2299241071rem  +  1.0714285714vw , 1.1875rem );
   }
 }
 
-@supports not (font-size: clamp( 1rem , -0.2834598214rem  +  1.7857142857vw , 1.3125rem )) {
+@supports not (font-size: clamp( 1rem , 0.2299241071rem  +  1.0714285714vw , 1.1875rem )) {
   .player-card-vh-slider__name h2 {
-    font-size: calc(1rem + 0.3125 * (100vw - 71.87375rem) / 17.5);
+    font-size: calc(1rem + 0.1875 * (100vw - 71.87375rem) / 17.5);
   }
 }
 
@@ -2592,7 +2676,7 @@ body::after {
 .player-card-vh-slider__desc {
   color: #3a3a3a;
   text-transform: uppercase;
-  letter-spacing: 0.075rem;
+  letter-spacing: 0.125rem;
 }
 
 @supports (font-size: clamp( 0.625rem , 0.5096153846rem  +  0.2403846154vw , 0.75rem )) {
@@ -7739,27 +7823,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 71.87375rem) {
-@supports (font-size: clamp( 0.875rem , 0.3723558825rem  +  1.0471752448vw , 1.125rem )) {
+@supports (font-size: clamp( 0.875rem , 0.6236779413rem  +  0.5235876224vw , 1rem )) {
     .player-card-vh-slider__name span {
-      font-size: clamp( 0.875rem , 0.3723558825rem  +  1.0471752448vw , 1.125rem );
+      font-size: clamp( 0.875rem , 0.6236779413rem  +  0.5235876224vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.3723558825rem  +  1.0471752448vw , 1.125rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.6236779413rem  +  0.5235876224vw , 1rem )) {
     .player-card-vh-slider__name span {
-      font-size: calc(0.875rem + 0.25 * (100vw - 48rem) / 23.87375);
+      font-size: calc(0.875rem + 0.125 * (100vw - 48rem) / 23.87375);
     }
 }
 
-@supports (font-size: clamp( 1rem , 0.3716948531rem  +  1.308969056vw , 1.3125rem )) {
+@supports (font-size: clamp( 1rem , 0.6230169119rem  +  0.7853814336vw , 1.1875rem )) {
     .player-card-vh-slider__name h2 {
-      font-size: clamp( 1rem , 0.3716948531rem  +  1.308969056vw , 1.3125rem );
+      font-size: clamp( 1rem , 0.6230169119rem  +  0.7853814336vw , 1.1875rem );
     }
 }
 
-@supports not (font-size: clamp( 1rem , 0.3716948531rem  +  1.308969056vw , 1.3125rem )) {
+@supports not (font-size: clamp( 1rem , 0.6230169119rem  +  0.7853814336vw , 1.1875rem )) {
     .player-card-vh-slider__name h2 {
-      font-size: calc(1rem + 0.3125 * (100vw - 48rem) / 23.87375);
+      font-size: calc(1rem + 0.1875 * (100vw - 48rem) / 23.87375);
     }
 }
 
@@ -8494,6 +8578,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     transition: height 0.2s;
   }
 
+  .player-card-roster__info {
+    margin: 5px 0px 0px 0px;
+    padding: 0px 5px 0px 5px;
+  }
+
   .game-video__video {
     margin: 10px 0px 10px 0px;
   }
@@ -8519,6 +8608,75 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  .player-card-roster__photo {
+    height: 15.625rem;
+    width: 15.625rem;
+  }
+
+@supports (font-size: clamp( 0.75rem , 0.5416521981rem  +  0.6944926731vw , 0.875rem )) {
+    .player-card-roster__name span {
+      font-size: clamp( 0.75rem , 0.5416521981rem  +  0.6944926731vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5416521981rem  +  0.6944926731vw , 0.875rem )) {
+    .player-card-roster__name span {
+      font-size: calc(0.75rem + 0.125 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6666521981rem  +  0.6944926731vw , 1rem )) {
+    .player-card-roster__name h3 {
+      font-size: clamp( 0.875rem , 0.6666521981rem  +  0.6944926731vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6666521981rem  +  0.6944926731vw , 1rem )) {
+    .player-card-roster__name h3 {
+      font-size: calc(0.875rem + 0.125 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+@supports (line-height: clamp( 1rem , 0.5833043961rem  +  1.3889853462vw , 1.25rem )) {
+    .player-card-roster__name h3 {
+      line-height: clamp( 1rem , 0.5833043961rem  +  1.3889853462vw , 1.25rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.5833043961rem  +  1.3889853462vw , 1.25rem )) {
+    .player-card-roster__name h3 {
+      line-height: calc(1rem + 0.25 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+  .player-card-roster__desc span {
+    letter-spacing: 0.0625rem;
+  }
+
+@supports (font-size: clamp( 0.625rem , 0.4166521981rem  +  0.6944926731vw , 0.75rem )) {
+    .player-card-roster__desc span {
+      font-size: clamp( 0.625rem , 0.4166521981rem  +  0.6944926731vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.625rem , 0.4166521981rem  +  0.6944926731vw , 0.75rem )) {
+    .player-card-roster__desc span {
+      font-size: calc(0.625rem + 0.125 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+@supports (font-size: clamp( 0.5625rem , 0.2499782971rem  +  1.0417390097vw , 0.75rem )) {
+    .player-card-roster__desc p {
+      font-size: clamp( 0.5625rem , 0.2499782971rem  +  1.0417390097vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , 0.2499782971rem  +  1.0417390097vw , 0.75rem )) {
+    .player-card-roster__desc p {
+      font-size: calc(0.5625rem + 0.1875 * (100vw - 30rem) / 17.99875);
+    }
+}
 
   .player-card-vh-slider {
     padding: 10px 0px 0px 0px;
@@ -8786,6 +8944,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @media (max-width: 40.62375rem) {
 @supports (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .player-card-roster__photo {
+      width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
+    }
+}
+
+@supports not (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .player-card-roster__photo {
+      width: calc(12.5rem + 2.5 * (100vw - 30rem) / 10.62375);
+    }
+}
+
+@supports (height: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .player-card-roster__photo {
+      height: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
+    }
+}
+
+@supports not (height: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .player-card-roster__photo {
+      height: calc(12.5rem + 2.5 * (100vw - 30rem) / 10.62375);
+    }
+}
+
+@supports (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
     .player-card-vh-slider__photo {
       width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
     }
@@ -8824,6 +9006,38 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .footer__icons-link {
     width: 2.25rem;
     height: 2.25rem;
+  }
+}
+
+@media (max-width: 34.37375rem) {
+  .player-card-roster__corner {
+    border-left: 100px solid #0f524d;
+    border-bottom: 100px solid transparent;
+  }
+
+  .player-card-roster__corner-num {
+    left: -6.375rem;
+  }
+
+@supports (font-size: clamp( 1.5rem , 0.2855986284rem  +  5.7148299838vw , 2.25rem )) {
+    .player-card-roster__corner-num {
+      font-size: clamp( 1.5rem , 0.2855986284rem  +  5.7148299838vw , 2.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.2855986284rem  +  5.7148299838vw , 2.25rem )) {
+    .player-card-roster__corner-num {
+      font-size: calc(1.5rem + 0.75 * (100vw - 21.25rem) / 13.12375);
+    }
+}
+
+  .player-card-roster__tournament-logo {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .player-card-roster__logo {
+    display: none;
   }
 }
 
@@ -8882,6 +9096,98 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 29.99875rem) {
+  .player-card-roster__photo {
+    border-bottom: 3px solid #0f524d;
+  }
+
+@supports (width: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .player-card-roster__photo {
+      width: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem );
+    }
+}
+
+@supports not (width: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .player-card-roster__photo {
+      width: calc(8.625rem + 3.875 * (100vw - 20rem) / 9.99875);
+    }
+}
+
+@supports (height: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .player-card-roster__photo {
+      height: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem );
+    }
+}
+
+@supports not (height: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .player-card-roster__photo {
+      height: calc(8.625rem + 3.875 * (100vw - 20rem) / 9.99875);
+    }
+}
+
+  .player-card-roster__photo::after {
+    display: none;
+  }
+
+@supports (font-size: clamp( 0.5625rem , 0.1070777968rem  +  2.143163309vw , 0.75rem )) {
+    .player-card-roster__name span {
+      font-size: clamp( 0.5625rem , 0.1070777968rem  +  2.143163309vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , 0.1070777968rem  +  2.143163309vw , 0.75rem )) {
+    .player-card-roster__name span {
+      font-size: calc(0.5625rem + 0.1875 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.5625rem , -0.1965370053rem  +  3.5719388484vw , 0.875rem )) {
+    .player-card-roster__name h3 {
+      font-size: clamp( 0.5625rem , -0.1965370053rem  +  3.5719388484vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , -0.1965370053rem  +  3.5719388484vw , 0.875rem )) {
+    .player-card-roster__name h3 {
+      font-size: calc(0.5625rem + 0.3125 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (line-height: clamp( 0.75rem , 0.1427703958rem  +  2.8575510787vw , 1rem )) {
+    .player-card-roster__name h3 {
+      line-height: clamp( 0.75rem , 0.1427703958rem  +  2.8575510787vw , 1rem );
+    }
+}
+
+@supports not (line-height: clamp( 0.75rem , 0.1427703958rem  +  2.8575510787vw , 1rem )) {
+    .player-card-roster__name h3 {
+      line-height: calc(0.75rem + 0.25 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.5625rem , 0.4106925989rem  +  0.7143877697vw , 0.625rem )) {
+    .player-card-roster__desc span {
+      font-size: clamp( 0.5625rem , 0.4106925989rem  +  0.7143877697vw , 0.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , 0.4106925989rem  +  0.7143877697vw , 0.625rem )) {
+    .player-card-roster__desc span {
+      font-size: calc(0.5625rem + 0.0625 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.5rem , 0.1963851979rem  +  1.4287755394vw , 0.625rem )) {
+    .player-card-roster__desc p {
+      font-size: clamp( 0.5rem , 0.1963851979rem  +  1.4287755394vw , 0.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5rem , 0.1963851979rem  +  1.4287755394vw , 0.625rem )) {
+    .player-card-roster__desc p {
+      font-size: calc(0.5rem + 0.125 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
 @supports (width: clamp( 8.75rem , 1.2490623828rem  +  37.504688086vw , 12.5rem )) {
     .player-card-vh-slider__photo {
       width: clamp( 8.75rem , 1.2490623828rem  +  37.504688086vw , 12.5rem );
@@ -9079,6 +9385,24 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 }
 
+@media (max-width: 26.87375rem) {
+  .player-card-roster__corner {
+    border-left: 75px solid #0f524d;
+    border-bottom: 75px solid transparent;
+  }
+
+  .player-card-roster__corner-num {
+    left: -5rem;
+  }
+
+  .player-card-roster__tournament-logo {
+    top: 0.3125rem;
+    right: 0.3125rem;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
+}
+
 @media (max-width: 24.99875rem) {
   .section-title-green::before {
     display: none;
@@ -9208,11 +9532,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .card__tags-item:hover {
     color: #ffffff;
     background-color: #3d308e;
-  }
-
-  .player-card__body:hover {
-    -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
   }
 
   .game-card__body:hover {
