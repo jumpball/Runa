@@ -15856,7 +15856,8 @@ PERFORMANCE OF THIS SOFTWARE.
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 1
+                    slidesPerView: 2,
+                    spaceBetween: 10
                 },
                 650: {
                     slidesPerView: 2
@@ -16276,8 +16277,7 @@ PERFORMANCE OF THIS SOFTWARE.
             breakpoints: {
                 320: {
                     slidesPerView: 2,
-                    spaceBetween: 10,
-                    autoHeight: true
+                    spaceBetween: 10
                 },
                 509.98: {
                     slidesPerView: 2,
