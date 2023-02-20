@@ -2889,14 +2889,6 @@ body::after {
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
 }
 
-.game-mini-card:hover .game-mini-card__header {
-  background-color: #8b2231;
-  color: #ccae61;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
-}
-
 .game-mini-card__body {
   overflow: hidden;
 }
@@ -9261,6 +9253,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: none;
   }
 
+  .section-title-green::before {
+    display: none;
+  }
+
+  .section-title-white::before {
+    display: none;
+  }
+
   .average-button {
     font-size: 0.625rem;
     min-width: 7.5rem;
@@ -9317,6 +9317,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     min-width: 2.5rem;
     font-size: 1.375rem;
     line-height: 2.1875rem;
+  }
+
+  .pub-cards-slider__navigation {
+    display: none;
   }
 }
 
@@ -9421,16 +9425,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
-@media (max-width: 24.99875rem) {
-  .section-title-green::before {
-    display: none;
-  }
-
-  .section-title-white::before {
-    display: none;
-  }
-}
-
 @media (any-hover: hover) {
   .publication-selector__btn:hover {
     background-color: #3d308e;
@@ -9526,14 +9520,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .green-button:hover {
-    background-color: #8b2231;
+    background-color: #3a3a3a;
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
   }
 
   .purple-button:hover {
-    background-color: #3a3a3a;
+    background-color: #8b2231;
     -webkit-transition: all 0.8s ease 0s;
     -o-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
