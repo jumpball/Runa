@@ -1885,6 +1885,14 @@ body::after {
   min-width: 11.25rem;
 }
 
+.mini-button {
+  line-height: 1rem;
+  height: 2rem;
+  padding: 8px 16px 8px 16px;
+  font-size: 0.6875rem;
+  min-width: 7.5rem;
+}
+
 .green-button {
   color: #ffffff;
   background-color: #0f524d;
@@ -3121,6 +3129,265 @@ body::after {
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   font-weight: 900;
+}
+
+.game-card-calendar {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background: #ffffff;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.game-card-calendar:hover {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.game-card-calendar__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.game-card-calendar__header {
+  width: 100%;
+  text-align: center;
+  padding: 0px 8px 4px 8px;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  color: #ccae61;
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.game-card-calendar__header h3 {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+}
+
+@supports (font-size: clamp( 1rem , 0.5921052632rem  +  0.6578947368vw , 1.25rem )) {
+  .game-card-calendar__header h3 {
+    font-size: clamp( 1rem , 0.5921052632rem  +  0.6578947368vw , 1.25rem );
+  }
+}
+
+@supports not (font-size: clamp( 1rem , 0.5921052632rem  +  0.6578947368vw , 1.25rem )) {
+  .game-card-calendar__header h3 {
+    font-size: calc(1rem + 0.25 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-card-calendar__header span {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.game-card-calendar__teams {
+  padding: 0px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.game-card-calendar__team-row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.625rem;
+}
+
+.game-card-calendar__team-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game-card-calendar__team-1-name {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.game-card-calendar__team-2-name {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.game-card-calendar__title {
+  display: none;
+}
+
+.game-card-calendar__score-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-card-calendar__score-row span {
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 40px;
+}
+
+.game-card-calendar__team-score {
+  font-family: "Oswald", sans-serif;
+  text-align: end;
+  min-width: 2.375rem;
+  font-size: 1.25rem;
+  line-height: 40px;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.game-card-calendar__team-1-score {
+  text-align: end;
+}
+
+.game-card-calendar__team-2-score {
+  text-align: start;
+}
+
+.game-card-calendar__tournament-logo {
+  position: absolute;
+  top: -2.625rem;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  opacity: 0.5;
+}
+
+.game-card-calendar__team-logo {
+  margin: 0px 0px 0px 0px;
+}
+
+@supports (width: clamp( 3.125rem , 0.0657894737rem  +  4.9342105263vw , 5rem )) {
+  .game-card-calendar__team-logo {
+    width: clamp( 3.125rem , 0.0657894737rem  +  4.9342105263vw , 5rem );
+  }
+}
+
+@supports not (width: clamp( 3.125rem , 0.0657894737rem  +  4.9342105263vw , 5rem )) {
+  .game-card-calendar__team-logo {
+    width: calc(3.125rem + 1.875 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (height: clamp( 3.125rem , 0.0657894737rem  +  4.9342105263vw , 5rem )) {
+  .game-card-calendar__team-logo {
+    height: clamp( 3.125rem , 0.0657894737rem  +  4.9342105263vw , 5rem );
+  }
+}
+
+@supports not (height: clamp( 3.125rem , 0.0657894737rem  +  4.9342105263vw , 5rem )) {
+  .game-card-calendar__team-logo {
+    height: calc(3.125rem + 1.875 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-card-calendar__icon {
+  display: none;
+}
+
+.game-card-calendar__content {
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+}
+
+.game-card-calendar__gym {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.1875rem;
+  margin: 0px 0px 5px 0px;
+}
+
+.game-card-calendar__gym p {
+  margin: 2px 0px 0px 0px;
+  line-height: 12px;
+}
+
+@supports (font-size: clamp( 0.5rem , 0.2960526316rem  +  0.3289473684vw , 0.625rem )) {
+  .game-card-calendar__gym p {
+    font-size: clamp( 0.5rem , 0.2960526316rem  +  0.3289473684vw , 0.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.5rem , 0.2960526316rem  +  0.3289473684vw , 0.625rem )) {
+  .game-card-calendar__gym p {
+    font-size: calc(0.5rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-card-calendar__tournament {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  margin: 10px 0px 0px 0px;
+  padding: 0px 10px 0px 10px;
+}
+
+.game-card-calendar__tournament span {
+  font-size: 11px;
+  letter-spacing: 0.09375rem;
+  text-transform: uppercase;
+  line-height: 16px;
 }
 
 .head-slider {
@@ -4552,6 +4819,124 @@ body::after {
   gap: 0.625rem;
 }
 
+.month-calendar {
+  width: 100%;
+  margin: 0px 0px 30px 0px;
+  font-family: "Roboto Condensed";
+  overflow: hidden;
+  border-radius: 0.1875rem;
+  border: 1px solid #a4a9ad;
+}
+
+.month-calendar__week-header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  border-bottom: 0.0625rem solid #86a5d9;
+}
+
+.month-calendar__week-header-day {
+  width: 100%;
+  text-align: center;
+  padding: 1.25rem 0.625rem;
+  color: #d5dde5;
+  background-color: #0f524d;
+  border-right: 0.0625rem solid #a4a9ad;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  text-shadow: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.month-calendar__day-title-short {
+  display: none;
+}
+
+.month-calendar__body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.month-calendar__week {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.month-calendar__week:not(:last-child) {
+  border-bottom: 0.0625rem solid #a4a9ad;
+}
+
+.month-calendar__day {
+  background-color: #ffffff;
+  padding: 0.5rem;
+  min-width: 8.5625rem;
+}
+
+.month-calendar__day:not(:last-child) {
+  border-right: 0.0625rem solid #a4a9ad;
+}
+
+.month-calendar__day-body {
+  position: relative;
+  padding: 10px 0px 0px 0px;
+  min-height: 11.25rem;
+}
+
+.month-calendar__day-disable .month-calendar__day-header {
+  background-color: #eef0f2;
+}
+
+.month-calendar__day-disable .month-calendar__date,
+.month-calendar__day-disable .month-calendar__week-day {
+  color: #ffffff;
+}
+
+.month-calendar__day-disable .month-calendar__date {
+  -webkit-text-stroke-width: 0.0625rem;
+  -webkit-text-stroke-color: #0f524d;
+}
+
+.month-calendar__day-today .month-calendar__day-header {
+  background-color: #eef0f2;
+  border: 0.0625rem solid #8b2231;
+}
+
+.month-calendar__day-today .month-calendar__date,
+.month-calendar__day-today .month-calendar__week-day {
+  color: #8b2231;
+}
+
+.month-calendar__day-header {
+  height: 2.8125rem;
+  padding: 0.3125rem;
+  background-color: #f0f8ff;
+  border: 0.0625rem solid #eef0f2;
+  border-radius: 0.1875rem;
+}
+
+.month-calendar__date {
+  text-align: end;
+  font-size: 1.875rem;
+  font-weight: 900;
+  font-family: "Oswald", sans-serif;
+  color: #0f524d;
+}
+
+.month-calendar__week-day {
+  display: none;
+  font-size: 0.875rem;
+}
+
 .profile-person__header {
   margin: 40px 0px 0px 0px;
   display: -ms-grid;
@@ -5441,6 +5826,10 @@ body::after {
 }
 
 .footer__middle-section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 38% 1fr 1fr 1fr;
+  grid-template-columns: 38% 1fr 1fr 1fr;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -5482,6 +5871,15 @@ body::after {
 }
 
 .footer__top-menu-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0;
   margin: 0;
 }
@@ -5584,15 +5982,11 @@ body::after {
   }
 }
 
-.footer__columns {
-  -ms-flex-preferred-size: 18%;
-      flex-basis: 18%;
+.footer__columns:not(:last-child) {
   padding-right: 0.9375rem;
 }
 
 .footer__first-column {
-  -ms-flex-preferred-size: 46%;
-      flex-basis: 46%;
   padding-right: 1.875rem;
 }
 
@@ -5627,12 +6021,6 @@ body::after {
   font-weight: 400;
 }
 
-.footer__icon {
-  height: 1rem;
-  width: 1rem;
-  margin-right: 0.625rem;
-}
-
 .footer__column-menu-list {
   margin: 0;
   padding: 0;
@@ -5643,6 +6031,10 @@ body::after {
   margin-bottom: 0.9375rem;
   font-size: 0.875rem;
   line-height: 1.25rem;
+}
+
+.footer__copyright {
+  font-size: 0.875rem;
 }
 
 .footer__site-developer {
@@ -5671,6 +6063,12 @@ body::after {
   display: block;
   width: 3.125rem;
   height: 3.125rem;
+}
+
+.footer__icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.625rem;
 }
 
 .tippy-box[data-animation=fade][data-state=hidden] {
@@ -8157,6 +8555,196 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+  .game-card-calendar__body {
+    -ms-grid-columns: 4.375rem 1fr 8.75rem;
+    grid-template-columns: 4.375rem 1fr 8.75rem;
+    gap: 0.625rem;
+  }
+
+  .game-card-calendar__header {
+    padding: 0px 0px 5px 0px;
+  }
+
+  .game-card-calendar__header h3 {
+    padding: 12px 0px 0px 0px;
+  }
+
+@supports (font-size: clamp( 1rem , 0.5848555297rem  +  1.4760692276vw , 1.5rem )) {
+    .game-card-calendar__header h3 {
+      font-size: clamp( 1rem , 0.5848555297rem  +  1.4760692276vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.5848555297rem  +  1.4760692276vw , 1.5rem )) {
+    .game-card-calendar__header h3 {
+      font-size: calc(1rem + 0.5 * (100vw - 28.125rem) / 33.87375);
+    }
+}
+
+  .game-card-calendar__teams {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+@supports (gap: clamp( 0.625rem , -18.6624363782rem  +  40.1821591214vw , 6.25rem )) {
+    .game-card-calendar__teams {
+      gap: clamp( 0.625rem , -18.6624363782rem  +  40.1821591214vw , 6.25rem );
+    }
+}
+
+@supports not (gap: clamp( 0.625rem , -18.6624363782rem  +  40.1821591214vw , 6.25rem )) {
+    .game-card-calendar__teams {
+      gap: calc(0.625rem + 5.625 * (100vw - 48rem) / 13.99875);
+    }
+}
+
+  .game-card-calendar__team-row {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0.3125rem;
+  }
+
+  .game-card-calendar__team-name {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.625rem;
+  }
+
+  .game-card-calendar__team-1-name {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .game-card-calendar__team-2-name {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .game-card-calendar__title {
+    display: block;
+    line-height: 3.125rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: left;
+  }
+
+@supports (font-size: clamp( 1.5rem , 0.2141709081rem  +  2.6788106081vw , 1.875rem )) {
+    .game-card-calendar__title {
+      font-size: clamp( 1.5rem , 0.2141709081rem  +  2.6788106081vw , 1.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.2141709081rem  +  2.6788106081vw , 1.875rem )) {
+    .game-card-calendar__title {
+      font-size: calc(1.5rem + 0.375 * (100vw - 48rem) / 13.99875);
+    }
+}
+
+  .game-card-calendar__score-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 0.3125rem;
+  }
+
+  .game-card-calendar__score-row span {
+    display: none;
+  }
+
+  .game-card-calendar__team-score {
+    line-height: 3.125rem;
+    text-align: start;
+  }
+
+@supports (font-size: clamp( 1.5rem , 0.2141709081rem  +  2.6788106081vw , 1.875rem )) {
+    .game-card-calendar__team-score {
+      font-size: clamp( 1.5rem , 0.2141709081rem  +  2.6788106081vw , 1.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.2141709081rem  +  2.6788106081vw , 1.875rem )) {
+    .game-card-calendar__team-score {
+      font-size: calc(1.5rem + 0.375 * (100vw - 48rem) / 13.99875);
+    }
+}
+
+  .game-card-calendar__team-1-score {
+    text-align: start;
+  }
+
+  .game-card-calendar__tournament-logo {
+    top: 3.625rem;
+    left: -3.125rem;
+  }
+
+  .game-card-calendar__icon {
+    position: relative;
+    width: 14px;
+    height: 14px;
+  }
+
+  .month-calendar__week-header {
+    display: none;
+  }
+
+  .month-calendar__week {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
+  .month-calendar__day {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 0.625rem;
+       -moz-column-gap: 0.625rem;
+            column-gap: 0.625rem;
+    border-right: none;
+  }
+
+  .month-calendar__day:not(:last-child) {
+    border-bottom: 0.0625rem solid #a4a9ad;
+    border-right: none;
+  }
+
+  .month-calendar__day-body {
+    min-height: 6.875rem;
+    padding: 0px 0px 0px 0px;
+    width: 100%;
+  }
+
+  .month-calendar__day-disable {
+    display: none;
+  }
+
+  .month-calendar__week-day {
+    width: 100%;
+    display: inline-block;
+    color: #0f524d;
+    text-align: center;
+  }
+
   .profile-person__header {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -8339,7 +8927,60 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
-@media (max-width: 60rem) {
+@media (max-width: 59.37375rem) {
+  .game-timer__title {
+    text-align: right;
+    padding: 0px 10px 10px 0px;
+  }
+
+  .game-timer__time-list {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+  }
+
+  .person-stats__form {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .calendar-slider__navigation {
+    display: none;
+  }
+}
+
+@media (max-width: 59.99875rem) {
+  .team-leaders__box {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 0.5rem;
+  }
+
+  .leader-index__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
   .footer ul li {
     display: block !important;
     padding: 1em !important;
@@ -8375,6 +9016,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 100%;
   }
 
+  .footer__middle-section {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+  }
+
   .footer__bottom-section {
     border-top: none;
     text-align: center;
@@ -8394,8 +9042,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .footer__top-menu-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
     margin: 2rem 0 0 0;
+  }
+
+  .footer__top-menu-item {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    text-align: center;
   }
 
   .footer__top-menu-item-active::before {
@@ -8457,60 +9115,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .footer__icons-link {
     margin-left: 0px;
   }
-}
 
-@media (max-width: 59.37375rem) {
-  .game-timer__title {
-    text-align: right;
-    padding: 0px 10px 10px 0px;
-  }
-
-  .game-timer__time-list {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: end;
-  }
-
-  .person-stats__form {
-    -ms-grid-columns: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .calendar-slider__navigation {
-    display: none;
-  }
-}
-
-@media (max-width: 59.99875rem) {
-  .team-leaders__box {
-    width: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    gap: 0.5rem;
-  }
-
-  .leader-index__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .footer__icons-link {
+    width: 2.25rem;
+    height: 2.25rem;
   }
 }
 
@@ -8890,6 +9498,92 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+  .game-card-calendar__body {
+    -ms-grid-columns: 3.75rem 1fr 7.75rem;
+    grid-template-columns: 3.75rem 1fr 7.75rem;
+    gap: 0.5rem;
+  }
+
+  .game-card-calendar__teams {
+    gap: 0.5rem;
+  }
+
+  .game-card-calendar__team-name {
+    gap: 0.5rem;
+  }
+
+@supports (font-size: clamp( 1rem , -0.7859268961rem  +  4.7624717228vw , 1.5rem )) {
+    .game-card-calendar__title {
+      font-size: clamp( 1rem , -0.7859268961rem  +  4.7624717228vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , -0.7859268961rem  +  4.7624717228vw , 1.5rem )) {
+    .game-card-calendar__title {
+      font-size: calc(1rem + 0.5 * (100vw - 37.5rem) / 10.49875);
+    }
+}
+
+@supports (line-height: clamp( 2.5rem , 0.2675913799rem  +  5.9530896535vw , 3.125rem )) {
+    .game-card-calendar__title {
+      line-height: clamp( 2.5rem , 0.2675913799rem  +  5.9530896535vw , 3.125rem );
+    }
+}
+
+@supports not (line-height: clamp( 2.5rem , 0.2675913799rem  +  5.9530896535vw , 3.125rem )) {
+    .game-card-calendar__title {
+      line-height: calc(2.5rem + 0.625 * (100vw - 37.5rem) / 10.49875);
+    }
+}
+
+@supports (font-size: clamp( 1.0625rem , -0.5001860341rem  +  4.1671627575vw , 1.5rem )) {
+    .game-card-calendar__team-score {
+      font-size: clamp( 1.0625rem , -0.5001860341rem  +  4.1671627575vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.0625rem , -0.5001860341rem  +  4.1671627575vw , 1.5rem )) {
+    .game-card-calendar__team-score {
+      font-size: calc(1.0625rem + 0.4375 * (100vw - 37.5rem) / 10.49875);
+    }
+}
+
+@supports (line-height: clamp( 2.5rem , 0.2675913799rem  +  5.9530896535vw , 3.125rem )) {
+    .game-card-calendar__team-score {
+      line-height: clamp( 2.5rem , 0.2675913799rem  +  5.9530896535vw , 3.125rem );
+    }
+}
+
+@supports not (line-height: clamp( 2.5rem , 0.2675913799rem  +  5.9530896535vw , 3.125rem )) {
+    .game-card-calendar__team-score {
+      line-height: calc(2.5rem + 0.625 * (100vw - 37.5rem) / 10.49875);
+    }
+}
+
+@supports (width: clamp( 2.5rem , -0.9433802339rem  +  8.4760128835vw , 3.125rem )) {
+    .game-card-calendar__team-logo {
+      width: clamp( 2.5rem , -0.9433802339rem  +  8.4760128835vw , 3.125rem );
+    }
+}
+
+@supports not (width: clamp( 2.5rem , -0.9433802339rem  +  8.4760128835vw , 3.125rem )) {
+    .game-card-calendar__team-logo {
+      width: calc(2.5rem + 0.625 * (100vw - 40.625rem) / 7.37375);
+    }
+}
+
+@supports (height: clamp( 2.5rem , -0.9433802339rem  +  8.4760128835vw , 3.125rem )) {
+    .game-card-calendar__team-logo {
+      height: clamp( 2.5rem , -0.9433802339rem  +  8.4760128835vw , 3.125rem );
+    }
+}
+
+@supports not (height: clamp( 2.5rem , -0.9433802339rem  +  8.4760128835vw , 3.125rem )) {
+    .game-card-calendar__team-logo {
+      height: calc(2.5rem + 0.625 * (100vw - 40.625rem) / 7.37375);
+    }
+}
+
   .calendar-slider__navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -9014,6 +9708,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     line-height: 2.1875rem;
   }
 
+  .game-card-calendar__tournament span {
+    display: none;
+  }
+
   .calendar-slider__navigation {
     display: none;
   }
@@ -9025,10 +9723,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
-@media (max-width: 37.5rem) {
-  .footer__icons-link {
-    width: 2.25rem;
-    height: 2.25rem;
+@media (max-width: 37.49875rem) {
+  .game-card-calendar__body {
+    -ms-grid-columns: 3.125rem 1fr 7.75rem;
+    grid-template-columns: 3.125rem 1fr 7.75rem;
+    gap: 0.3125rem;
+  }
+
+  .game-card-calendar__team-score {
+    min-width: 2rem;
+  }
+
+  .game-card-calendar__tournament-logo {
+    display: none;
+  }
+
+  .game-card-calendar__team-logo {
+    display: none;
+  }
+
+  .month-calendar__day-body {
+    min-height: 5.625rem;
   }
 }
 
@@ -9099,6 +9814,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .game-mini-card__team-score {
     line-height: 1.625rem;
+  }
+
+  .game-card-calendar__header span {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 33.12375rem) {
+  .game-card-calendar__title {
+    display: none;
+  }
+
+  .game-card-calendar__team-logo {
+    display: block;
   }
 }
 
@@ -9427,6 +10156,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     line-height: 2.1875rem;
   }
 
+  .game-card-calendar__header span {
+    font-size: 0.875rem;
+  }
+
   .pub-cards-slider__navigation {
     display: none;
   }
@@ -9530,6 +10263,50 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     right: 0.3125rem;
     width: 3.125rem;
     height: 3.125rem;
+  }
+}
+
+@media (max-width: 26.24875rem) {
+  .game-card-calendar__body {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    gap: 0rem;
+  }
+
+  .game-card-calendar__header h3 {
+    padding: 0px 0px 0px 0px;
+  }
+
+  .game-card-calendar__teams {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0rem;
+  }
+
+  .game-card-calendar__team-row {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .game-card-calendar__score-row {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+
+  .game-card-calendar__score-row span {
+    display: block;
+  }
+
+  .game-card-calendar__tournament-logo {
+    display: block;
+  }
+
+  .game-card-calendar__content {
+    margin: 0px 0px 0px 0px;
   }
 }
 
