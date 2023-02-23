@@ -2,7 +2,7 @@
 <html lang="ru">
 
 <head>
-	<title>Профайл Персоны</title>
+	<title>Профайл Команды</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
@@ -335,18 +335,17 @@
 					<li><a href="#">Главная</a></li>
 					<li><a href="#">Команды</a></li>
 					<li><a href="#">Мужская Суперлига</a></li>
-					<li><a href="#">Игроки</a></li>
-					<li>Михаил Карпачев</li>
+					<li><a href="#">Руна</a></li>
 				</ul>
 			</div>
-			<!-- PERSON PROFILE HEADER -->
+			<!-- TEAM PROFILE HEADER -->
 			<section class="site-bg section-offset">
 				<div class="section__container">
-					<!-- PERSON PROFILE - NAV / SELECT -->
+					<!-- TEAM PROFILE - NAV / SELECT -->
 					<div class="nav-select__nav">
-						<!-- PERSON PROFILE - FORM / 2 BOXES -->
-						<form action="#" class="nav-select__form-3-box">
-							<!-- PERSON PROFILE - FORM - SELECT / TEAM -->
+						<!-- TEAM PROFILE - FORM / 2 BOXES -->
+						<form action="#" class="nav-select__form-2-box">
+							<!-- TEAM PROFILE - FORM - SELECT / TEAM -->
 							<div class="nav-select__box">
 								<label class="nav-select__label nav-select__label-green" for="select-team">Выбрать
 									команду</label>
@@ -359,150 +358,499 @@
 									<option class="nav-select__item" value="6">Руна 3х3</option>
 								</select>
 							</div>
-							<!-- PERSON PROFILE - FORM - SELECT / PERSON TYPE -->
+							<!-- TEAM PROFILE - FORM - SELECT / SEASON -->
 							<div class="nav-select__box">
-								<label class="nav-select__label nav-select__label-green" for="select-person-type">Выбрать
-									тип персоны</label>
-								<select data-label data-scroll data-show name="form[]" id="select-person-type" class="nav-select__list">
-									<option class="nav-select__item" value="1" selected="selected">игрок</option>
-									<option class="nav-select__item" value="2">тренер</option>
-									<option class="nav-select__item" value="3">персонал</option>
+								<label class="nav-select__label nav-select__label-green" for="select-season">Выбрать
+									сезон</label>
+								<select data-label data-scroll data-show name="form[]" id="select-season" class="nav-select__list">
+									<option class="nav-select__item" value="1" selected="selected">2022/2023</option>
+									<option class="nav-select__item" value="2">2021/2022</option>
+									<option class="nav-select__item" value="3">2020/2021</option>
+									<option class="nav-select__item" value="4">2019/2020</option>
+									<option class="nav-select__item" value="5">2018/2019</option>
 								</select>
 							</div>
-							<!-- PERSON PROFILE - FORM - SELECT / PERSON -->
-							<div class="nav-select__box">
-								<label class="nav-select__label nav-select__label-green" for="select-person">Выбрать
-									персону</label>
-								<select data-label data-scroll data-show name="form[]" id="select-person" class="nav-select__list">
-									<option class="nav-select__item" value="1" selected="selected">Константинопольский Константин
-									</option>
-									<option class="nav-select__item" value="2">Ключников Федор</option>
-									<option class="nav-select__item" value="3">Заряжко Виктор</option>
-									<option class="nav-select__item" value="4">Карпачев Михаил</option>
-									<option class="nav-select__item" value="5">Митькин Борис</option>
-								</select>
-							</div>
+
 						</form>
 					</div>
-					<!-- PROFILE PERSON HEADER -->
-					<div class="profile-person__header">
-						<div class="profile-person__header-col">
-							<div class="profile-person__photo-box">
-								<!-- PROFILE PHOTO -->
-								<div class="profile-photo__team-logo -ibg">
-									<img src="img/RUNA/LOGO/runa-mini-white.svg" alt="лого команды">
-								</div>
-								<div class="profile-photo__image-out">
-									<div class="profile-photo__image-clip-wrap">
-										<div class="profile-photo__image-wrap cover-contain">
-											<!-- <picture><source data-srcset="img/RUNA/players/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/players/1.png" alt=""></picture> -->
-											<picture><source srcset="img/RUNA/players/12.webp" type="image/webp"><img class="profile-photo__image" alt="#" src="img/RUNA/players/12.webp"></picture>
+					<!-- TEAM TITLE / NAME -->
+					<h2 class="section-title section-title-h2 section-title-green element-animation">
+						Руна
+					</h2>
+					<!-- TABS / TABLE or CARDS -->
+					<div data-tabs class="tabs tabs-selector__tabs">
+						<nav data-tabs-titles class="tabs-selector__tabs-navigation">
+							<button type="button" class="tabs-selector__tabs-title _tab-active -ibg">
+								<img src="img/RUNA/icons/icon-cards-green.svg" alt="">
+							</button>
+							<button type="button" class="tabs-selector__tabs-title -ibg">
+								<img src="img/RUNA/icons/icon-table-green.svg" alt="">
+							</button>
+						</nav>
+						<div data-tabs-body class="tabs-selector__tabs-content">
+							<div class="tabs-selector__tabs-body">
+								<!-- TEAM PROFILE - HEADER CARDS / ROSTER -->
+								<div class="profile-team__header-cards">
+									<!-- TEAM PROFILE - HEADER CARDS LIST -->
+									<div class="profile-team__header-cards-grid">
+										<!-- ROSTER PLAYER CARDS -->
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">2</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/1.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/1.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Виктор</span>
+															<h3>константинопольский</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>разыгрывающий</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>195</span>см</p>
+																<span>/</span>
+																<p><span>90</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
 										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">1</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/2.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/2.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Федор</span>
+															<h3>Ключников</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>защитник</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>194</span>см</p>
+																<span>/</span>
+																<p><span>87</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">4</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/4.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/4.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Майкл</span>
+															<h3>Девис</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>защитник</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>188</span>см</p>
+																<span>/</span>
+																<p><span>100</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">15</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/5.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/5.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Кирилл</span>
+															<h3>Савин</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>форвард</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>196</span>см</p>
+																<span>/</span>
+																<p><span>93</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">8</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/8.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/8.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Артем</span>
+															<h3>Комиссаров</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>форвард</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>200</span>см</p>
+																<span>/</span>
+																<p><span>101</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">2</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/9.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/9.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Виктор</span>
+															<h3>константинопольский</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>разыгрывающий</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>195</span>см</p>
+																<span>/</span>
+																<p><span>90</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">1</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/10.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/10.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Федор</span>
+															<h3>Ключников</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>защитник</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>194</span>см</p>
+																<span>/</span>
+																<p><span>87</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">4</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/11.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/11.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Майкл</span>
+															<h3>Девис</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>защитник</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>188</span>см</p>
+																<span>/</span>
+																<p><span>100</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">15</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/13.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/13.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Кирилл</span>
+															<h3>Савин</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>форвард</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>196</span>см</p>
+																<span>/</span>
+																<p><span>93</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+										<div class="player-card-roster">
+											<div class="player-card-roster__corner">
+												<h3 class="player-card-roster__corner-num">8</h3>
+											</div>
+											<div class="player-card-roster__tournament-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+											</div>
+											<a href="#" class="player-card-roster__body">
+
+												<div class="player-card-roster__content">
+													<div class="player-card-roster__photo -ibg">
+														<picture><source srcset="img/RUNA/players/14.webp" type="image/webp"><img class="player-card-roster__image" alt="#" src="img/RUNA/players/14.webp"></picture>
+													</div>
+													<div class="player-card-roster__info">
+														<div class="player-card-roster__name">
+															<span>Артем</span>
+															<h3>Комиссаров</h3>
+														</div>
+														<div class="player-card-roster__logo -ibg">
+															<img src="img/RUNA/LOGO/axes-green.svg" alt="">
+														</div>
+														<div class="player-card-roster__desc">
+															<p>форвард</p>
+															<!-- <span>29.09.1992</span> -->
+															<div class="player-card-roster__data">
+																<p><span>200</span>см</p>
+																<span>/</span>
+																<p><span>101</span>кг</p>
+															</div>
+														</div>
+													</div>
+												</div>
+											</a>
+										</div>
+
 									</div>
 								</div>
-
-								<ul class="profile-photo__icons-list">
-									<li class="profile-photo__icons-item -ibg">
-										<a href="#" class="header__icons-link">
-											<img src="img/icon/vk-1-w.svg" alt="иконка ВКонтакте">
-										</a>
-									</li>
-									<li class="profile-photo__icons-item -ibg">
-										<a href="#" class="header__icons-link">
-											<img src="img/icon/instagram-1-w.svg" alt="иконка Инстаграм">
-										</a>
-									</li>
-									<!-- <li class="profile-photo__icons-item -ibg">
-				<a href="#" class="header__icons-link">
-					<img src="img/icon/ok-1-w.svg" alt="иконка Тик-Ток">
-				</a>
-			</li> -->
-
-								</ul>
-								<h2 class="profile-person__num">52</h2>
 							</div>
-						</div>
-						<div class="profile-person__header-col">
-							<div class="profile-person__header-desc">
-								<div class="profile-person__name element-animation">
-									<span>Константин</span>
-									<h2>Константинопольский</h2>
-								</div>
-								<ul class="profile-person__info-list">
-									<li class="profile-person__info-item">
-										<p>позиция</p>
-										<p>форвард</p>
-									</li>
-									<li class="profile-person__info-item">
-										<p>родился</p>
-										<span>09.01.1992</span>
-									</li>
-									<li class="profile-person__info-item">
-										<p>возраст</p>
-										<p class="lower-case"><span>31</span>год</p>
-									</li>
-
-									<li class="profile-person__info-item">
-										<p>рост</p>
-										<p class="lower-case"><span>198</span>см</p>
-									</li>
-									<li class="profile-person__info-item">
-										<p>вес</p>
-										<p class="lower-case"><span>96</span>кг</p>
-									</li>
-									<li class="profile-person__info-item">
-										<p>город</p>
-										<p>Санкт-Петербург</p>
-									</li>
-									<li class="profile-person__info-item">
-										<p>страна</p>
-										<p>Россия</p>
-									</li>
-								</ul>
-								<div class="profile-person__button-box">
-									<button class="base-button big-button green-button">купить майку игрока</button>
+							<div class="tabs-selector__tabs-body">
+								<!-- TEAM PROFILE - HEADER TABLE / ROSTER -->
+								<div class="profile-team__header-table-box">
+									<!-- TABLE ROSTER -->
+									<div class="table__block table__wrapper-dark">
+										<table>
+											<thead>
+												<tr>
+													<th class="th-thead">№</th>
+													<th class="th-thead-1">
+														<div class="table__head-image -ibg">
+															<picture><source srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt="Логотип турнира"></picture>
+														</div>
+													</th>
+													<th>игроки</th>
+													<th>дата рождения</th>
+													<th>возраст</th>
+													<th>страна</th>
+													<th>позиция</th>
+													<th>рост / см</th>
+													<th>вес / кг</th>
+													<th>звание</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td class="td-tbody3"> 2 </td>
+													<td class="td-tbody3-1">
+														<div class="table__image -ibg"><picture><source srcset="img/RUNA/players/2.webp" type="image/webp"><img alt="" class="team-box-score__team-image" src="img/RUNA/players/2.webp"></picture></div>
+													</td>
+													<td class="text-left"><a href="#">
+															Метревели
+															Арсений
+														</a></td>
+													<td> 16.11.1995 </td>
+													<td> 27 </td>
+													<td> Россия </td>
+													<td> разыгрывающий </td>
+													<td> 190 </td>
+													<td> 85 </td>
+													<td> Кандидат в мастера спорта </td>
+												</tr>
+												<tr>
+													<td class="td-tbody3">1</td>
+													<td class="td-tbody3-1">
+														<div class="table__image -ibg"><picture><source srcset="img/RUNA/players/1.webp" type="image/webp"><img alt="" class="team-box-score__team-image" src="img/RUNA/players/1.webp"></picture></div>
+													</td>
+													<td class="text-left"><a href="#"> Мелешкин
+															Владислав
+														</a></td>
+													<td> 12.05.1994 </td>
+													<td> 28 </td>
+													<td> Россия </td>
+													<td> атакующий защитник </td>
+													<td> 188 </td>
+													<td> 87 </td>
+													<td> Кандидат в мастера спорта </td>
+												</tr>
+												<tr>
+													<td class="td-tbody3"> 8 </td>
+													<td class="td-tbody3-1">
+														<div class="table__image -ibg"><picture><source srcset="img/RUNA/players/8.webp" type="image/webp"><img alt="" class="team-box-score__team-image" src="img/RUNA/players/8.webp"></picture></div>
+													</td>
+													<td class="text-left"><a href="#">
+															Антониковский
+															Александр </a></td>
+													<td> 05.01.1995 </td>
+													<td> 28 </td>
+													<td> Россия </td>
+													<td> тяжелый форвард </td>
+													<td> 203 </td>
+													<td> 110 </td>
+													<td> Мастер спорта </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="profile-person__menu-block">
+				<div class="profile-team__menu-block">
 					<!-- TABS HORIZONTAL MENU -->
 					<div class="tabs-hor-menu">
-						<div data-tabs class="tabs-hor-menu__box">
-							<!-- TABS MENU / NAV TITLE -->
+						<div data-tabs class="tabs-hor-menu__box section__container">
+
 							<nav data-tabs-titles class="tabs-hor-menu__tabs-nav">
 								<button type="button" class="tabs-hor-menu__tabs-title _tab-active">статистика</button>
-								<button type="button" class="tabs-hor-menu__tabs-title">карьера</button>
+								<button type="button" class="tabs-hor-menu__tabs-title">календарь</button>
 								<button type="button" class="tabs-hor-menu__tabs-title">рекорды</button>
 								<button type="button" class="tabs-hor-menu__tabs-title">фото галерея</button>
 							</nav>
-							<!-- TABS MENU / TAB BODY -->
+
+
 							<div data-tabs-body class="tabs-hor-menu__tabs-content">
 								<div class="tabs-hor-menu__tabs-body">
 									<div class="section__container">
 										<h2 class="section-title section-title-h2 section-title-green element-animation">
 											статистика
 										</h2>
-
-									</div>
-								</div>
-								<div class="tabs-hor-menu__tabs-body">
-									<div class="section__container">
-										<h2 class="section-title section-title-h2 section-title-green element-animation">карьера
-										</h2>
 										<div class="nav-select__nav">
 											<form action="#" class="nav-select__form-3-box">
 												<div class="nav-select__box">
 													<label class="nav-select__label nav-select__label-black" for="select-season">Выбрать сезон</label>
 													<select data-label data-scroll data-show name="form[]" id="select-season" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">все сезоны
+														<option class="nav-select__item" value="1" selected="selected">2022/2023
 														</option>
-														<option class="nav-select__item" value="2">2022/2023</option>
-														<option class="nav-select__item" value="3">2021/2022</option>
-														<option class="nav-select__item" value="4">2020/2021</option>
-														<option class="nav-select__item" value="5">2019/2020</option>
-														<option class="nav-select__item" value="6">2018/2019</option>
+														<option class="nav-select__item" value="2">2021/2022</option>
+														<option class="nav-select__item" value="3">2020/2021</option>
+														<option class="nav-select__item" value="4">2019/2020</option>
+														<option class="nav-select__item" value="5">2018/2019</option>
+														<option class="nav-select__item" value="6">2017/2018</option>
 													</select>
 												</div>
 												<div class="nav-select__box">
@@ -526,156 +874,248 @@
 												</div>
 											</form>
 										</div>
-										<div class="table__block table__wrapper-dark">
-											<table>
-												<thead>
-													<tr>
-														<th rowspan="2" class="th-thead  text-bottom">сезон</th>
-														<th rowspan="2" class="th-thead-1">
-															<div class="table__head-image -ibg">
-																<picture><source srcset="img/RUNA/LOGO/league-logo/vtb-logo.webp" type="image/webp"><img src="img/RUNA/LOGO/league-logo/vtb-logo.png" alt="Логотип турнира"></picture>
+
+									</div>
+								</div>
+								<div class="tabs-hor-menu__tabs-body">
+									<div class="section__container">
+										<h2 class="section-title section-title-h2 section-title-green element-animation">календарь
+										</h2>
+										<!-- TABS / TABLE or CARDS -->
+										<div data-tabs class="tabs tabs-selector__tabs">
+											<nav data-tabs-titles class="tabs-selector__tabs-navigation">
+												<button type="button" class="tabs-selector__tabs-title _tab-active -ibg">
+													<img src="img/RUNA/icons/icon-cards-green.svg" alt="">
+												</button>
+												<button type="button" class="tabs-selector__tabs-title -ibg">
+													<img src="img/RUNA/icons/icon-table-green.svg" alt="">
+												</button>
+											</nav>
+											<div data-tabs-body class="tabs-selector__tabs-content">
+												<div class="tabs-selector__tabs-body">
+													<!-- MONTH CALENDAR -->
+													<div class="month-calendar">
+														<div class="month-calendar__header">
+														</div>
+														<div class="month-calendar__week-header">
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">понедельник</div>
+																<div class="month-calendar__day-title-short">пн</div>
 															</div>
-														</th>
-														<th rowspan="2" class="text-left text-bottom">команда</th>
-														<th rowspan="2" class="text-bottom">и</th>
-														<th rowspan="2" class="text-bottom">ст</th>
-														<th rowspan="2" class="text-bottom">мин</th>
-														<th rowspan="2" class="text-bottom">очки</th>
-														<th colspan="6" class="table-th-colspan">броски</th>
-														<th colspan="3" class="table-th-colspan">подборы</th>
-														<th rowspan="2" class="text-bottom">гп</th>
-														<th rowspan="2" class="text-bottom">пх</th>
-														<th rowspan="2" class="text-bottom">бш</th>
-														<th rowspan="2" class="text-bottom">пт</th>
-														<th rowspan="2" class="text-bottom">ф</th>
-														<th rowspan="2" class="text-bottom">фс</th>
-														<th rowspan="2" class="text-bottom">+/-</th>
-													</tr>
-													<tr>
-														<th>2-х</th>
-														<th>%</th>
-														<th>3-х</th>
-														<th>%</th>
-														<th>шт</th>
-														<th>%</th>
-														<th>сщ</th>
-														<th>чщ</th>
-														<th>вс</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td class="td-tbody3">22/23</td>
-														<td class="td-tbody3-1">
-															<div class="table__image -ibg"><picture><source srcset="img/RUNA/LOGO/team-logo/runa.webp" type="image/webp"><img alt="" class="team-box-score__team-image" src="img/RUNA/LOGO/team-logo/runa.png"></picture></div>
-														</td>
-														<td class="text-left"><a href="#">БК Руна</a>
-														</td>
-														<td> 16 </td>
-														<td> 15 </td>
-														<td> 19:12 </td>
-														<td> 10.7 </td>
-														<td> 6.5/12.4 </td>
-														<td> 54.7% </td>
-														<td> 3.1/7.6 </td>
-														<td> 42.2% </td>
-														<td> 6.5/8.4 </td>
-														<td> 87.3% </td>
-														<td> 5.2 </td>
-														<td> 4.9 </td>
-														<td> 10.1 </td>
-														<td> 6.6 </td>
-														<td> 3.1 </td>
-														<td> 4.3 </td>
-														<td> 2.9 </td>
-														<td> 1.6 </td>
-														<td> 4.2 </td>
-														<td> +8.5 </td>
-													</tr>
-													<tr>
-														<td class="td-tbody3">21/22</td>
-														<td class="td-tbody3-1">
-															<div class="table__image -ibg"><picture><source srcset="img/RUNA/LOGO/team-logo/runa.webp" type="image/webp"><img alt="" class="team-box-score__team-image" src="img/RUNA/LOGO/team-logo/runa.png"></picture></div>
-														</td>
-														<td class="text-left"><a href="#">БК Руна</a>
-														</td>
-														<td> 16 </td>
-														<td> 15 </td>
-														<td> 19:12 </td>
-														<td> 10.7 </td>
-														<td> 6.5/12.4 </td>
-														<td> 54.7% </td>
-														<td> 3.1/7.6 </td>
-														<td> 42.2% </td>
-														<td> 6.5/8.4 </td>
-														<td> 87.3% </td>
-														<td> 5.2 </td>
-														<td> 4.9 </td>
-														<td> 10.1 </td>
-														<td> 6.6 </td>
-														<td> 3.1 </td>
-														<td> 4.3 </td>
-														<td> 2.9 </td>
-														<td> 1.6 </td>
-														<td> 4.2 </td>
-														<td> +8.5 </td>
-													</tr>
-													<tr>
-														<td class="td-tbody3">20/21</td>
-														<td class="td-tbody3-1">
-															<div class="table__image -ibg"><picture><source srcset="img/RUNA/LOGO/team-logo/runa.webp" type="image/webp"><img alt="" class="team-box-score__team-image" src="img/RUNA/LOGO/team-logo/runa.png"></picture></div>
-														</td>
-														<td class="text-left"><a href="#">БК Руна</a>
-														</td>
-														<td> 16 </td>
-														<td> 15 </td>
-														<td> 19:12 </td>
-														<td> 10.7 </td>
-														<td> 6.5/12.4 </td>
-														<td> 54.7% </td>
-														<td> 3.1/7.6 </td>
-														<td> 42.2% </td>
-														<td> 6.5/8.4 </td>
-														<td> 87.3% </td>
-														<td> 5.2 </td>
-														<td> 4.9 </td>
-														<td> 10.1 </td>
-														<td> 6.6 </td>
-														<td> 3.1 </td>
-														<td> 4.3 </td>
-														<td> 2.9 </td>
-														<td> 1.6 </td>
-														<td> 4.2 </td>
-														<td> +8.5 </td>
-													</tr>
-												</tbody>
-												<tfoot>
-													<tr>
-														<td colspan="2" class="td-tbody3 table-footer">всего</td>
-														<td class="text-left table-footer"></td>
-														<td>15</td>
-														<td>12</td>
-														<td>19:28</td>
-														<td>6.6</td>
-														<td>1.9/3.8</td>
-														<td>50%</td>
-														<td>0.7/2.4</td>
-														<td>30%</td>
-														<td>0.5/1.1</td>
-														<td>50%</td>
-														<td>1.7</td>
-														<td>0.7</td>
-														<td>2.4</td>
-														<td>2.7</td>
-														<td>1.7</td>
-														<td>1.7</td>
-														<td>0.3</td>
-														<td>2.3</td>
-														<td>1.3</td>
-														<td>+6.9</td>
-													</tr>
-												</tfoot>
-											</table>
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">вторник</div>
+																<div class="month-calendar__day-title-short">вт</div>
+															</div>
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">среда</div>
+																<div class="month-calendar__day-title-short">ср</div>
+															</div>
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">четверг</div>
+																<div class="month-calendar__day-title-short">чт</div>
+															</div>
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">пятница</div>
+																<div class="month-calendar__day-title-short">пт</div>
+															</div>
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">суббота</div>
+																<div class="month-calendar__day-title-short">сб</div>
+															</div>
+															<div class="month-calendar__week-header-day">
+																<div class="month-calendar__day-title">воскресенье</div>
+																<div class="month-calendar__day-title-short">вс</div>
+															</div>
+														</div>
+														<div class="month-calendar__body">
+															<ul class="month-calendar__week">
+																<li class="month-calendar__day month-calendar__day-disable">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">31</h5>
+																		<div class="month-calendar__week-day">пн</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">01</h5>
+																		<div class="month-calendar__week-day">вт</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																		<!-- XXX -->
+																		<div class="game-card-calendar">
+																			<div class="game-card-calendar__body">
+																				<div class="game-card-calendar__header">
+																					<!-- <h3>20 <span>фев</span></h3> -->
+																					<h3>20:30</h3>
+																					<!-- <div class="game-card-calendar__tournament"> -->
+																					<div class="game-card-calendar__tournament-logo -ibg">
+																						<picture><source data-srcset="img/RUNA/LOGO/league-logo/superliga-logo.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/LOGO/league-logo/superliga-logo.png" alt=""></picture>
+																					</div>
+																					<!-- <span>суперлига</span> -->
+																					<!-- </div> -->
+																				</div>
+
+
+																				<div class="game-card-calendar__teams">
+																					<div class="game-card-calendar__team-row">
+																						<div class="game-card-calendar__team-name game-card-calendar__team-1-name">
+																							<div class="game-card-calendar__team-logo -ibg">
+																								<picture><source data-srcset="img/RUNA/LOGO/team-logo/runa.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/LOGO/team-logo/runa.png" alt=""></picture>
+																							</div>
+																							<a href="#" class="game-card-calendar__title">Руна</a>
+																						</div>
+																						<div class="game-card-calendar__team-name game-card-calendar__team-2-name">
+																							<div class="game-card-calendar__team-logo -ibg">
+																								<picture><source data-srcset="img/RUNA/LOGO/team-logo/loko.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/LOGO/team-logo/loko.png" alt=""></picture>
+																							</div>
+																							<a href="#" class="game-card-calendar__title">СШОР Локомотив Кубань-2</a>
+																						</div>
+																					</div>
+
+																					<div class="game-card-calendar__score-row">
+																						<h4 class="game-card-calendar__team-score game-card-calendar__team-1-score">103</h4>
+																						<span>-</span>
+																						<h4 class="game-card-calendar__team-score game-card-calendar__team-2-score">102</h4>
+																					</div>
+
+
+																				</div>
+
+
+																				<div class="game-card-calendar__content">
+																					<div class="game-card-calendar__gym">
+																						<div class="game-card-calendar__icon -ibg">
+																							<img data-src="img/RUNA/icons/icon-home.svg" alt="">
+																						</div>
+																						<p>ДС "Динамо" Москва</p>
+																					</div>
+																					<button class="base-button mini-button purple-button">билеты</button>
+																				</div>
+																			</div>
+																		</div>
+																		<!-- XXX -->
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">02</h5>
+																		<div class="month-calendar__week-day">ср</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">03</h5>
+																		<div class="month-calendar__week-day">чт</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+																	</div>
+																</li>
+																<li class="month-calendar__day month-calendar__day-today">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">04</h5>
+																		<div class="month-calendar__week-day">пт</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">05</h5>
+																		<div class="month-calendar__week-day">сб</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">06</h5>
+																		<div class="month-calendar__week-day">вс</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																	</div>
+																</li>
+															</ul>
+															<ul class="month-calendar__week">
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">07</h5>
+																		<div class="month-calendar__week-day">пн</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">08</h5>
+																		<div class="month-calendar__week-day">вт</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">09</h5>
+																		<div class="month-calendar__week-day">ср</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">10</h5>
+																		<div class="month-calendar__week-day">чт</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">11</h5>
+																		<div class="month-calendar__week-day">пт</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">12</h5>
+																		<div class="month-calendar__week-day">сб</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+																	</div>
+																</li>
+																<li class="month-calendar__day">
+																	<div class="month-calendar__day-header">
+																		<h5 class="month-calendar__date">13</h5>
+																		<div class="month-calendar__week-day">вс</div>
+																	</div>
+																	<div class="month-calendar__day-body">
+
+																	</div>
+																</li>
+															</ul>
+														</div>
+													</div>
+												</div>
+												<div class="tabs-selector__tabs-body">
+
+												</div>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -697,6 +1137,10 @@
 							</div>
 						</div>
 					</div>
+
+
+
+
 				</div>
 
 			</section>
