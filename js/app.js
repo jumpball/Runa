@@ -16098,6 +16098,33 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
+        new Swiper(".month-slider", {
+            slidesPerView: 1,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            centeredSlides: true,
+            loop: true,
+            effect: "fade",
+            fadeEffect: {
+                crossFade: true
+            },
+            navigation: {
+                prevEl: ".month-slider__nav-prev",
+                nextEl: ".month-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                767.98: {
+                    slidesPerView: 1
+                },
+                991.98: {
+                    slidesPerView: 1
+                }
+            }
+        });
         new Swiper(".video-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
@@ -16265,7 +16292,7 @@ PERFORMANCE OF THIS SOFTWARE.
             observeSlideChildren: true,
             loop: true,
             pagination: {
-                el: ".team-sliderpagination",
+                el: ".swiper-pagination",
                 type: "bullets",
                 clickable: true,
                 dynamicBullets: true
