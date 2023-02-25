@@ -15761,14 +15761,14 @@ PERFORMANCE OF THIS SOFTWARE.
         window.setupPubsBlock = function setupPubsBlock() {
             let boxs = document.querySelectorAll(".publication-selector__item");
             let menu = document.querySelector(".publication-selector__menu");
-            let btns = document.querySelectorAll(".pub-menu-slider .publication-selector__btn");
+            let btns = document.querySelectorAll(".pub-menu-slider .pub-selector-button");
             if (menu && btns) {
                 btns.forEach((elem => {
                     elem.addEventListener("click", (function(event) {
                         btns.forEach((btn => {
-                            btn.classList.remove("publication-selector__btn-active");
+                            btn.classList.remove("pub-selector-button-active");
                         }));
-                        elem.classList.add("publication-selector__btn-active");
+                        elem.classList.add("pub-selector-button-active");
                     }));
                 }));
                 menu.addEventListener("click", (function(event) {
@@ -15784,14 +15784,14 @@ PERFORMANCE OF THIS SOFTWARE.
         setupPubsBlock();
         let boxs = document.querySelectorAll(".roster-selector__item");
         let menu = document.querySelector(".roster-selector__menu");
-        let btns = document.querySelectorAll(".roster-selector__btn");
+        let btns = document.querySelectorAll(".rst-selector-button");
         if (menu && btns) {
             btns.forEach((elem => {
                 elem.addEventListener("click", (function(event) {
                     btns.forEach((btn => {
-                        btn.classList.remove("roster-selector__btn-active");
+                        btn.classList.remove("rst-selector-button-active");
                     }));
-                    elem.classList.add("roster-selector__btn-active");
+                    elem.classList.add("rst-selector-button-active");
                 }));
             }));
             menu.addEventListener("click", (function(event) {

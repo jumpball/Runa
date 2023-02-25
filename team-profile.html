@@ -7,10 +7,10 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230225032252">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230225032252">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230226024939">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230226024939">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230225032252" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230226024939" rel="stylesheet">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -1038,41 +1038,59 @@
 										<h2 class="section-title section-title-h2 section-title-green element-animation">
 											статистика
 										</h2>
-										<div class="nav-select__nav">
-											<form action="#" class="nav-select__form-3-box">
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-season">Выбрать сезон</label>
-													<select data-label data-scroll data-show name="form[]" id="select-season" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">2022/2023
-														</option>
-														<option class="nav-select__item" value="2">2021/2022</option>
-														<option class="nav-select__item" value="3">2020/2021</option>
-														<option class="nav-select__item" value="4">2019/2020</option>
-														<option class="nav-select__item" value="5">2018/2019</option>
-														<option class="nav-select__item" value="6">2017/2018</option>
-													</select>
+										<!-- SPOLLERS / NAV SELECT - 3 BOX -->
+										<div data-spollers="767.98,max" class="spollers spollers__box spollers__box-767">
+											<div class="spollers__item">
+												<button type="button" data-spoller class="spollers__title spollers__title-767 -ibg">
+													<img src="img/RUNA/icons/icon-select-green.svg" alt="">
+												</button>
+												<div class="spollers__body">
+													<!-- NAV SELECT / 3 BOX -->
+													<!-- TEAM STATS - NAV / SELECT -->
+													<div class="nav-select__nav">
+														<form action="#" class="nav-select__form-3-box">
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-season">Выбрать сезон</label>
+																<select data-label data-scroll data-show name="form[]" id="select-season" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">
+																		2022/2023
+																	</option>
+																	<option class="nav-select__item" value="2">2021/2022</option>
+																	<option class="nav-select__item" value="3">2020/2021</option>
+																	<option class="nav-select__item" value="4">2019/2020</option>
+																	<option class="nav-select__item" value="5">2018/2019</option>
+																	<option class="nav-select__item" value="6">2017/2018</option>
+																</select>
+															</div>
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-tournament">Выбрать
+																	турнир</label>
+																<select data-label data-scroll data-show name="form[]" id="select-tournament" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">Единая
+																		Лига
+																		ВТБ</option>
+																	<option class="nav-select__item" value="2">Суперлига</option>
+																	<option class="nav-select__item" value="3">Молодежная Лига ВТБ
+																	</option>
+																</select>
+															</div>
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="type-stats">тип
+																	статистики</label>
+																<select data-label data-scroll data-show name="form[]" id="type-stats" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">в
+																		среднем за
+																		игру</option>
+																	<option class="nav-select__item" value="2">абсолютные показатели
+																	</option>
+																</select>
+															</div>
+														</form>
+													</div>
 												</div>
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-tournament">Выбрать
-														турнир</label>
-													<select data-label data-scroll data-show name="form[]" id="select-tournament" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">Единая Лига
-															ВТБ</option>
-														<option class="nav-select__item" value="2">Суперлига</option>
-														<option class="nav-select__item" value="3">Молодежная Лига ВТБ</option>
-													</select>
-												</div>
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="type-stats">тип
-														статистики</label>
-													<select data-label data-scroll data-show name="form[]" id="type-stats" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">в среднем за
-															игру</option>
-														<option class="nav-select__item" value="2">абсолютные показатели</option>
-													</select>
-												</div>
-											</form>
+											</div>
 										</div>
+
 										<!-- TABLE TEAM PLAYERS STATS -->
 										<div class="table__wrapper-dark">
 											<div class="table__block">
@@ -1674,7 +1692,7 @@
 																		<!-- +++ -->
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">02</h5>
 																		<div class="month-calendar__week-day">ср</div>
@@ -1683,7 +1701,7 @@
 
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">03</h5>
 																		<div class="month-calendar__week-day">чт</div>
@@ -1747,7 +1765,7 @@
 																		<!-- +++ -->
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">05</h5>
 																		<div class="month-calendar__week-day">сб</div>
@@ -1755,7 +1773,7 @@
 																	<div class="month-calendar__day-body">
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">06</h5>
 																		<div class="month-calendar__week-day">вс</div>
@@ -1822,7 +1840,7 @@
 																		<!-- +++ -->
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">08</h5>
 																		<div class="month-calendar__week-day">вт</div>
@@ -1830,7 +1848,7 @@
 																	<div class="month-calendar__day-body">
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">09</h5>
 																		<div class="month-calendar__week-day">ср</div>
@@ -1895,17 +1913,15 @@
 																		<!-- +++ -->
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">11</h5>
 																		<div class="month-calendar__week-day">пт</div>
 																	</div>
 																	<div class="month-calendar__day-body">
-
-
 																	</div>
 																</li>
-																<li class="month-calendar__day">
+																<li class="month-calendar__day month-calendar__empty-day">
 																	<div class="month-calendar__day-header">
 																		<h5 class="month-calendar__date">12</h5>
 																		<div class="month-calendar__week-day">сб</div>
@@ -2567,9 +2583,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230225032252"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230225032252"></script>
-	<script src="js/app.min.js?_v=20230225032252"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230226024939"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230226024939"></script>
+	<script src="js/app.min.js?_v=20230226024939"></script>
 </body>
 
 </html>

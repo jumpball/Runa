@@ -7,10 +7,10 @@
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230225032252">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230225032252">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230226024939">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230226024939">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230225032252" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230226024939" rel="stylesheet">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -342,48 +342,63 @@
 			<!-- PERSON PROFILE HEADER -->
 			<section class="site-bg section-offset">
 				<div class="section__container">
-					<!-- PERSON PROFILE - NAV / SELECT -->
-					<div class="nav-select__nav">
-						<!-- PERSON PROFILE - FORM / 2 BOXES -->
-						<form action="#" class="nav-select__form-3-box">
-							<!-- PERSON PROFILE - FORM - SELECT / TEAM -->
-							<div class="nav-select__box">
-								<label class="nav-select__label nav-select__label-green" for="select-team">Выбрать
-									команду</label>
-								<select data-label data-scroll data-show name="form[]" id="select-team" class="nav-select__list">
-									<option class="nav-select__item" value="1" selected="selected">мужская суперлига</option>
-									<option class="nav-select__item" value="2">женская суперлига</option>
-									<option class="nav-select__item" value="3">молодежная Лига ВТБ</option>
-									<option class="nav-select__item" value="4">ДЮБЛ юноши</option>
-									<option class="nav-select__item" value="5">ДЮБЛ девушки</option>
-									<option class="nav-select__item" value="6">Руна 3х3</option>
-								</select>
+
+					<!-- SPOLLERS / NAV SELECT - 3 BOX -->
+					<div data-spollers="767.98,max" class="spollers spollers__box spollers__box-767">
+						<div class="spollers__item">
+							<button type="button" data-spoller class="spollers__title spollers__title-767 -ibg">
+								<img src="img/RUNA/icons/icon-select-green.svg" alt="">
+							</button>
+							<div class="spollers__body">
+								<!-- NAV SELECT / 3 BOX -->
+								<!-- PERSON PROFILE - NAV / SELECT -->
+								<div class="nav-select__nav">
+									<!-- PERSON PROFILE - FORM / 2 BOXES -->
+									<form action="#" class="nav-select__form-3-box">
+										<!-- PERSON PROFILE - FORM - SELECT / TEAM -->
+										<div class="nav-select__box">
+											<label class="nav-select__label nav-select__label-green" for="select-team">Выбрать
+												команду</label>
+											<select data-label data-scroll data-show name="form[]" id="select-team" class="nav-select__list">
+												<option class="nav-select__item" value="1" selected="selected">мужская суперлига
+												</option>
+												<option class="nav-select__item" value="2">женская суперлига</option>
+												<option class="nav-select__item" value="3">молодежная Лига ВТБ</option>
+												<option class="nav-select__item" value="4">ДЮБЛ юноши</option>
+												<option class="nav-select__item" value="5">ДЮБЛ девушки</option>
+												<option class="nav-select__item" value="6">Руна 3х3</option>
+											</select>
+										</div>
+										<!-- PERSON PROFILE - FORM - SELECT / PERSON TYPE -->
+										<div class="nav-select__box">
+											<label class="nav-select__label nav-select__label-green" for="select-person-type">Выбрать
+												тип персоны</label>
+											<select data-label data-scroll data-show name="form[]" id="select-person-type" class="nav-select__list">
+												<option class="nav-select__item" value="1" selected="selected">игрок</option>
+												<option class="nav-select__item" value="2">тренер</option>
+												<option class="nav-select__item" value="3">персонал</option>
+											</select>
+										</div>
+										<!-- PERSON PROFILE - FORM - SELECT / PERSON -->
+										<div class="nav-select__box">
+											<label class="nav-select__label nav-select__label-green" for="select-person">Выбрать
+												персону</label>
+											<select data-label data-scroll data-show name="form[]" id="select-person" class="nav-select__list">
+												<option class="nav-select__item" value="1" selected="selected">Константинопольский
+													Константин
+												</option>
+												<option class="nav-select__item" value="2">Ключников Федор</option>
+												<option class="nav-select__item" value="3">Заряжко Виктор</option>
+												<option class="nav-select__item" value="4">Карпачев Михаил</option>
+												<option class="nav-select__item" value="5">Митькин Борис</option>
+											</select>
+										</div>
+									</form>
+								</div>
 							</div>
-							<!-- PERSON PROFILE - FORM - SELECT / PERSON TYPE -->
-							<div class="nav-select__box">
-								<label class="nav-select__label nav-select__label-green" for="select-person-type">Выбрать
-									тип персоны</label>
-								<select data-label data-scroll data-show name="form[]" id="select-person-type" class="nav-select__list">
-									<option class="nav-select__item" value="1" selected="selected">игрок</option>
-									<option class="nav-select__item" value="2">тренер</option>
-									<option class="nav-select__item" value="3">персонал</option>
-								</select>
-							</div>
-							<!-- PERSON PROFILE - FORM - SELECT / PERSON -->
-							<div class="nav-select__box">
-								<label class="nav-select__label nav-select__label-green" for="select-person">Выбрать
-									персону</label>
-								<select data-label data-scroll data-show name="form[]" id="select-person" class="nav-select__list">
-									<option class="nav-select__item" value="1" selected="selected">Константинопольский Константин
-									</option>
-									<option class="nav-select__item" value="2">Ключников Федор</option>
-									<option class="nav-select__item" value="3">Заряжко Виктор</option>
-									<option class="nav-select__item" value="4">Карпачев Михаил</option>
-									<option class="nav-select__item" value="5">Митькин Борис</option>
-								</select>
-							</div>
-						</form>
+						</div>
 					</div>
+
 					<!-- PROFILE PERSON HEADER -->
 					<div class="profile-person__header">
 						<div class="profile-person__header-col">
@@ -484,45 +499,60 @@
 										<h2 class="section-title section-title-h2 section-title-green element-animation">
 											статистика
 										</h2>
-										<!-- PLAYER STATS NAV -->
-										<div class="nav-select__nav">
-											<form action="#" class="nav-select__form-3-box">
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-season">Выбрать сезон</label>
-													<select data-label data-scroll data-show name="form[]" id="select-season" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">2022/2023
-														</option>
-														<option class="nav-select__item" value="2">2021/2022</option>
-														<option class="nav-select__item" value="3">2020/2021</option>
-														<option class="nav-select__item" value="4">2019/2020</option>
-														<option class="nav-select__item" value="5">2018/2019</option>
-														<option class="nav-select__item" value="6">2017/2018</option>
-													</select>
-												</div>
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-tournament">Выбрать
-														турнир</label>
-													<select data-label data-scroll data-show name="form[]" id="select-tournament" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">все турниры
-														</option>
-														<option class="nav-select__item" value="2">Суперлига</option>
-														<option class="nav-select__item" value="3">Кубок России</option>
+										<!-- SPOLLERS / NAV SELECT - 3 BOX -->
+										<div data-spollers="767.98,max" class="spollers spollers__box spollers__box-767">
+											<div class="spollers__item">
+												<button type="button" data-spoller class="spollers__title spollers__title-767 -ibg">
+													<img src="img/RUNA/icons/icon-select-green.svg" alt="">
+												</button>
+												<div class="spollers__body">
+													<!-- NAV SELECT / 3 BOX -->
+													<!-- PLAYER STATS NAV -->
+													<div class="nav-select__nav">
+														<form action="#" class="nav-select__form-3-box">
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-season">Выбрать сезон</label>
+																<select data-label data-scroll data-show name="form[]" id="select-season" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">
+																		2022/2023
+																	</option>
+																	<option class="nav-select__item" value="2">2021/2022</option>
+																	<option class="nav-select__item" value="3">2020/2021</option>
+																	<option class="nav-select__item" value="4">2019/2020</option>
+																	<option class="nav-select__item" value="5">2018/2019</option>
+																	<option class="nav-select__item" value="6">2017/2018</option>
+																</select>
+															</div>
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-tournament">Выбрать
+																	турнир</label>
+																<select data-label data-scroll data-show name="form[]" id="select-tournament" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">все
+																		турниры
+																	</option>
+																	<option class="nav-select__item" value="2">Суперлига</option>
+																	<option class="nav-select__item" value="3">Кубок России</option>
 
-													</select>
+																</select>
+															</div>
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-opponent">соперник</label>
+																<select data-label data-scroll data-show name="form[]" id="select-opponent" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">все
+																		соперники
+																	</option>
+																	<option class="nav-select__item" value="2">Уралмаш</option>
+																	<option class="nav-select__item" value="3">Барнаул</option>
+																	<option class="nav-select__item" value="4">Химки</option>
+																	<option class="nav-select__item" value="5">Иркут</option>
+																</select>
+															</div>
+														</form>
+													</div>
 												</div>
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-opponent">соперник</label>
-													<select data-label data-scroll data-show name="form[]" id="select-opponent" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">все соперники
-														</option>
-														<option class="nav-select__item" value="2">Уралмаш</option>
-														<option class="nav-select__item" value="3">Барнаул</option>
-														<option class="nav-select__item" value="4">Химки</option>
-														<option class="nav-select__item" value="5">Иркут</option>
-													</select>
-												</div>
-											</form>
+											</div>
 										</div>
+
 										<!-- TABLE PLAYER SEASON STATS / GAME by GAME -->
 										<div class="table__wrapper-dark">
 											<div class="table__block">
@@ -760,43 +790,60 @@
 									<div class="section__container">
 										<h2 class="section-title section-title-h2 section-title-green element-animation">карьера
 										</h2>
-										<!-- PLAYER CARRIER NAV -->
-										<div class="nav-select__nav">
-											<form action="#" class="nav-select__form-3-box">
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-season-1">Выбрать сезон</label>
-													<select data-label data-scroll data-show name="form[]" id="select-season-1" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">все сезоны
-														</option>
-														<option class="nav-select__item" value="2">2022/2023</option>
-														<option class="nav-select__item" value="3">2021/2022</option>
-														<option class="nav-select__item" value="4">2020/2021</option>
-														<option class="nav-select__item" value="5">2019/2020</option>
-														<option class="nav-select__item" value="6">2018/2019</option>
-													</select>
+										<!-- SPOLLERS / NAV SELECT - 3 BOX -->
+										<div data-spollers="767.98,max" class="spollers spollers__box spollers__box-767">
+											<div class="spollers__item">
+												<button type="button" data-spoller class="spollers__title spollers__title-767 -ibg">
+													<img src="img/RUNA/icons/icon-select-green.svg" alt="">
+												</button>
+												<div class="spollers__body">
+													<!-- NAV SELECT / 3 BOX -->
+													<!-- PLAYER CARRIER NAV -->
+													<div class="nav-select__nav">
+														<form action="#" class="nav-select__form-3-box">
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-season-1">Выбрать сезон</label>
+																<select data-label data-scroll data-show name="form[]" id="select-season-1" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">все
+																		сезоны
+																	</option>
+																	<option class="nav-select__item" value="2">2022/2023</option>
+																	<option class="nav-select__item" value="3">2021/2022</option>
+																	<option class="nav-select__item" value="4">2020/2021</option>
+																	<option class="nav-select__item" value="5">2019/2020</option>
+																	<option class="nav-select__item" value="6">2018/2019</option>
+																</select>
+															</div>
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="select-tournament-1">Выбрать
+																	турнир</label>
+																<select data-label data-scroll data-show name="form[]" id="select-tournament-1" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">все
+																		турниры
+																	</option>
+																	<option class="nav-select__item" value="2">Суперлига</option>
+																	<option class="nav-select__item" value="3">Единая Лига ВТБ</option>
+																	<option class="nav-select__item" value="4">Молодежная Лига ВТБ
+																	</option>
+																</select>
+															</div>
+															<div class="nav-select__box">
+																<label class="nav-select__label nav-select__label-black" for="type-stats">тип
+																	статистики</label>
+																<select data-label data-scroll data-show name="form[]" id="type-stats" class="nav-select__list">
+																	<option class="nav-select__item" value="1" selected="selected">в
+																		среднем за
+																		игру</option>
+																	<option class="nav-select__item" value="2">абсолютные показатели
+																	</option>
+																</select>
+															</div>
+														</form>
+													</div>
 												</div>
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="select-tournament-1">Выбрать
-														турнир</label>
-													<select data-label data-scroll data-show name="form[]" id="select-tournament-1" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">все турниры
-														</option>
-														<option class="nav-select__item" value="2">Суперлига</option>
-														<option class="nav-select__item" value="3">Единая Лига ВТБ</option>
-														<option class="nav-select__item" value="4">Молодежная Лига ВТБ</option>
-													</select>
-												</div>
-												<div class="nav-select__box">
-													<label class="nav-select__label nav-select__label-black" for="type-stats">тип
-														статистики</label>
-													<select data-label data-scroll data-show name="form[]" id="type-stats" class="nav-select__list">
-														<option class="nav-select__item" value="1" selected="selected">в среднем за
-															игру</option>
-														<option class="nav-select__item" value="2">абсолютные показатели</option>
-													</select>
-												</div>
-											</form>
+											</div>
 										</div>
+
 										<!-- TABLE PLAYER CARRIER STATS / SEASON by SEASON -->
 										<div class="table__wrapper-dark">
 											<div class="table__block">
@@ -1390,9 +1437,9 @@
 			</div>
 		</div>
 	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230225032252"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230225032252"></script>
-	<script src="js/app.min.js?_v=20230225032252"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230226024939"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230226024939"></script>
+	<script src="js/app.min.js?_v=20230226024939"></script>
 </body>
 
 </html>

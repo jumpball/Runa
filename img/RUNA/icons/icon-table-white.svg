@@ -1,8 +1,8 @@
-<svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-<rect x="5" y="5" width="20" height="20" fill="white"/>
-<rect x="40" y="5" width="55" height="20" fill="white"/>
-<rect x="5" y="40" width="20" height="20" fill="white"/>
-<rect x="40" y="40" width="55" height="20" fill="white"/>
-<rect x="5" y="75" width="20" height="20" fill="white"/>
-<rect x="40" y="75" width="55" height="20" fill="white"/>
+<svg width="105" height="105" viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="25" height="25" fill="white"/>
+<rect x="40" width="65" height="25" fill="white"/>
+<rect y="40" width="25" height="25" fill="white"/>
+<rect x="40" y="40" width="65" height="25" fill="white"/>
+<rect y="80" width="25" height="25" fill="white"/>
+<rect x="40" y="80" width="65" height="25" fill="white"/>
 </svg>
