@@ -9775,6 +9775,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .header__menu-sub-list {
     padding: 10px 16px 10px 16px;
+    border: none;
     margin: 10px -15px 0px -15px;
   }
 
