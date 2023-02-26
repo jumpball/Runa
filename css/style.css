@@ -1176,30 +1176,7 @@ body::after {
   font-weight: 900;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
-}
-
-@supports (padding-top: clamp( 0.0000000625rem , -1.2703767186rem  +  4.0652056994vw , 1.25rem )) {
-  .section-title {
-    padding-top: clamp( 0.0000000625rem , -1.2703767186rem  +  4.0652056994vw , 1.25rem );
-  }
-}
-
-@supports not (padding-top: clamp( 0.0000000625rem , -1.2703767186rem  +  4.0652056994vw , 1.25rem )) {
-  .section-title {
-    padding-top: calc(0.0000000625rem + 1.2499999375 * (100vw - 31.25rem) / 30.74875);
-  }
-}
-
-@supports (padding-botom: clamp( 0.0000000625rem , -1.2703767186rem  +  4.0652056994vw , 1.25rem )) {
-  .section-title {
-    padding-botom: clamp( 0.0000000625rem , -1.2703767186rem  +  4.0652056994vw , 1.25rem );
-  }
-}
-
-@supports not (padding-botom: clamp( 0.0000000625rem , -1.2703767186rem  +  4.0652056994vw , 1.25rem )) {
-  .section-title {
-    padding-botom: calc(0.0000000625rem + 1.2499999375 * (100vw - 31.25rem) / 30.74875);
-  }
+  padding: 20px 0px 10px 0px;
 }
 
 .title-block {
@@ -1596,7 +1573,6 @@ body::after {
 .table__block {
   overflow-x: auto;
   position: relative;
-  border: 0.0625rem solid #a4a9ad;
 }
 
 .table__block * {
@@ -1940,7 +1916,7 @@ td {
 
 .select__title {
   font-family: "Roboto Condensed";
-  border: 0.0625rem solid #3a3a3a;
+  border: 0.0625rem solid #a4a9ad;
   border-radius: 0.1875rem;
   width: 100%;
   position: relative;
@@ -2157,15 +2133,15 @@ td {
           justify-content: right;
 }
 
-@supports (top: clamp( -4.875rem , -2.475rem  +  -2.4vw , -3.375rem )) {
+@supports (top: clamp( -4.375rem , -2.375rem  +  -2vw , -3.125rem )) {
   .tabs-selector__tabs-navigation {
-    top: clamp( -4.875rem , -2.475rem  +  -2.4vw , -3.375rem );
+    top: clamp( -4.375rem , -2.375rem  +  -2vw , -3.125rem );
   }
 }
 
-@supports not (top: clamp( -4.875rem , -2.475rem  +  -2.4vw , -3.375rem )) {
+@supports not (top: clamp( -4.375rem , -2.375rem  +  -2vw , -3.125rem )) {
   .tabs-selector__tabs-navigation {
-    top: calc(-3.375rem + -1.5 * (100vw - 37.5rem) / 62.5);
+    top: calc(-3.125rem + -1.25 * (100vw - 37.5rem) / 62.5);
   }
 }
 
@@ -2398,7 +2374,6 @@ td {
   height: auto;
   min-width: 290px;
   background: #ffffff;
-  border: 1px solid #3a3a3a;
   border-radius: 0.1875rem;
   -webkit-transition: -webkit-box-shadow 0.3s;
   transition: -webkit-box-shadow 0.3s;
@@ -2704,12 +2679,12 @@ td {
 
 .player-card-roster {
   position: relative;
+  padding: 0px 0px 15px 0px;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
   background-color: #ffffff;
   border-radius: 3px;
-  border: 1px solid #a4a9ad;
 }
 
 .player-card-roster:hover {
@@ -2718,7 +2693,6 @@ td {
   transition: all 0.8s ease 0s;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-  border: 1px solid #0f524d;
 }
 
 .player-card-roster:hover .player-card-roster__name {
@@ -3399,7 +3373,6 @@ td {
   height: -moz-fit-content;
   height: fit-content;
   border-radius: 0.1875rem;
-  border: 1px solid #a4a9ad;
   background: #ffffff;
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
@@ -5648,11 +5621,8 @@ td {
   font-size: 8.75rem;
   font-weight: 900;
   color: #ffffff;
-  -webkit-text-stroke-width: 0.1875rem;
+  -webkit-text-stroke-width: 0.125rem;
   -webkit-text-stroke-color: #0f524d;
-  -webkit-text-shadow: 2px 2px 4px rgba(34, 60, 80, 0.2);
-  -moz-text-shadow: 2px 2px 4px rgba(34, 60, 80, 0.2);
-  text-shadow: 2px 2px 4px rgba(34, 60, 80, 0.4);
 }
 
 .profile-person__name {
