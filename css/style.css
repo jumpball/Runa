@@ -2187,7 +2187,7 @@ td {
 .vertical-spollers__title {
   width: 100%;
   background-color: #ffffff;
-  margin: 10px 0px 0px 0px;
+  margin: 0px 0px 10px 0px;
   padding: 10px 10px 10px 10px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -2213,6 +2213,10 @@ td {
   -webkit-transform: rotate(-180deg);
   -ms-transform: rotate(-180deg);
   transform: rotate(-180deg);
+}
+
+.vertical-spollers__body {
+  padding: 10px 0px 20px 0px;
 }
 
 .vertical-spollers__bage {
@@ -2356,6 +2360,182 @@ td {
 
 @supports not (width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
   .vertical-spollers__icon {
+    width: calc(1.5625rem + 0.3125 * (100vw - 62rem) / 38);
+  }
+}
+
+.button-spollers__title {
+  width: 100%;
+  background-color: #ffffff;
+  margin: 10px 0px 0px 0px;
+  padding: 10px 10px 10px 10px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.button-spollers__title._spoller-active .vertical-spollers__icon {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.button-spollers__bage {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@supports (height: clamp( 3.125rem , 2.1052631579rem  +  1.6447368421vw , 3.75rem )) {
+  .button-spollers__logo {
+    height: clamp( 3.125rem , 2.1052631579rem  +  1.6447368421vw , 3.75rem );
+  }
+}
+
+@supports not (height: clamp( 3.125rem , 2.1052631579rem  +  1.6447368421vw , 3.75rem )) {
+  .button-spollers__logo {
+    height: calc(3.125rem + 0.625 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (width: clamp( 3.125rem , 2.1052631579rem  +  1.6447368421vw , 3.75rem )) {
+  .button-spollers__logo {
+    width: clamp( 3.125rem , 2.1052631579rem  +  1.6447368421vw , 3.75rem );
+  }
+}
+
+@supports not (width: clamp( 3.125rem , 2.1052631579rem  +  1.6447368421vw , 3.75rem )) {
+  .button-spollers__logo {
+    width: calc(3.125rem + 0.625 * (100vw - 62rem) / 38);
+  }
+}
+
+.button-spollers__desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.button-spollers__desc-title {
+  margin: 0px 0px 0px 10px;
+  font-weight: 900;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+@supports (font-size: clamp( 1.5rem , 1.0921052632rem  +  0.6578947368vw , 1.75rem )) {
+  .button-spollers__desc-title {
+    font-size: clamp( 1.5rem , 1.0921052632rem  +  0.6578947368vw , 1.75rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 1.0921052632rem  +  0.6578947368vw , 1.75rem )) {
+  .button-spollers__desc-title {
+    font-size: calc(1.5rem + 0.25 * (100vw - 62rem) / 38);
+  }
+}
+
+.button-spollers__desc-subtitle {
+  font-weight: 400;
+  padding: 0px 0px 0px 3px;
+  color: #a4a9ad;
+}
+
+@supports (font-size: clamp( 0.75rem , 0.5460526316rem  +  0.3289473684vw , 0.875rem )) {
+  .button-spollers__desc-subtitle {
+    font-size: clamp( 0.75rem , 0.5460526316rem  +  0.3289473684vw , 0.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5460526316rem  +  0.3289473684vw , 0.875rem )) {
+  .button-spollers__desc-subtitle {
+    font-size: calc(0.75rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
+.button-spollers__desc-subtitle::before {
+  display: none;
+  content: "/";
+  margin: 0px 4px 0px 4px;
+}
+
+@supports (font-size: clamp( 0.75rem , 0.5460526316rem  +  0.3289473684vw , 0.875rem )) {
+  .button-spollers__desc-subtitle::before {
+    font-size: clamp( 0.75rem , 0.5460526316rem  +  0.3289473684vw , 0.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5460526316rem  +  0.3289473684vw , 0.875rem )) {
+  .button-spollers__desc-subtitle::before {
+    font-size: calc(0.75rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
+.button-spollers__icon {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  overflow: hidden;
+  border-radius: 0.1875rem;
+}
+
+@supports (height: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
+  .button-spollers__icon {
+    height: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem );
+  }
+}
+
+@supports not (height: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
+  .button-spollers__icon {
+    height: calc(1.5625rem + 0.3125 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
+  .button-spollers__icon {
+    width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem );
+  }
+}
+
+@supports not (width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
+  .button-spollers__icon {
     width: calc(1.5625rem + 0.3125 * (100vw - 62rem) / 38);
   }
 }
@@ -6316,6 +6496,479 @@ td {
   }
 }
 
+.game-profile-header__body {
+  position: relative;
+  margin: 0px 0px 20px 0px;
+}
+
+.game-profile-header__bg-logo {
+  opacity: 0.1;
+  position: absolute;
+  right: 50%;
+  -webkit-transform: translate(50%);
+      -ms-transform: translate(50%);
+          transform: translate(50%);
+}
+
+@supports (width: clamp( 11.25rem , 9.2106345186rem  +  3.2893654814vw , 12.5rem )) {
+  .game-profile-header__bg-logo {
+    width: clamp( 11.25rem , 9.2106345186rem  +  3.2893654814vw , 12.5rem );
+  }
+}
+
+@supports not (width: clamp( 11.25rem , 9.2106345186rem  +  3.2893654814vw , 12.5rem )) {
+  .game-profile-header__bg-logo {
+    width: calc(11.25rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (height: clamp( 11.25rem , 9.2106345186rem  +  3.2893654814vw , 12.5rem )) {
+  .game-profile-header__bg-logo {
+    height: clamp( 11.25rem , 9.2106345186rem  +  3.2893654814vw , 12.5rem );
+  }
+}
+
+@supports not (height: clamp( 11.25rem , 9.2106345186rem  +  3.2893654814vw , 12.5rem )) {
+  .game-profile-header__bg-logo {
+    height: calc(11.25rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (top: clamp( 0.0000000625rem , 2.2727272216rem  +  -2.2727271591vw , 1.25rem )) {
+  .game-profile-header__bg-logo {
+    top: clamp( 0.0000000625rem , 2.2727272216rem  +  -2.2727271591vw , 1.25rem );
+  }
+}
+
+@supports not (top: clamp( 0.0000000625rem , 2.2727272216rem  +  -2.2727271591vw , 1.25rem )) {
+  .game-profile-header__bg-logo {
+    top: calc(1.25rem + -1.2499999375 * (100vw - 45rem) / 55);
+  }
+}
+
+.game-profile-header__teams {
+  margin: 80px 0px 20px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.game-profile-header__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@supports (width: clamp( 25rem , 16.8421052632rem  +  13.1578947368vw , 30rem )) {
+  .game-profile-header__team {
+    width: clamp( 25rem , 16.8421052632rem  +  13.1578947368vw , 30rem );
+  }
+}
+
+@supports not (width: clamp( 25rem , 16.8421052632rem  +  13.1578947368vw , 30rem )) {
+  .game-profile-header__team {
+    width: calc(25rem + 5 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-profile-header__team-left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-profile-header__team-right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@supports (height: clamp( 11.25rem , 9.2105263158rem  +  3.2894736842vw , 12.5rem )) {
+  .game-profile-header__team-logo {
+    height: clamp( 11.25rem , 9.2105263158rem  +  3.2894736842vw , 12.5rem );
+  }
+}
+
+@supports not (height: clamp( 11.25rem , 9.2105263158rem  +  3.2894736842vw , 12.5rem )) {
+  .game-profile-header__team-logo {
+    height: calc(11.25rem + 1.25 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (width: clamp( 11.25rem , 9.2105263158rem  +  3.2894736842vw , 12.5rem )) {
+  .game-profile-header__team-logo {
+    width: clamp( 11.25rem , 9.2105263158rem  +  3.2894736842vw , 12.5rem );
+  }
+}
+
+@supports not (width: clamp( 11.25rem , 9.2105263158rem  +  3.2894736842vw , 12.5rem )) {
+  .game-profile-header__team-logo {
+    width: calc(11.25rem + 1.25 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-profile-header__team-name {
+  text-align: center;
+}
+
+.game-profile-header__team-title {
+  color: #3a3a3a;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem )) {
+  .game-profile-header__team-title {
+    font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem )) {
+  .game-profile-header__team-title {
+    font-size: calc(1.5rem + 0.375 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (line-height: clamp( 1.625rem , 1.0131578947rem  +  0.9868421053vw , 2rem )) {
+  .game-profile-header__team-title {
+    line-height: clamp( 1.625rem , 1.0131578947rem  +  0.9868421053vw , 2rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.625rem , 1.0131578947rem  +  0.9868421053vw , 2rem )) {
+  .game-profile-header__team-title {
+    line-height: calc(1.625rem + 0.375 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-profile-header__team-subtitle {
+  color: #3a3a3a;
+}
+
+@supports (font-size: clamp( 1rem , 0.7960526316rem  +  0.3289473684vw , 1.125rem )) {
+  .game-profile-header__team-subtitle {
+    font-size: clamp( 1rem , 0.7960526316rem  +  0.3289473684vw , 1.125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7960526316rem  +  0.3289473684vw , 1.125rem )) {
+  .game-profile-header__team-subtitle {
+    font-size: calc(1rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (line-height: clamp( 1.125rem , 0.9210526316rem  +  0.3289473684vw , 1.25rem )) {
+  .game-profile-header__team-subtitle {
+    line-height: clamp( 1.125rem , 0.9210526316rem  +  0.3289473684vw , 1.25rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.125rem , 0.9210526316rem  +  0.3289473684vw , 1.25rem )) {
+  .game-profile-header__team-subtitle {
+    line-height: calc(1.125rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-profile-header__team-l {
+  min-width: 40%;
+}
+
+.game-profile-header__team-card-l {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.game-profile-header__team-card-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.game-profile-header__team-logo-r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.game-profile-header__team-image {
+  width: 6.25rem;
+  height: 6.25rem;
+  padding: 0.1875rem;
+  background-color: #ffffff;
+  border: 0.0625rem solid #ffffff;
+  border-radius: 0.1875rem;
+}
+
+.game-profile-header__team-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  padding: 0.1875rem;
+}
+
+.game-profile-header__team-image-1 {
+  padding: 0.3125rem;
+  background-color: #ffffff;
+  border: 0.0625rem solid #ffffff;
+  border-radius: 0.1875rem;
+}
+
+@supports (width: clamp( 4.6875rem , 2.4264705882rem  +  8.8235294118vw , 11.25rem )) {
+  .game-profile-header__team-image-1 {
+    width: clamp( 4.6875rem , 2.4264705882rem  +  8.8235294118vw , 11.25rem );
+  }
+}
+
+@supports not (width: clamp( 4.6875rem , 2.4264705882rem  +  8.8235294118vw , 11.25rem )) {
+  .game-profile-header__team-image-1 {
+    width: calc(4.6875rem + 6.5625 * (100vw - 25.625rem) / 74.375);
+  }
+}
+
+@supports (height: clamp( 4.6875rem , 2.4264705882rem  +  8.8235294118vw , 11.25rem )) {
+  .game-profile-header__team-image-1 {
+    height: clamp( 4.6875rem , 2.4264705882rem  +  8.8235294118vw , 11.25rem );
+  }
+}
+
+@supports not (height: clamp( 4.6875rem , 2.4264705882rem  +  8.8235294118vw , 11.25rem )) {
+  .game-profile-header__team-image-1 {
+    height: calc(4.6875rem + 6.5625 * (100vw - 25.625rem) / 74.375);
+  }
+}
+
+.game-profile-header__team-image-1 img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.game-profile-header__team-info-l {
+  margin-left: 0.625rem;
+}
+
+.game-profile-header__team-name {
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  font-weight: 900;
+  color: #ffffff;
+  line-height: 150%;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.8881903556rem  +  0.9868096444vw , 1.875rem )) {
+  .game-profile-header__team-name {
+    font-size: clamp( 1.5rem , 0.8881903556rem  +  0.9868096444vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.8881903556rem  +  0.9868096444vw , 1.875rem )) {
+  .game-profile-header__team-name {
+    font-size: calc(1.5rem + 0.375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-profile-header__team-name-1 {
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  font-weight: 900;
+  color: #3a3a3a;
+  line-height: 150%;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.8881903556rem  +  0.9868096444vw , 1.875rem )) {
+  .game-profile-header__team-name-1 {
+    font-size: clamp( 1.5rem , 0.8881903556rem  +  0.9868096444vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.8881903556rem  +  0.9868096444vw , 1.875rem )) {
+  .game-profile-header__team-name-1 {
+    font-size: calc(1.5rem + 0.375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-profile-header__team-city {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #f9d110;
+}
+
+.game-profile-header__team-r {
+  min-width: 40%;
+}
+
+.game-profile-header__team-info-r {
+  margin-right: 0.625rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  text-align: end;
+}
+
+.game-profile-header__bg {
+  background: url("../img/icon/basket-ring-white.svg") 50% 50%/contain no-repeat scroll;
+  margin-bottom: 1.25rem;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.game-profile-header__bg-1 {
+  background: url("../img/icon/basket-ring-black.svg") 50% 50%/contain no-repeat scroll;
+  margin-bottom: 1.25rem;
+  width: 6.25rem;
+  height: 6.25rem;
+}
+
+.game-profile-header__rows {
+  margin-top: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.game-profile-header__row {
+  position: relative;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-weight: 900;
+  text-transform: uppercase;
+  border-top: 1px solid #0f524d;
+  height: 2.625rem;
+  line-height: 2.625rem;
+}
+
+.game-profile-header__col span {
+  color: #ffffff;
+}
+
+.game-profile-header__col-left {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+  padding-right: 1.25rem;
+  text-align: right;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.game-profile-header__col-center {
+  background-color: #ffffff;
+  min-width: 42%;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.game-profile-header__col-right {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+          flex: 1;
+  padding-left: 1.25rem;
+  text-align: left;
+  font-size: 1.625rem;
+  color: #ffffff;
+}
+
+.game-profile-header__score {
+  text-align: center;
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+@supports (font-size: clamp( 3.75rem , 1.7106345186rem  +  3.2893654814vw , 5rem )) {
+  .game-profile-header__score {
+    font-size: clamp( 3.75rem , 1.7106345186rem  +  3.2893654814vw , 5rem );
+  }
+}
+
+@supports not (font-size: clamp( 3.75rem , 1.7106345186rem  +  3.2893654814vw , 5rem )) {
+  .game-profile-header__score {
+    font-size: calc(3.75rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-profile-header__score-1 {
+  text-align: center;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+@supports (font-size: clamp( 1.875rem , -0.1643654814rem  +  3.2893654814vw , 3.125rem )) {
+  .game-profile-header__score-1 {
+    font-size: clamp( 1.875rem , -0.1643654814rem  +  3.2893654814vw , 3.125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.875rem , -0.1643654814rem  +  3.2893654814vw , 3.125rem )) {
+  .game-profile-header__score-1 {
+    font-size: calc(1.875rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-profile-header__score-quarter {
+  font-weight: 400;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  color: #3a3a3a;
+  padding-bottom: 0.3125rem;
+}
+
+.game-profile-header__score-quarter > span + span {
+  display: inline-block;
+  position: relative;
+  padding-left: 0.25rem;
+  margin-left: 0.25rem;
+}
+
+.game-profile-header__score-quarter > span + span::before {
+  display: inline-block;
+  position: relative;
+  left: -4px;
+  content: "/";
+}
+
 .game-video__spollers-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9573,6 +10226,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-top: 3.4375rem;
   }
 
+  .game-profile-header {
+    margin-top: 1.25rem;
+  }
+
   .header__body {
     height: 5rem;
     display: -webkit-box;
@@ -10427,6 +11084,44 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 55rem) {
+  .game-profile-header__team-card-l {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    width: 100%;
+  }
+
+  .game-profile-header__team-card-r {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+
+  .game-profile-header__team-logo-l {
+    left: calc(50% - 30px);
+  }
+
+  .game-profile-header__team-logo-r {
+    right: calc(50% - 30px);
+  }
+
+  .game-profile-header__team-info-l {
+    margin-left: 0;
+  }
+
+  .game-profile-header__team-info-r {
+    margin-right: 0;
+  }
+}
+
 @media (max-width: 54.99875rem) {
   .profile-team__header-cards-grid {
     -ms-grid-columns: 1fr 1fr;
@@ -10443,6 +11138,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media (max-width: 53.12375rem) {
   .leader-index__bage-info {
     display: none;
+  }
+}
+
+@media (max-width: 50rem) {
+  .game-profile-header__score-quarter {
+    margin: 10px 0px 0px 0px;
   }
 }
 
@@ -10685,6 +11386,78 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
 @supports not (width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
     .vertical-spollers__icon {
+      width: calc(1.25rem + 0.3125 * (100vw - 21.25rem) / 26.74875);
+    }
+}
+
+@supports (height: clamp( 2.5rem , 2.0034814711rem  +  2.3365577831vw , 3.125rem )) {
+    .button-spollers__logo {
+      height: clamp( 2.5rem , 2.0034814711rem  +  2.3365577831vw , 3.125rem );
+    }
+}
+
+@supports not (height: clamp( 2.5rem , 2.0034814711rem  +  2.3365577831vw , 3.125rem )) {
+    .button-spollers__logo {
+      height: calc(2.5rem + 0.625 * (100vw - 21.25rem) / 26.74875);
+    }
+}
+
+@supports (width: clamp( 2.5rem , 2.0034814711rem  +  2.3365577831vw , 3.125rem )) {
+    .button-spollers__logo {
+      width: clamp( 2.5rem , 2.0034814711rem  +  2.3365577831vw , 3.125rem );
+    }
+}
+
+@supports not (width: clamp( 2.5rem , 2.0034814711rem  +  2.3365577831vw , 3.125rem )) {
+    .button-spollers__logo {
+      width: calc(2.5rem + 0.625 * (100vw - 21.25rem) / 26.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.3784814711rem  +  2.3365577831vw , 1.5rem )) {
+    .button-spollers__desc-title {
+      font-size: clamp( 0.875rem , 0.3784814711rem  +  2.3365577831vw , 1.5rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.3784814711rem  +  2.3365577831vw , 1.5rem )) {
+    .button-spollers__desc-title {
+      font-size: calc(0.875rem + 0.625 * (100vw - 21.25rem) / 26.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.6875rem , 0.6378481471rem  +  0.2336557783vw , 0.75rem )) {
+    .button-spollers__desc-subtitle {
+      font-size: clamp( 0.6875rem , 0.6378481471rem  +  0.2336557783vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.6875rem , 0.6378481471rem  +  0.2336557783vw , 0.75rem )) {
+    .button-spollers__desc-subtitle {
+      font-size: calc(0.6875rem + 0.0625 * (100vw - 21.25rem) / 26.74875);
+    }
+}
+
+@supports (height: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
+    .button-spollers__icon {
+      height: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem );
+    }
+}
+
+@supports not (height: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
+    .button-spollers__icon {
+      height: calc(1.25rem + 0.3125 * (100vw - 21.25rem) / 26.74875);
+    }
+}
+
+@supports (width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
+    .button-spollers__icon {
+      width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem );
+    }
+}
+
+@supports not (width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
+    .button-spollers__icon {
       width: calc(1.25rem + 0.3125 * (100vw - 21.25rem) / 26.74875);
     }
 }
@@ -11190,6 +11963,52 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 }
 
+@media (max-width: 45rem) {
+@supports (top: clamp( -3.75rem , -1.0227272727rem  +  -6.0606060606vw , -2.5rem )) {
+    .game-profile-header__bg-logo {
+      top: clamp( -3.75rem , -1.0227272727rem  +  -6.0606060606vw , -2.5rem );
+    }
+}
+
+@supports not (top: clamp( -3.75rem , -1.0227272727rem  +  -6.0606060606vw , -2.5rem )) {
+    .game-profile-header__bg-logo {
+      top: calc(-2.5rem + -1.25 * (100vw - 24.375rem) / 20.625);
+    }
+}
+}
+
+@media (max-width: 42.5rem) {
+  .game-profile-header__col-left {
+    font-size: 1.375rem;
+  }
+
+  .game-profile-header__col-right {
+    font-size: 1.375rem;
+  }
+}
+
+@media (max-width: 41.25rem) {
+  .game-profile-header__team-l {
+    min-width: 32%;
+  }
+
+  .game-profile-header__team-name {
+    display: none;
+  }
+
+  .game-profile-header__team-name-1 {
+    display: none;
+  }
+
+  .game-profile-header__team-city {
+    display: none;
+  }
+
+  .game-profile-header__team-r {
+    min-width: 32%;
+  }
+}
+
 @media (max-width: 40.62375rem) {
 @supports (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
     .player-card-roster__photo {
@@ -11300,6 +12119,26 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-column-gap: 0.3125rem;
        -moz-column-gap: 0.3125rem;
             column-gap: 0.3125rem;
+  }
+}
+
+@media (max-width: 36.25rem) {
+  .game-profile-header__row {
+    height: 2.25rem;
+    line-height: 2.25rem;
+  }
+
+  .game-profile-header__col-left {
+    font-size: 1.125rem;
+  }
+
+  .game-profile-header__col-center {
+    min-width: 44%;
+    font-size: 1rem;
+  }
+
+  .game-profile-header__col-right {
+    font-size: 1.125rem;
   }
 }
 
@@ -11506,6 +12345,21 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .profile-photo__icons-item {
     height: 2.75rem;
     width: 2.75rem;
+  }
+}
+
+@media (max-width: 31.25rem) {
+  .game-profile-header__col-left {
+    font-size: 1rem;
+  }
+
+  .game-profile-header__col-center {
+    font-size: 0.875rem;
+    min-width: 46%;
+  }
+
+  .game-profile-header__col-right {
+    font-size: 1rem;
   }
 }
 
@@ -11861,6 +12715,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     width: 100%;
     left: 0;
   }
+
+  .game-profile-header__team-image {
+    width: 5rem;
+    height: 5rem;
+  }
+
+  .game-profile-header__bg {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.625rem;
+  }
+
+  .game-profile-header__bg-1 {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 0.625rem;
+  }
 }
 
 @media (max-width: 28.74875em) {
@@ -11986,10 +12857,23 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 25.625rem) {
+  .game-profile-header__team-image {
+    width: 4.375rem;
+    height: 4.375rem;
+  }
+}
+
 @media (max-width: 23.74875rem) {
   .tabs-selector__tabs-navigation {
     position: relative;
     top: -0.625rem;
+  }
+}
+
+@media (max-width: 23.75rem) {
+  .game-profile-header__col-center {
+    font-size: 0.75rem;
   }
 }
 
