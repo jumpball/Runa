@@ -1232,6 +1232,38 @@ body::after {
   padding: 20px 0px 10px 0px;
 }
 
+.section-title span {
+  letter-spacing: 0.0625rem;
+  text-transform: capitalize;
+  margin: 0px 0px 0px 5px;
+  font-weight: 700;
+  color: #a4a9ad;
+}
+
+@supports (font-size: clamp( 1rem , 0.7960526316rem  +  0.3289473684vw , 1.125rem )) {
+  .section-title span {
+    font-size: clamp( 1rem , 0.7960526316rem  +  0.3289473684vw , 1.125rem );
+  }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7960526316rem  +  0.3289473684vw , 1.125rem )) {
+  .section-title span {
+    font-size: calc(1rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (line-height: clamp( 1.375rem , 1.1710526316rem  +  0.3289473684vw , 1.5rem )) {
+  .section-title span {
+    line-height: clamp( 1.375rem , 1.1710526316rem  +  0.3289473684vw , 1.5rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.375rem , 1.1710526316rem  +  0.3289473684vw , 1.5rem )) {
+  .section-title span {
+    line-height: calc(1.375rem + 0.125 * (100vw - 62rem) / 38);
+  }
+}
+
 .title-block {
   width: 100%;
   display: -webkit-box;
@@ -1637,6 +1669,35 @@ body::after {
 @supports not (line-height: clamp( 2.25rem , 0.2106345186rem  +  3.2893654814vw , 3.5rem )) {
   .publication-title-h1b {
     line-height: calc(2.25rem + 1.25 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.table__legend-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: "Roboto Condensed";
+}
+
+.table__legend-box .table__block {
+  width: 100%;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6710526316rem  +  0.3289473684vw , 1rem )) {
+  .table__legend-box .table__block table td {
+    font-size: clamp( 0.875rem , 0.6710526316rem  +  0.3289473684vw , 1rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6710526316rem  +  0.3289473684vw , 1rem )) {
+  .table__legend-box .table__block table td {
+    font-size: calc(0.875rem + 0.125 * (100vw - 62rem) / 38);
   }
 }
 
@@ -2184,10 +2245,6 @@ td {
   cursor: pointer;
 }
 
-.vertical-spollers {
-  background-color: #ffffff;
-}
-
 .vertical-spollers__item {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
@@ -2227,6 +2284,11 @@ td {
 
 .vertical-spollers__body {
   padding: 10px 0px 20px 0px;
+}
+
+.vertical-spollers__body .calendar-slider__item.swiper-slide > div > div {
+  border: 0.0625rem solid #c4cdd3;
+  border-radius: 0.1875rem;
 }
 
 .vertical-spollers__bage {
@@ -2421,6 +2483,115 @@ td {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.tabs-logo-menu__box {
+  position: relative;
+}
+
+.tabs-logo-menu__tabs-nav {
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs-logo-menu__tabs-title-box {
+  margin: 0px 0px 10px 0px;
+  padding: 26px 24px 16px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  border-bottom: 0.625rem solid transparent;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.tabs-logo-menu__tabs-title {
+  color: #c4cdd3;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.0625rem;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+@supports (font-size: clamp( 1.125rem , 0.7788461538rem  +  0.7211538462vw , 1.5rem )) {
+  .tabs-logo-menu__tabs-title {
+    font-size: clamp( 1.125rem , 0.7788461538rem  +  0.7211538462vw , 1.5rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.7788461538rem  +  0.7211538462vw , 1.5rem )) {
+  .tabs-logo-menu__tabs-title {
+    font-size: calc(1.125rem + 0.375 * (100vw - 48rem) / 52);
+  }
+}
+
+@supports (height: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .tabs-logo-menu__tabs-logo {
+    height: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem );
+  }
+}
+
+@supports not (height: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .tabs-logo-menu__tabs-logo {
+    height: calc(4.375rem + 0.625 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (width: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .tabs-logo-menu__tabs-logo {
+    width: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem );
+  }
+}
+
+@supports not (width: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .tabs-logo-menu__tabs-logo {
+    width: calc(4.375rem + 0.625 * (100vw - 62rem) / 38);
+  }
+}
+
+.tabs-logo-menu ._tab-active {
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.tabs-logo-menu ._tab-active .tabs-logo-menu__tabs-title-box {
+  border-bottom: 0.625rem solid #0f524d;
+  background-color: #f8f8ff;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.tabs-logo-menu ._tab-active .tabs-logo-menu__tabs-title {
+  color: #3a3a3a;
+}
+
+.tabs-logo-menu__tabs-body {
+  padding: 20px 0px 50px 0px;
 }
 
 .tabs-selector__tabs {
@@ -2630,7 +2801,7 @@ td {
 }
 
 .spollers-button {
-  margin: 20px 0px 20px 0px;
+  margin: 10px 0px 20px 0px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -3706,17 +3877,25 @@ td {
   height: fit-content;
   border-radius: 0.1875rem;
   background: #ffffff;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .game-mini-card:hover {
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.game-mini-card:hover .game-mini-card__header {
+  background-color: #c4cdd3;
+  color: #3a3a3a;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
 }
 
 .game-mini-card__body {
@@ -3729,9 +3908,9 @@ td {
   padding: 8px 10px 0px 10px;
   background: #3a3a3a;
   border-radius: 0.1875rem 0.1875rem 0px 0px;
-  -webkit-transition: all 0.8s ease 0s;
-  -o-transition: all 0.8s ease 0s;
-  transition: all 0.8s ease 0s;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
   color: #ffffff;
   font-weight: 900;
   display: -webkit-box;
@@ -6402,7 +6581,7 @@ td {
   }
 }
 
-.game-profile-header__body {
+.calendar-slider__item.swiper-slide > div > div .game-profile-header__body {
   position: relative;
   margin: 0px 0px 20px 0px;
 }
@@ -6412,7 +6591,7 @@ td {
 }
 
 .game-profile-header__teams {
-  margin: 80px 0px 20px 0px;
+  margin: 50px 0px 20px 0px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -6477,17 +6656,18 @@ td {
 
 .game-profile-header__team-title {
   font-weight: 900;
+  text-transform: uppercase;
 }
 
-@supports (font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem )) {
+@supports (font-size: clamp( 1.375rem , 0.7631578947rem  +  0.9868421053vw , 1.75rem )) {
   .game-profile-header__team-title {
-    font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem );
+    font-size: clamp( 1.375rem , 0.7631578947rem  +  0.9868421053vw , 1.75rem );
   }
 }
 
-@supports not (font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem )) {
+@supports not (font-size: clamp( 1.375rem , 0.7631578947rem  +  0.9868421053vw , 1.75rem )) {
   .game-profile-header__team-title {
-    font-size: calc(1.5rem + 0.375 * (100vw - 62rem) / 38);
+    font-size: calc(1.375rem + 0.375 * (100vw - 62rem) / 38);
   }
 }
 
@@ -6696,6 +6876,119 @@ td {
 
 .game-profile-body__menu-block {
   background-color: #ffffff;
+}
+
+.game-profile-body__team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px 0px 10px 0px;
+}
+
+.game-profile-body__team-left {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-profile-body__team-right {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-profile-body__team-name {
+  margin: 0px 0px 0px 8px;
+}
+
+.game-profile-body__team-name-left {
+  text-align: left;
+}
+
+.game-profile-body__team-title {
+  font-weight: 900;
+}
+
+@supports (font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem )) {
+  .game-profile-body__team-title {
+    font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.8881578947rem  +  0.9868421053vw , 1.875rem )) {
+  .game-profile-body__team-title {
+    font-size: calc(1.5rem + 0.375 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (line-height: clamp( 1.625rem , 1.0131578947rem  +  0.9868421053vw , 2rem )) {
+  .game-profile-body__team-title {
+    line-height: clamp( 1.625rem , 1.0131578947rem  +  0.9868421053vw , 2rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.625rem , 1.0131578947rem  +  0.9868421053vw , 2rem )) {
+  .game-profile-body__team-title {
+    line-height: calc(1.625rem + 0.375 * (100vw - 62rem) / 38);
+  }
+}
+
+.game-profile-body__team-subtitle {
+  color: #a4a9ad;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.7730263158rem  +  0.1644736842vw , 0.9375rem )) {
+  .game-profile-body__team-subtitle {
+    font-size: clamp( 0.875rem , 0.7730263158rem  +  0.1644736842vw , 0.9375rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.7730263158rem  +  0.1644736842vw , 0.9375rem )) {
+  .game-profile-body__team-subtitle {
+    font-size: calc(0.875rem + 0.0625 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (line-height: clamp( 1.0625rem , 0.9605263158rem  +  0.1644736842vw , 1.125rem )) {
+  .game-profile-body__team-subtitle {
+    line-height: clamp( 1.0625rem , 0.9605263158rem  +  0.1644736842vw , 1.125rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.0625rem , 0.9605263158rem  +  0.1644736842vw , 1.125rem )) {
+  .game-profile-body__team-subtitle {
+    line-height: calc(1.0625rem + 0.0625 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (height: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .game-profile-body__team-logo {
+    height: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem );
+  }
+}
+
+@supports not (height: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .game-profile-body__team-logo {
+    height: calc(4.375rem + 0.625 * (100vw - 62rem) / 38);
+  }
+}
+
+@supports (width: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .game-profile-body__team-logo {
+    width: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem );
+  }
+}
+
+@supports not (width: clamp( 4.375rem , 3.3552631579rem  +  1.6447368421vw , 5rem )) {
+  .game-profile-body__team-logo {
+    width: calc(4.375rem + 0.625 * (100vw - 62rem) / 38);
+  }
 }
 
 .element-animation {
@@ -10065,6 +10358,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     opacity: 1;
   }
 
+@supports (font-size: clamp( 0.875rem , 0.4463903027rem  +  0.8929368694vw , 1rem )) {
+    .section-title span {
+      font-size: clamp( 0.875rem , 0.4463903027rem  +  0.8929368694vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.4463903027rem  +  0.8929368694vw , 1rem )) {
+    .section-title span {
+      font-size: calc(0.875rem + 0.125 * (100vw - 48rem) / 13.99875);
+    }
+}
+
+@supports (line-height: clamp( 1.125rem , 0.6963903027rem  +  0.8929368694vw , 1.25rem )) {
+    .section-title span {
+      line-height: clamp( 1.125rem , 0.6963903027rem  +  0.8929368694vw , 1.25rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.125rem , 0.6963903027rem  +  0.8929368694vw , 1.25rem )) {
+    .section-title span {
+      line-height: calc(1.125rem + 0.125 * (100vw - 48rem) / 13.99875);
+    }
+}
+
+  .table__legend-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table__legend-box .table__block .text-center {
+    width: 5.9375rem;
+    min-width: 5.9375rem;
+  }
+
   .big-button {
     height: 5rem;
     padding: 20px 40px 20px 40px;
@@ -10489,15 +10818,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     border-radius: 0.1875rem;
   }
 
-@supports (font-size: clamp( 1.25rem , 0.3927806054rem  +  1.7858737387vw , 1.5rem )) {
+@supports (font-size: clamp( 1.125rem , 0.2677806054rem  +  1.7858737387vw , 1.375rem )) {
     .game-profile-header__team-title {
-      font-size: clamp( 1.25rem , 0.3927806054rem  +  1.7858737387vw , 1.5rem );
+      font-size: clamp( 1.125rem , 0.2677806054rem  +  1.7858737387vw , 1.375rem );
     }
 }
 
-@supports not (font-size: clamp( 1.25rem , 0.3927806054rem  +  1.7858737387vw , 1.5rem )) {
+@supports not (font-size: clamp( 1.125rem , 0.2677806054rem  +  1.7858737387vw , 1.375rem )) {
     .game-profile-header__team-title {
-      font-size: calc(1.25rem + 0.25 * (100vw - 48rem) / 13.99875);
+      font-size: calc(1.125rem + 0.25 * (100vw - 48rem) / 13.99875);
     }
 }
 
@@ -11034,6 +11363,42 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             justify-content: center;
   }
 
+@supports (font-size: clamp( 0.75rem , 0.2262805785rem  +  1.3515339911vw , 0.875rem )) {
+    .section-title span {
+      font-size: clamp( 0.75rem , 0.2262805785rem  +  1.3515339911vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.2262805785rem  +  1.3515339911vw , 0.875rem )) {
+    .section-title span {
+      font-size: calc(0.75rem + 0.125 * (100vw - 38.75rem) / 9.24875);
+    }
+}
+
+@supports (line-height: clamp( 1rem , 0.4762805785rem  +  1.3515339911vw , 1.125rem )) {
+    .section-title span {
+      line-height: clamp( 1rem , 0.4762805785rem  +  1.3515339911vw , 1.125rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.4762805785rem  +  1.3515339911vw , 1.125rem )) {
+    .section-title span {
+      line-height: calc(1rem + 0.125 * (100vw - 38.75rem) / 9.24875);
+    }
+}
+
+@supports (font-size: clamp( 0.75rem , 0.6397004755rem  +  0.4902201088vw , 0.875rem )) {
+    .table__legend-box .table__block table td {
+      font-size: clamp( 0.75rem , 0.6397004755rem  +  0.4902201088vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.6397004755rem  +  0.4902201088vw , 0.875rem )) {
+    .table__legend-box .table__block table td {
+      font-size: calc(0.75rem + 0.125 * (100vw - 22.5rem) / 25.49875);
+    }
+}
+
   .nav-select__form-3-box {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
@@ -11115,6 +11480,46 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .button-spollers__video {
     margin: 10px 0px 10px 0px;
   }
+
+  .tabs-logo-menu__tabs-title-box {
+    padding: 20px 16px 10px 16px;
+  }
+
+@supports (font-size: clamp( 0.875rem , -0.5023520936rem  +  3.3904051534vw , 1.125rem )) {
+    .tabs-logo-menu__tabs-title {
+      font-size: clamp( 0.875rem , -0.5023520936rem  +  3.3904051534vw , 1.125rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , -0.5023520936rem  +  3.3904051534vw , 1.125rem )) {
+    .tabs-logo-menu__tabs-title {
+      font-size: calc(0.875rem + 0.25 * (100vw - 40.625rem) / 7.37375);
+    }
+}
+
+@supports (height: clamp( 3.75rem , 0.3066197661rem  +  8.4760128835vw , 4.375rem )) {
+    .tabs-logo-menu__tabs-logo {
+      height: clamp( 3.75rem , 0.3066197661rem  +  8.4760128835vw , 4.375rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , 0.3066197661rem  +  8.4760128835vw , 4.375rem )) {
+    .tabs-logo-menu__tabs-logo {
+      height: calc(3.75rem + 0.625 * (100vw - 40.625rem) / 7.37375);
+    }
+}
+
+@supports (width: clamp( 3.75rem , 0.3066197661rem  +  8.4760128835vw , 4.375rem )) {
+    .tabs-logo-menu__tabs-logo {
+      width: clamp( 3.75rem , 0.3066197661rem  +  8.4760128835vw , 4.375rem );
+    }
+}
+
+@supports not (width: clamp( 3.75rem , 0.3066197661rem  +  8.4760128835vw , 4.375rem )) {
+    .tabs-logo-menu__tabs-logo {
+      width: calc(3.75rem + 0.625 * (100vw - 40.625rem) / 7.37375);
+    }
+}
 
   .player-card-roster__photo {
     height: 15.625rem;
@@ -11613,15 +12018,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (font-size: clamp( 1.0625rem , 0.2769208677rem  +  2.0273009866vw , 1.25rem )) {
+@supports (font-size: clamp( 1rem , 0.4762805785rem  +  1.3515339911vw , 1.125rem )) {
     .game-profile-header__team-title {
-      font-size: clamp( 1.0625rem , 0.2769208677rem  +  2.0273009866vw , 1.25rem );
+      font-size: clamp( 1rem , 0.4762805785rem  +  1.3515339911vw , 1.125rem );
     }
 }
 
-@supports not (font-size: clamp( 1.0625rem , 0.2769208677rem  +  2.0273009866vw , 1.25rem )) {
+@supports not (font-size: clamp( 1rem , 0.4762805785rem  +  1.3515339911vw , 1.125rem )) {
     .game-profile-header__team-title {
-      font-size: calc(1.0625rem + 0.1875 * (100vw - 38.75rem) / 9.24875);
+      font-size: calc(1rem + 0.125 * (100vw - 38.75rem) / 9.24875);
     }
 }
 
@@ -11698,6 +12103,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 40.62375rem) {
+  .tabs-logo-menu__tabs-title-box {
+    margin: 0px 0px 0px 0px;
+    padding: 16px 10px 6px 10px;
+  }
+
+  .tabs-logo-menu__tabs-title {
+    display: none;
+  }
+
 @supports (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
     .player-card-roster__photo {
       width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
@@ -11781,6 +12195,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 38.74875rem) {
+@supports (font-size: clamp( 0.625rem , 0.4519097623rem  +  0.7692899454vw , 0.75rem )) {
+    .section-title span {
+      font-size: clamp( 0.625rem , 0.4519097623rem  +  0.7692899454vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.625rem , 0.4519097623rem  +  0.7692899454vw , 0.75rem )) {
+    .section-title span {
+      font-size: calc(0.625rem + 0.125 * (100vw - 22.5rem) / 16.24875);
+    }
+}
+
+@supports (line-height: clamp( 0.75rem , 0.4038195246rem  +  1.5385798908vw , 1rem )) {
+    .section-title span {
+      line-height: clamp( 0.75rem , 0.4038195246rem  +  1.5385798908vw , 1rem );
+    }
+}
+
+@supports not (line-height: clamp( 0.75rem , 0.4038195246rem  +  1.5385798908vw , 1rem )) {
+    .section-title span {
+      line-height: calc(0.75rem + 0.25 * (100vw - 22.5rem) / 16.24875);
+    }
+}
+
 @supports (height: clamp( 6.25rem , -2.0230321214rem  +  29.4152253206vw , 9.375rem )) {
     .game-profile-header__team-logo {
       height: clamp( 6.25rem , -2.0230321214rem  +  29.4152253206vw , 9.375rem );
@@ -11805,27 +12243,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
-@supports (font-size: clamp( 0.875rem , 0.6153646434rem  +  1.1539349181vw , 1.0625rem )) {
+@supports (font-size: clamp( 0.875rem , 0.7019097623rem  +  0.7692899454vw , 1rem )) {
     .game-profile-header__team-title {
-      font-size: clamp( 0.875rem , 0.6153646434rem  +  1.1539349181vw , 1.0625rem );
+      font-size: clamp( 0.875rem , 0.7019097623rem  +  0.7692899454vw , 1rem );
     }
 }
 
-@supports not (font-size: clamp( 0.875rem , 0.6153646434rem  +  1.1539349181vw , 1.0625rem )) {
+@supports not (font-size: clamp( 0.875rem , 0.7019097623rem  +  0.7692899454vw , 1rem )) {
     .game-profile-header__team-title {
-      font-size: calc(0.875rem + 0.1875 * (100vw - 22.5rem) / 16.24875);
+      font-size: calc(0.875rem + 0.125 * (100vw - 22.5rem) / 16.24875);
     }
 }
 
-@supports (line-height: clamp( 1rem , 0.6538195246rem  +  1.5385798908vw , 1.25rem )) {
+@supports (line-height: clamp( 1.125rem , 0.9519097623rem  +  0.7692899454vw , 1.25rem )) {
     .game-profile-header__team-title {
-      line-height: clamp( 1rem , 0.6538195246rem  +  1.5385798908vw , 1.25rem );
+      line-height: clamp( 1.125rem , 0.9519097623rem  +  0.7692899454vw , 1.25rem );
     }
 }
 
-@supports not (line-height: clamp( 1rem , 0.6538195246rem  +  1.5385798908vw , 1.25rem )) {
+@supports not (line-height: clamp( 1.125rem , 0.9519097623rem  +  0.7692899454vw , 1.25rem )) {
     .game-profile-header__team-title {
-      line-height: calc(1rem + 0.25 * (100vw - 22.5rem) / 16.24875);
+      line-height: calc(1.125rem + 0.125 * (100vw - 22.5rem) / 16.24875);
     }
 }
 
@@ -12528,9 +12966,29 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     padding: 10px 0px 0px 0px;
     border-top: 0.0625rem solid #a4a9ad;
   }
+
+  .game-profile-body__team-left {
+    grid-column: 1/1 span;
+    grid-row: 1/1 span;
+  }
+
+  .game-profile-body__team-right {
+    grid-column: 2/1 span;
+    grid-row: 1/1 span;
+  }
 }
 
 @media (max-width: 28.74875rem) {
+  .table__legend-box .table__block .text-center {
+    width: 3.75rem;
+    min-width: 3.125rem;
+  }
+
+  .table__legend-box .table__block .text-center,
+  .table__legend-box .table__block .text-left {
+    padding: 15px 7px 15px 7px;
+  }
+
 @supports (height: clamp( 18.125rem , -6.6652083333rem  +  116.6666666667vw , 26.875rem )) {
     .leader-card__photo {
       height: clamp( 18.125rem , -6.6652083333rem  +  116.6666666667vw , 26.875rem );
@@ -12822,6 +13280,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     transition: all 0.8s ease 0s;
     -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
             box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .tabs-logo-menu__tabs-title-box:hover {
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
   }
 
   .base-button:hover {
