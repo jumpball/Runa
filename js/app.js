@@ -15839,7 +15839,7 @@ PERFORMANCE OF THIS SOFTWARE.
         });
         new Swiper(".calendar-slider", {
             slidesPerView: "auto",
-            spaceBetween: 20,
+            spaceBetween: 10,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
@@ -15856,8 +15856,7 @@ PERFORMANCE OF THIS SOFTWARE.
             },
             breakpoints: {
                 320: {
-                    slidesPerView: 2,
-                    spaceBetween: 10
+                    slidesPerView: 2
                 },
                 650: {
                     slidesPerView: 2
@@ -15869,8 +15868,7 @@ PERFORMANCE OF THIS SOFTWARE.
                     slidesPerView: 4
                 },
                 1600: {
-                    slidesPerView: 5,
-                    spaceBetween: 20
+                    slidesPerView: 5
                 }
             }
         });
