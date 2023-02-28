@@ -2594,6 +2594,36 @@ td {
   padding: 20px 0px 50px 0px;
 }
 
+.tabs-mini-buttons__tabs-navigation {
+  margin: 30px 0px 30px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tabs-mini-buttons__tabs-title {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: 700;
+  width: 100%;
+  color: #3a3a3a;
+  border-bottom: 0.3125rem solid transparent;
+  border-radius: 0.1875rem;
+  padding: 20px 14px 15px 14px;
+}
+
+.tabs-mini-buttons__tabs-title._tab-active {
+  color: #ffffff;
+  background-color: #3a3a3a;
+  border-bottom: 0.3125rem solid #ffffff;
+}
+
 .tabs-selector__tabs {
   position: relative;
   padding: 0px 0px 20px 0px;
@@ -6991,6 +7021,412 @@ td {
   }
 }
 
+.game-progress__block-1 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+  gap: 0.625rem;
+}
+
+.game-progress__row {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 10.625rem 1fr;
+  grid-template-columns: 1fr 10.625rem 1fr;
+  grid-auto-rows: 1fr;
+  grid-gap: 10px;
+}
+
+.game-progress__item {
+  font-family: "Roboto Condensed";
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.game-progress__item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/span 1;
+}
+
+.game-progress__item-2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/span 1;
+}
+
+.game-progress__item-3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/span 1;
+}
+
+.game-progress__item-left {
+  color: #3a3a3a;
+  background-color: #ffffff;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 0.0625rem solid #3a3a3a;
+  border-radius: 0.1875rem;
+}
+
+.game-progress__item-right {
+  color: #3a3a3a;
+  background-color: #ffffff;
+  border: 0.0625rem solid #3a3a3a;
+  border-radius: 0.1875rem;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.game-progress__item-photo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  border-radius: 100%;
+  border: 0.0625rem solid #eef0f2;
+  margin: 0.3125rem;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+@supports (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-photo {
+    min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+  }
+}
+
+@supports not (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-photo {
+    min-width: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+  }
+}
+
+@supports (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-photo {
+    height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+  }
+}
+
+@supports not (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-photo {
+    height: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+  }
+}
+
+.game-progress__item-photo-right {
+  right: 0;
+}
+
+.game-progress__item-logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin: 0.3125rem;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+}
+
+@supports (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-logo {
+    min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+  }
+}
+
+@supports not (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-logo {
+    min-width: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+  }
+}
+
+@supports (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-logo {
+    height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+  }
+}
+
+@supports not (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+  .game-progress__item-logo {
+    height: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+  }
+}
+
+.game-progress__item-logo img {
+  padding: 0.3125rem;
+}
+
+.game-progress__item-logo-right {
+  right: 0;
+}
+
+.game-progress__item-content {
+  width: 100%;
+  padding: 6px 8px 6px 8px;
+}
+
+.game-progress__item-title {
+  font-weight: 900;
+  color: #8b2231;
+  text-transform: uppercase;
+}
+
+@supports (font-size: clamp( 1.25rem , 0.6381903556rem  +  0.9868096444vw , 1.625rem )) {
+  .game-progress__item-title {
+    font-size: clamp( 1.25rem , 0.6381903556rem  +  0.9868096444vw , 1.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 0.6381903556rem  +  0.9868096444vw , 1.625rem )) {
+  .game-progress__item-title {
+    font-size: calc(1.25rem + 0.375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (line-height: clamp( 1.625rem , 1.0131903556rem  +  0.9868096444vw , 2rem )) {
+  .game-progress__item-title {
+    line-height: clamp( 1.625rem , 1.0131903556rem  +  0.9868096444vw , 2rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.625rem , 1.0131903556rem  +  0.9868096444vw , 2rem )) {
+  .game-progress__item-title {
+    line-height: calc(1.625rem + 0.375 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__item-title span {
+  color: #33348e;
+}
+
+.game-progress__item-info {
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #3a3a3a;
+  line-height: 1.25rem;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem )) {
+  .game-progress__item-info {
+    font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem )) {
+  .game-progress__item-info {
+    font-size: calc(0.875rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+@supports (line-height: clamp( 1.25rem , 1.0460634519rem  +  0.3289365481vw , 1.375rem )) {
+  .game-progress__item-info {
+    line-height: clamp( 1.25rem , 1.0460634519rem  +  0.3289365481vw , 1.375rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.25rem , 1.0460634519rem  +  0.3289365481vw , 1.375rem )) {
+  .game-progress__item-info {
+    line-height: calc(1.25rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
+  }
+}
+
+.game-progress__info-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.25rem;
+  width: 100%;
+}
+
+.game-progress__info-row-left {
+  text-align: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.game-progress__action {
+  font-weight: 900;
+  color: #3a3a3a;
+}
+
+.game-progress__action > span {
+  color: #8b2231;
+}
+
+.game-progress__num {
+  color: #33348e;
+  font-family: "Oswald", sans-serif;
+  font-weight: 900;
+}
+
+.game-progress__item-event {
+  padding: 10px 5px 10px 5px;
+  text-align: center;
+  border-radius: 0.1875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 11.25rem;
+}
+
+.game-progress__item-event-score {
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  background-color: #8b2231;
+  border: 0.0625rem solid #ffffff;
+}
+
+.game-progress__item-event-time {
+  font-family: "Oswald", sans-serif;
+  color: #3a3a3a;
+  background-color: #ffffff;
+  border: 0.0625rem solid #3a3a3a;
+}
+
+.game-progress__item-event-info {
+  background-color: #0f524d;
+  border: 0.0625rem solid #ffffff;
+  color: #ffffff;
+}
+
+.game-progress__item-event-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.game-progress__event-period {
+  text-transform: uppercase;
+}
+
+@supports (font-size: clamp( 0.875rem , 0.5rem  +  0.5vw , 1rem )) {
+  .game-progress__event-period {
+    font-size: clamp( 0.875rem , 0.5rem  +  0.5vw , 1rem );
+  }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.5rem  +  0.5vw , 1rem )) {
+  .game-progress__event-period {
+    font-size: calc(0.875rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+@supports (line-height: clamp( 1.375rem , 1rem  +  0.5vw , 1.5rem )) {
+  .game-progress__event-period {
+    line-height: clamp( 1.375rem , 1rem  +  0.5vw , 1.5rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.375rem , 1rem  +  0.5vw , 1.5rem )) {
+  .game-progress__event-period {
+    line-height: calc(1.375rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+.game-progress__event-time {
+  font-weight: 900;
+  letter-spacing: 0.0625rem;
+}
+
+@supports (font-size: clamp( 1.25rem , 0.875rem  +  0.5vw , 1.375rem )) {
+  .game-progress__event-time {
+    font-size: clamp( 1.25rem , 0.875rem  +  0.5vw , 1.375rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.25rem , 0.875rem  +  0.5vw , 1.375rem )) {
+  .game-progress__event-time {
+    font-size: calc(1.25rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+@supports (line-height: clamp( 1.875rem , 1.5rem  +  0.5vw , 2rem )) {
+  .game-progress__event-time {
+    line-height: clamp( 1.875rem , 1.5rem  +  0.5vw , 2rem );
+  }
+}
+
+@supports not (line-height: clamp( 1.875rem , 1.5rem  +  0.5vw , 2rem )) {
+  .game-progress__event-time {
+    line-height: calc(1.875rem + 0.125 * (100vw - 75rem) / 25);
+  }
+}
+
+.game-progress__event-score {
+  font-weight: 900;
+  color: #ffffff;
+}
+
+@supports (font-size: clamp( 1.75rem , 1rem  +  1vw , 2rem )) {
+  .game-progress__event-score {
+    font-size: clamp( 1.75rem , 1rem  +  1vw , 2rem );
+  }
+}
+
+@supports not (font-size: clamp( 1.75rem , 1rem  +  1vw , 2rem )) {
+  .game-progress__event-score {
+    font-size: calc(1.75rem + 0.25 * (100vw - 75rem) / 25);
+  }
+}
+
+@supports (line-height: clamp( 2.625rem , 1.875rem  +  1vw , 2.875rem )) {
+  .game-progress__event-score {
+    line-height: clamp( 2.625rem , 1.875rem  +  1vw , 2.875rem );
+  }
+}
+
+@supports not (line-height: clamp( 2.625rem , 1.875rem  +  1vw , 2.875rem )) {
+  .game-progress__event-score {
+    line-height: calc(2.625rem + 0.25 * (100vw - 75rem) / 25);
+  }
+}
+
+.game-progress__event-border {
+  width: 60%;
+  height: 0.3125rem;
+  background-color: #ccae61;
+  border-radius: 0.1875rem;
+}
+
+.game-progress__event-label {
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 8px 0px 0px 0px;
+  font-weight: 400;
+  letter-spacing: 0.0625rem;
+  line-height: 1.125rem;
+  font-size: 0.75rem;
+}
+
 .element-animation {
   /* Скроем элемент в начальном состоянии */
   opacity: 0;
@@ -9966,6 +10402,37 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 74.99875rem) {
+  .game-progress__row {
+    -ms-grid-columns: 1fr 9.375rem 1fr;
+    grid-template-columns: 1fr 9.375rem 1fr;
+  }
+
+@supports (font-size: clamp( 1.5rem , 0.3077163462rem  +  1.9230769231vw , 1.75rem )) {
+    .game-progress__event-score {
+      font-size: clamp( 1.5rem , 0.3077163462rem  +  1.9230769231vw , 1.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.5rem , 0.3077163462rem  +  1.9230769231vw , 1.75rem )) {
+    .game-progress__event-score {
+      font-size: calc(1.5rem + 0.25 * (100vw - 61.99875rem) / 13);
+    }
+}
+
+@supports (line-height: clamp( 2.375rem , 1.1827163462rem  +  1.9230769231vw , 2.625rem )) {
+    .game-progress__event-score {
+      line-height: clamp( 2.375rem , 1.1827163462rem  +  1.9230769231vw , 2.625rem );
+    }
+}
+
+@supports not (line-height: clamp( 2.375rem , 1.1827163462rem  +  1.9230769231vw , 2.625rem )) {
+    .game-progress__event-score {
+      line-height: calc(2.375rem + 0.25 * (100vw - 61.99875rem) / 13);
+    }
+}
+}
+
 @media (max-width: 73.12375rem) {
   .profile-team__header-cards-grid {
     -ms-grid-columns: 1fr 1fr 1fr;
@@ -10167,6 +10634,67 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .head-slider {
     margin-top: 3.4375rem;
+  }
+
+  .game-progress__row {
+    -ms-grid-columns: 1fr 8.125rem 1fr;
+    grid-template-columns: 1fr 8.125rem 1fr;
+  }
+
+@supports (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-photo {
+      min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
+    }
+}
+
+@supports not (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-photo {
+      min-width: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
+    }
+}
+
+@supports (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-photo {
+      height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-photo {
+      height: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
+    }
+}
+
+  .game-progress__item-photo-left {
+    left: 0;
+  }
+
+@supports (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-logo {
+      min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
+    }
+}
+
+@supports not (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-logo {
+      min-width: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
+    }
+}
+
+@supports (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-logo {
+      height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+    .game-progress__item-logo {
+      height: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
+    }
+}
+
+  .game-progress__item-logo-left {
+    left: 0;
   }
 
   .header__body {
@@ -11183,6 +11711,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 56.24875rem) {
+  .game-progress__name span {
+    display: none;
+  }
+}
+
 @media (max-width: 54.99875rem) {
   .profile-team__header-cards-grid {
     -ms-grid-columns: 1fr 1fr;
@@ -11216,6 +11750,117 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .head-slider .swiper-pagination {
     display: none;
+  }
+
+  .game-progress__row {
+    -ms-grid-columns: 8.75rem 1fr;
+    grid-template-columns: 8.75rem 1fr;
+  }
+
+  .game-progress__item-1 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/span 1;
+  }
+
+  .game-progress__item-2 {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/span 1;
+  }
+
+  .game-progress__item-3 {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/span 1;
+  }
+
+  .game-progress__item-left {
+    text-align: left;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+
+@supports (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-photo {
+      min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+    }
+}
+
+@supports not (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-photo {
+      min-width: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+    }
+}
+
+@supports (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-photo {
+      height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-photo {
+      height: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+    }
+}
+
+  .game-progress__item-photo-left {
+    left: auto;
+    right: 0;
+  }
+
+@supports (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-logo {
+      min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+    }
+}
+
+@supports not (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-logo {
+      min-width: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+    }
+}
+
+@supports (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-logo {
+      height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+    }
+}
+
+@supports not (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+    .game-progress__item-logo {
+      height: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+    }
+}
+
+  .game-progress__item-logo-left {
+    left: auto;
+    right: 0;
+  }
+
+  .game-progress__item-content {
+    padding: 6px 6px 6px 8px;
+  }
+
+  .game-progress__info-row-left {
+    text-align: left;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+
+  .game-progress__name span {
+    display: inline-block;
+  }
+
+  .game-progress__item-event {
+    height: 10rem;
   }
 }
 
@@ -11520,6 +12165,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
       width: calc(3.75rem + 0.625 * (100vw - 40.625rem) / 7.37375);
     }
 }
+
+  .tabs-mini-buttons__tabs-title {
+    font-size: 1.125rem;
+  }
+
+  .tabs-mini-buttons__tabs-title span {
+    display: none;
+  }
 
   .player-card-roster__photo {
     height: 15.625rem;
@@ -12102,6 +12755,53 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 }
 
+@media (max-width: 41.24875rem) {
+  .game-progress__row {
+    -ms-grid-columns: 7.5rem 1fr;
+    grid-template-columns: 7.5rem 1fr;
+  }
+
+  .game-progress__event-period {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+  }
+
+  .game-progress__event-time {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+@supports (font-size: clamp( 1.125rem , 0.5893095238rem  +  1.9047619048vw , 1.375rem )) {
+    .game-progress__event-score {
+      font-size: clamp( 1.125rem , 0.5893095238rem  +  1.9047619048vw , 1.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.125rem , 0.5893095238rem  +  1.9047619048vw , 1.375rem )) {
+    .game-progress__event-score {
+      font-size: calc(1.125rem + 0.25 * (100vw - 28.12375rem) / 13.125);
+    }
+}
+
+@supports (line-height: clamp( 1.625rem , 1.0893095238rem  +  1.9047619048vw , 1.875rem )) {
+    .game-progress__event-score {
+      line-height: clamp( 1.625rem , 1.0893095238rem  +  1.9047619048vw , 1.875rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.625rem , 1.0893095238rem  +  1.9047619048vw , 1.875rem )) {
+    .game-progress__event-score {
+      line-height: calc(1.625rem + 0.25 * (100vw - 28.12375rem) / 13.125);
+    }
+}
+
+  .game-progress__event-label {
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+    margin: 6px 0px 0px 0px;
+  }
+}
+
 @media (max-width: 40.62375rem) {
   .tabs-logo-menu__tabs-title-box {
     margin: 0px 0px 0px 0px;
@@ -12374,6 +13074,56 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 36.24875rem) {
+@supports (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-photo {
+      min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
+    }
+}
+
+@supports not (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-photo {
+      min-width: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
+    }
+}
+
+@supports (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-photo {
+      height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
+    }
+}
+
+@supports not (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-photo {
+      height: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
+    }
+}
+
+@supports (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-logo {
+      min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
+    }
+}
+
+@supports not (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-logo {
+      min-width: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
+    }
+}
+
+@supports (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-logo {
+      height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
+    }
+}
+
+@supports not (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
+    .game-progress__item-logo {
+      height: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
+    }
+}
+}
+
 @media (max-width: 34.37375rem) {
   .player-card-roster__corner {
     border-left: 100px solid #0f524d;
@@ -12446,6 +13196,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .game-card-calendar__header span {
     font-size: 1rem;
   }
+
+@supports (font-size: clamp( 1rem , 0.39065625rem  +  2.5vw , 1.25rem )) {
+    .game-progress__item-title {
+      font-size: clamp( 1rem , 0.39065625rem  +  2.5vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.39065625rem  +  2.5vw , 1.25rem )) {
+    .game-progress__item-title {
+      font-size: calc(1rem + 0.25 * (100vw - 24.37375rem) / 10);
+    }
+}
+
+@supports (line-height: clamp( 1.375rem , 0.76565625rem  +  2.5vw , 1.625rem )) {
+    .game-progress__item-title {
+      line-height: clamp( 1.375rem , 0.76565625rem  +  2.5vw , 1.625rem );
+    }
+}
+
+@supports not (line-height: clamp( 1.375rem , 0.76565625rem  +  2.5vw , 1.625rem )) {
+    .game-progress__item-title {
+      line-height: calc(1.375rem + 0.25 * (100vw - 24.37375rem) / 10);
+    }
+}
 }
 
 @media (max-width: 33.74875rem) {
@@ -12578,6 +13352,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     height: 2.75rem;
     width: 2.75rem;
   }
+
+@supports (line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem )) {
+    .game-progress__item-info {
+      line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem )) {
+    .game-progress__item-info {
+      line-height: calc(1rem + 0.125 * (100vw - 24.37375rem) / 6.875);
+    }
+}
+
+@supports (font-size: clamp( 0.625rem , 0.1818409091rem  +  1.8181818182vw , 0.75rem )) {
+    .game-progress__item-info {
+      font-size: clamp( 0.625rem , 0.1818409091rem  +  1.8181818182vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.625rem , 0.1818409091rem  +  1.8181818182vw , 0.75rem )) {
+    .game-progress__item-info {
+      font-size: calc(0.625rem + 0.125 * (100vw - 24.37375rem) / 6.875);
+    }
+}
 }
 
 @media (max-width: 29.99875rem) {
@@ -12976,6 +13774,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     grid-column: 2/1 span;
     grid-row: 1/1 span;
   }
+
+  .game-progress__row {
+    -ms-grid-columns: 6.25rem 1fr;
+    grid-template-columns: 6.25rem 1fr;
+  }
+
+  .game-progress__item-event {
+    height: 9.375rem;
+  }
 }
 
 @media (max-width: 28.74875rem) {
@@ -13180,10 +13987,43 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 }
 
+@media (max-width: 25.56125rem) {
+  .game-progress__name span {
+    display: none;
+  }
+}
+
 @media (max-width: 23.74875rem) {
   .tabs-selector__tabs-navigation {
     position: relative;
     top: -0.625rem;
+  }
+}
+
+@media (max-width: 22.49875rem) {
+  .game-progress__row {
+    -ms-grid-columns: 5.5rem 1fr;
+    grid-template-columns: 5.5rem 1fr;
+  }
+
+  .game-progress__event-period {
+    font-size: 0.625rem;
+    line-height: 1.125rem;
+  }
+
+  .game-progress__event-time {
+    font-size: 1rem;
+    line-height: 1.625rem;
+  }
+
+  .game-progress__event-score {
+    font-size: 1rem;
+    line-height: 1.875rem;
+  }
+
+  .game-progress__event-label {
+    font-size: 0.5rem;
+    line-height: 1rem;
   }
 }
 
