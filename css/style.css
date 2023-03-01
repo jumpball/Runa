@@ -2397,32 +2397,10 @@ td {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  width: 2.5rem;
+  height: 2.5rem;
   overflow: hidden;
   border-radius: 0.1875rem;
-}
-
-@supports (height: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
-  .vertical-spollers__icon {
-    height: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem );
-  }
-}
-
-@supports not (height: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
-  .vertical-spollers__icon {
-    height: calc(1.5625rem + 0.3125 * (100vw - 62rem) / 38);
-  }
-}
-
-@supports (width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
-  .vertical-spollers__icon {
-    width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem );
-  }
-}
-
-@supports not (width: clamp( 1.5625rem , 1.0526315789rem  +  0.8223684211vw , 1.875rem )) {
-  .vertical-spollers__icon {
-    width: calc(1.5625rem + 0.3125 * (100vw - 62rem) / 38);
-  }
 }
 
 .button-spollers__item {
@@ -2591,7 +2569,7 @@ td {
 }
 
 .tabs-logo-menu__tabs-body {
-  padding: 20px 0px 50px 0px;
+  padding: 20px 0px 20px 0px;
 }
 
 .tabs-mini-buttons__tabs-navigation {
@@ -6904,10 +6882,6 @@ td {
   padding: 20px 0px 0px 0px;
 }
 
-.game-profile-body__menu-block {
-  background-color: #ffffff;
-}
-
 .game-profile-body__team {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7021,12 +6995,12 @@ td {
   }
 }
 
-.game-progress__block-1 {
+.game-progress__block {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
-  gap: 0.625rem;
+  grid-gap: 0.5rem;
 }
 
 .game-progress__row {
@@ -7035,7 +7009,7 @@ td {
   -ms-grid-columns: 1fr 10.625rem 1fr;
   grid-template-columns: 1fr 10.625rem 1fr;
   grid-auto-rows: 1fr;
-  grid-gap: 10px;
+  grid-gap: 0.5rem;
 }
 
 .game-progress__item {
@@ -7073,14 +7047,14 @@ td {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  border: 0.0625rem solid #3a3a3a;
+  border: 0.0625rem solid #c4cdd3;
   border-radius: 0.1875rem;
 }
 
 .game-progress__item-right {
   color: #3a3a3a;
   background-color: #ffffff;
-  border: 0.0625rem solid #3a3a3a;
+  border: 0.0625rem solid #c4cdd3;
   border-radius: 0.1875rem;
   text-align: left;
   display: -webkit-box;
@@ -7091,38 +7065,68 @@ td {
           justify-content: space-between;
 }
 
+.game-progress__item-left-corner {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 60px solid #0f524d;
+  border-bottom: 60px solid transparent;
+}
+
+.game-progress__item-right-corner {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-right: 60px solid #ccae61;
+  border-bottom: 60px solid transparent;
+}
+
 .game-progress__item-photo {
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   border-radius: 100%;
-  border: 0.0625rem solid #eef0f2;
-  margin: 0.3125rem;
+  border: 0.0625rem solid #c4cdd3;
+  margin: 0.375rem;
   overflow: hidden;
+  background-color: #ffffff;
   position: absolute;
   bottom: 0;
+  z-index: 1;
 }
 
-@supports (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports (width: clamp( 6.25rem , 1.7857142857rem  +  5.7142857143vw , 7.5rem )) {
   .game-progress__item-photo {
-    min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+    width: clamp( 6.25rem , 1.7857142857rem  +  5.7142857143vw , 7.5rem );
   }
 }
 
-@supports not (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports not (width: clamp( 6.25rem , 1.7857142857rem  +  5.7142857143vw , 7.5rem )) {
   .game-progress__item-photo {
-    min-width: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+    width: calc(6.25rem + 1.25 * (100vw - 78.125rem) / 21.875);
   }
 }
 
-@supports (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports (height: clamp( 6.25rem , 1.7857142857rem  +  5.7142857143vw , 7.5rem )) {
   .game-progress__item-photo {
-    height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+    height: clamp( 6.25rem , 1.7857142857rem  +  5.7142857143vw , 7.5rem );
   }
 }
 
-@supports not (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports not (height: clamp( 6.25rem , 1.7857142857rem  +  5.7142857143vw , 7.5rem )) {
   .game-progress__item-photo {
-    height: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+    height: calc(6.25rem + 1.25 * (100vw - 78.125rem) / 21.875);
   }
 }
 
@@ -7133,33 +7137,32 @@ td {
 .game-progress__item-logo {
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin: 0.3125rem;
   overflow: hidden;
   position: absolute;
   bottom: 0;
 }
 
-@supports (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports (min-width: clamp( 5.625rem , -1.0709388035rem  +  8.5709388035vw , 7.5rem )) {
   .game-progress__item-logo {
-    min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+    min-width: clamp( 5.625rem , -1.0709388035rem  +  8.5709388035vw , 7.5rem );
   }
 }
 
-@supports not (min-width: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports not (min-width: clamp( 5.625rem , -1.0709388035rem  +  8.5709388035vw , 7.5rem )) {
   .game-progress__item-logo {
-    min-width: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+    min-width: calc(5.625rem + 1.875 * (100vw - 78.12375rem) / 21.87625);
   }
 }
 
-@supports (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports (height: clamp( 5.625rem , -1.0709388035rem  +  8.5709388035vw , 7.5rem )) {
   .game-progress__item-logo {
-    height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem );
+    height: clamp( 5.625rem , -1.0709388035rem  +  8.5709388035vw , 7.5rem );
   }
 }
 
-@supports not (height: clamp( 6.25rem , -4.9098980058rem  +  14.2848980058vw , 9.375rem )) {
+@supports not (height: clamp( 5.625rem , -1.0709388035rem  +  8.5709388035vw , 7.5rem )) {
   .game-progress__item-logo {
-    height: calc(6.25rem + 3.125 * (100vw - 78.12375rem) / 21.87625);
+    height: calc(5.625rem + 1.875 * (100vw - 78.12375rem) / 21.87625);
   }
 }
 
@@ -7169,6 +7172,25 @@ td {
 
 .game-progress__item-logo-right {
   right: 0;
+}
+
+.game-progress__item-logo-bg {
+  height: 10rem;
+  width: 10rem;
+  opacity: 0.1;
+  margin: 0.3125rem;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.game-progress__item-logo-bg-left {
+  left: 10%;
+}
+
+.game-progress__item-logo-bg-right {
+  right: 10%;
 }
 
 .game-progress__item-content {
@@ -7206,6 +7228,52 @@ td {
   }
 }
 
+.game-progress__item-title-bg {
+  font-weight: 900;
+  color: #8b2231;
+  text-transform: uppercase;
+  padding: 0.3125rem;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 0;
+}
+
+@supports (font-size: clamp( 2.5rem , -0.3846153846rem  +  6.0096153846vw , 5.625rem )) {
+  .game-progress__item-title-bg {
+    font-size: clamp( 2.5rem , -0.3846153846rem  +  6.0096153846vw , 5.625rem );
+  }
+}
+
+@supports not (font-size: clamp( 2.5rem , -0.3846153846rem  +  6.0096153846vw , 5.625rem )) {
+  .game-progress__item-title-bg {
+    font-size: calc(2.5rem + 3.125 * (100vw - 48rem) / 52);
+  }
+}
+
+@supports (line-height: clamp( 2.5rem , -0.3846153846rem  +  6.0096153846vw , 5.625rem )) {
+  .game-progress__item-title-bg {
+    line-height: clamp( 2.5rem , -0.3846153846rem  +  6.0096153846vw , 5.625rem );
+  }
+}
+
+@supports not (line-height: clamp( 2.5rem , -0.3846153846rem  +  6.0096153846vw , 5.625rem )) {
+  .game-progress__item-title-bg {
+    line-height: calc(2.5rem + 3.125 * (100vw - 48rem) / 52);
+  }
+}
+
+.game-progress__item-title-bg span {
+  font-family: "Oswald", sans-serif;
+}
+
+.game-progress__item-title-bg-left {
+  right: 0;
+}
+
+.game-progress__item-title-bg-right {
+  left: 0;
+}
+
 .game-progress__item-title span {
   color: #33348e;
 }
@@ -7226,18 +7294,6 @@ td {
 @supports not (font-size: clamp( 0.875rem , 0.6710634519rem  +  0.3289365481vw , 1rem )) {
   .game-progress__item-info {
     font-size: calc(0.875rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
-  }
-}
-
-@supports (line-height: clamp( 1.25rem , 1.0460634519rem  +  0.3289365481vw , 1.375rem )) {
-  .game-progress__item-info {
-    line-height: clamp( 1.25rem , 1.0460634519rem  +  0.3289365481vw , 1.375rem );
-  }
-}
-
-@supports not (line-height: clamp( 1.25rem , 1.0460634519rem  +  0.3289365481vw , 1.375rem )) {
-  .game-progress__item-info {
-    line-height: calc(1.25rem + 0.125 * (100vw - 61.99875rem) / 38.00125);
   }
 }
 
@@ -7301,8 +7357,8 @@ td {
 .game-progress__item-event-time {
   font-family: "Oswald", sans-serif;
   color: #3a3a3a;
-  background-color: #ffffff;
-  border: 0.0625rem solid #3a3a3a;
+  background-color: #eef0f2;
+  border: 0.0625rem solid #c4cdd3;
 }
 
 .game-progress__item-event-info {
@@ -10636,60 +10692,31 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     margin-top: 3.4375rem;
   }
 
-  .game-progress__row {
-    -ms-grid-columns: 1fr 8.125rem 1fr;
-    grid-template-columns: 1fr 8.125rem 1fr;
-  }
-
-@supports (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
-    .game-progress__item-photo {
-      min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
-    }
-}
-
-@supports not (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
-    .game-progress__item-photo {
-      min-width: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
-    }
-}
-
-@supports (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
-    .game-progress__item-photo {
-      height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
-    }
-}
-
-@supports not (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
-    .game-progress__item-photo {
-      height: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
-    }
-}
-
   .game-progress__item-photo-left {
     left: 0;
   }
 
-@supports (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+@supports (min-width: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
     .game-progress__item-logo {
-      min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
+      min-width: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem );
     }
 }
 
-@supports not (min-width: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+@supports not (min-width: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
     .game-progress__item-logo {
-      min-width: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
+      min-width: calc(4.375rem + 0.625 * (100vw - 47.99875rem) / 14);
     }
 }
 
-@supports (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+@supports (height: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
     .game-progress__item-logo {
-      height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem );
+      height: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem );
     }
 }
 
-@supports not (height: clamp( 3.75rem , -0.5356026786rem  +  8.9285714286vw , 5rem )) {
+@supports not (height: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
     .game-progress__item-logo {
-      height: calc(3.75rem + 1.25 * (100vw - 47.99875rem) / 14);
+      height: calc(4.375rem + 0.625 * (100vw - 47.99875rem) / 14);
     }
 }
 
@@ -11470,6 +11497,35 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+  .game-progress__row {
+    -ms-grid-columns: 1fr 8.125rem 1fr;
+    grid-template-columns: 1fr 8.125rem 1fr;
+  }
+
+@supports (width: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
+    .game-progress__item-photo {
+      width: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem );
+    }
+}
+
+@supports not (width: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
+    .game-progress__item-photo {
+      width: calc(4.375rem + 0.625 * (100vw - 47.99875rem) / 14);
+    }
+}
+
+@supports (height: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
+    .game-progress__item-photo {
+      height: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem );
+    }
+}
+
+@supports not (height: clamp( 4.375rem , 2.2321986607rem  +  4.4642857143vw , 5rem )) {
+    .game-progress__item-photo {
+      height: calc(4.375rem + 0.625 * (100vw - 47.99875rem) / 14);
+    }
+}
+
   .header__menu-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11752,11 +11808,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: none;
   }
 
-  .game-progress__row {
-    -ms-grid-columns: 8.75rem 1fr;
-    grid-template-columns: 8.75rem 1fr;
-  }
-
   .game-progress__item-1 {
     -ms-grid-column: 2;
     -ms-grid-column-span: 1;
@@ -11786,27 +11837,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
             flex-direction: row-reverse;
   }
 
-@supports (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports (width: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-photo {
-      min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+      width: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem );
     }
 }
 
-@supports not (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports not (width: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-photo {
-      min-width: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+      width: calc(4.375rem + 1.875 * (100vw - 36.24875rem) / 11.75);
     }
 }
 
-@supports (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports (height: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-photo {
-      height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+      height: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem );
     }
 }
 
-@supports not (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports not (height: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-photo {
-      height: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+      height: calc(4.375rem + 1.875 * (100vw - 36.24875rem) / 11.75);
     }
 }
 
@@ -11815,27 +11866,27 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     right: 0;
   }
 
-@supports (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports (min-width: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-logo {
-      min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+      min-width: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem );
     }
 }
 
-@supports not (min-width: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports not (min-width: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-logo {
-      min-width: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+      min-width: calc(4.375rem + 1.875 * (100vw - 36.24875rem) / 11.75);
     }
 }
 
-@supports (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports (height: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-logo {
-      height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem );
+      height: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem );
     }
 }
 
-@supports not (height: clamp( 3.75rem , -3.9625rem  +  21.2765957447vw , 6.25rem )) {
+@supports not (height: clamp( 4.375rem , -1.409375rem  +  15.9574468085vw , 6.25rem )) {
     .game-progress__item-logo {
-      height: calc(3.75rem + 2.5 * (100vw - 36.24875rem) / 11.75);
+      height: calc(4.375rem + 1.875 * (100vw - 36.24875rem) / 11.75);
     }
 }
 
@@ -11857,10 +11908,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .game-progress__name span {
     display: inline-block;
-  }
-
-  .game-progress__item-event {
-    height: 10rem;
   }
 }
 
@@ -12095,30 +12142,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @supports not (font-size: clamp( 0.6875rem , 0.6378481471rem  +  0.2336557783vw , 0.75rem )) {
     .vertical-spollers__desc-subtitle {
       font-size: calc(0.6875rem + 0.0625 * (100vw - 21.25rem) / 26.74875);
-    }
-}
-
-@supports (height: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
-    .vertical-spollers__icon {
-      height: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem );
-    }
-}
-
-@supports not (height: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
-    .vertical-spollers__icon {
-      height: calc(1.25rem + 0.3125 * (100vw - 21.25rem) / 26.74875);
-    }
-}
-
-@supports (width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
-    .vertical-spollers__icon {
-      width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem );
-    }
-}
-
-@supports not (width: clamp( 1.25rem , 1.0017407355rem  +  1.1682788915vw , 1.5625rem )) {
-    .vertical-spollers__icon {
-      width: calc(1.25rem + 0.3125 * (100vw - 21.25rem) / 26.74875);
     }
 }
 
@@ -12722,6 +12745,66 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .game-profile-header__score-box {
     min-width: 15.625rem;
   }
+
+  .game-progress__block {
+    grid-gap: 0.3125rem;
+  }
+
+  .game-progress__row {
+    -ms-grid-columns: 8.75rem 1fr;
+    grid-template-columns: 8.75rem 1fr;
+    grid-gap: 0.3125rem;
+  }
+
+  .game-progress__item-left-corner {
+    border-left: none;
+    border-right: 60px solid #0f524d;
+    left: auto;
+    right: 0;
+  }
+
+  .game-progress__item-logo-bg {
+    height: 8.75rem;
+    width: 8.75rem;
+  }
+
+  .game-progress__item-logo-bg-left {
+    left: auto;
+    right: 10%;
+  }
+
+@supports (font-size: clamp( 2.125rem , 0.1396085592rem  +  8.8239619589vw , 4.375rem )) {
+    .game-progress__item-title-bg {
+      font-size: clamp( 2.125rem , 0.1396085592rem  +  8.8239619589vw , 4.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 2.125rem , 0.1396085592rem  +  8.8239619589vw , 4.375rem )) {
+    .game-progress__item-title-bg {
+      font-size: calc(2.125rem + 2.25 * (100vw - 22.5rem) / 25.49875);
+    }
+}
+
+@supports (line-height: clamp( 2.125rem , 0.1396085592rem  +  8.8239619589vw , 4.375rem )) {
+    .game-progress__item-title-bg {
+      line-height: clamp( 2.125rem , 0.1396085592rem  +  8.8239619589vw , 4.375rem );
+    }
+}
+
+@supports not (line-height: clamp( 2.125rem , 0.1396085592rem  +  8.8239619589vw , 4.375rem )) {
+    .game-progress__item-title-bg {
+      line-height: calc(2.125rem + 2.25 * (100vw - 22.5rem) / 25.49875);
+    }
+}
+
+  .game-progress__item-title-bg-left {
+    right: auto;
+    left: 0;
+  }
+
+  .game-progress__item-event {
+    height: 10rem;
+  }
 }
 
 @media (max-width: 46.24875rem) {
@@ -13075,53 +13158,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 36.24875rem) {
-@supports (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-photo {
-      min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
-    }
-}
+  .game-progress__item-photo {
+    width: 4.0625rem;
+    height: 4.0625rem;
+  }
 
-@supports not (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-photo {
-      min-width: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
-    }
-}
-
-@supports (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-photo {
-      height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
-    }
-}
-
-@supports not (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-photo {
-      height: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
-    }
-}
-
-@supports (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-logo {
-      min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
-    }
-}
-
-@supports not (min-width: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-logo {
-      min-width: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
-    }
-}
-
-@supports (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-logo {
-      height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem );
-    }
-}
-
-@supports not (height: clamp( 3.125rem , 2.1021797436rem  +  4.5458678062vw , 3.75rem )) {
-    .game-progress__item-logo {
-      height: calc(3.125rem + 0.625 * (100vw - 22.5rem) / 13.74875);
-    }
-}
+  .game-progress__item-logo {
+    min-width: 4.0625rem;
+    height: 4.0625rem;
+  }
 }
 
 @media (max-width: 34.37375rem) {
@@ -13351,6 +13396,16 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .profile-photo__icons-item {
     height: 2.75rem;
     width: 2.75rem;
+  }
+
+  .game-progress__item-left-corner {
+    border-right: 40px solid #0f524d;
+    border-bottom: 40px solid transparent;
+  }
+
+  .game-progress__item-right-corner {
+    border-right: 40px solid #ccae61;
+    border-bottom: 40px solid transparent;
   }
 
 @supports (line-height: clamp( 1rem , 0.5568409091rem  +  1.8181818182vw , 1.125rem )) {
@@ -13778,6 +13833,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .game-progress__row {
     -ms-grid-columns: 6.25rem 1fr;
     grid-template-columns: 6.25rem 1fr;
+  }
+
+  .game-progress__item-logo-bg {
+    height: 8.125rem;
+    width: 8.125rem;
   }
 
   .game-progress__item-event {
