@@ -5,14 +5,11 @@
 	<title>Профайл Игры</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<!-- <style>body{opacity: 0;}</style> -->
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230302022539">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230302022539">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230303033505">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link href="https://fonts.googleapis.com/css?family=Oswald:200,300,regular,500,600,700&_v=20230302022539" rel="stylesheet">
-	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230303033505">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230303033505"></script>
 </head>
 <!-- BODY -->
 
@@ -778,10 +775,104 @@
 
 							<div data-tabs-body class="tabs-hor-menu__tabs-content section__container">
 								<div class="tabs-hor-menu__tabs-body">
-									<h2 class="section-title section-title-h3 section-title-black element-animation">
-										обзор игры
-									</h2>
+									<!-- <h2 class="section-title section-title-h3 section-title-black element-animation">
+										лидеры
+									</h2> -->
+									<div class="title-block">
+										<h2 class="section-title section-title-h2 section-title-green element-animation">лидеры
+										</h2>
+										<div class="team-lead-menu-slider__navigation">
+											<div class="team-lead-menu-slider__nav-prev -ibg">
+												<img src="img/RUNA/icons/arrow-mini-left-green.svg" alt="">
+											</div>
+											<div class="team-lead-menu-slider__nav-next -ibg">
+												<img src="img/RUNA/icons/arrow-mini-right-green.svg" alt="">
+											</div>
+										</div>
+									</div>
+									<!-- === ROSTER SELECTOR === -->
 
+
+									<!-- === BUTTON SLIDER NAVIGATION === -->
+									<div class="team-lead-menu-slider__box">
+										<div class="team-lead-menu-slider">
+											<!-- === TEAM LEAD MENU SLIDER === -->
+											<div class="swiper-wrapper team-lead-menu-slider__wrapper team-lead-selector__menu">
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button team-lead-selector-button-active" data-view="pt">очки</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="reb">подборы</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="as">передачи</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="st">перехваты</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="min">минуты</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="bs">блокшоты</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="to">потери</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="kpi">КПИ</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="fg2">2-х очковые</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="fg3">3-х очковые</button>
+												</div>
+												<div class="team-lead-menu-slider__item swiper-slide">
+													<button type="button" class="team-lead-selector-button" data-view="ft">штрафные</button>
+												</div>
+
+											</div>
+										</div>
+									</div>
+									<!-- === TEAM LEAD SELECTOR LIST === -->
+									<ul class="team-lead-selector__list">
+										<!-- === TEAM LEAD SELECTOR ITEM === -->
+										<li class="team-lead-selector__item pt">
+											<!-- === TEAM LEAD SLIDER - ROSTER === -->
+
+										</li>
+										<li class="team-lead-selector__item reb">
+											<div class="team-lead-selector__demo">подборы</div>
+										</li>
+										<li class="team-lead-selector__item as">
+											<div class="team-lead-selector__demo">передачи</div>
+										</li>
+										<li class="team-lead-selector__item st">
+											<div class="team-lead-selector__demo">перехваты</div>
+										</li>
+										<li class="team-lead-selector__item bs">
+											<div class="team-lead-selector__demo">блокшоты</div>
+										</li>
+										<li class="team-lead-selector__item min">
+											<div class="team-lead-selector__demo">минуты</div>
+										</li>
+										<li class="team-lead-selector__item to">
+											<div class="team-lead-selector__demo">потери</div>
+										</li>
+										<li class="team-lead-selector__item kpi">
+											<div class="team-lead-selector__demo">кпи</div>
+										</li>
+										<li class="team-lead-selector__item fg3">
+											<div class="team-lead-selector__demo">3-х очковые</div>
+										</li>
+										<li class="team-lead-selector__item fg2">
+											<div class="team-lead-selector__demo">2-х очковые</div>
+										</li>
+										<li class="team-lead-selector__item ft">
+											<div class="team-lead-selector__demo">штрафные</div>
+										</li>
+									</ul>
 								</div>
 								<!-- TABS BOX SCORE -->
 								<div class="tabs-hor-menu__tabs-body">
@@ -900,7 +991,7 @@
 											<div class="tabs-logo-menu__tabs-body">
 												<!-- BOX SCORE / TEAM 1 -->
 												<div class="table__block table__wrapper-dark">
-													<table>
+													<table class="table">
 														<thead>
 															<tr>
 																<th rowspan="2" class="th-thead2 sortable"> № </th>
@@ -912,8 +1003,8 @@
 																<th rowspan="2" class="text-bottom sortable">игрок</th>
 																<th rowspan="2" class="text-bottom sortable">мин</th>
 																<th rowspan="2" class="text-bottom sortable">очки</th>
-																<th colspan="4" class="table__th-colspan">броски</th>
-																<th colspan="3" class="table__th-colspan">подборы</th>
+																<th colspan="4" class="table__th-colspan not-sort">броски</th>
+																<th colspan="3" class="table__th-colspan not-sort">подборы</th>
 																<th rowspan="2" class="text-bottom sortable">гп</th>
 																<th rowspan="2" class="text-bottom sortable">пх</th>
 																<th rowspan="2" class="text-bottom sortable">пт</th>
@@ -1223,16 +1314,15 @@
 																<td> </td>
 																<td> 8 </td>
 																<td> 2 </td>
-
-															</tr><!---->
-															<tr>
+															</tr>
+															<tr class="not-sort">
 																<td colspan="2" class="td-tbody1">Тренер</td>
 																<td>Бартунов Олег</td>
 																<td colspan="13"></td>
 																<td></td>
 																<td colspan="4"></td>
 															</tr>
-															<tr>
+															<tr class="not-sort">
 																<td colspan="2" class="td-tbody1">Команда</td>
 																<td></td>
 																<td></td>
@@ -1255,7 +1345,7 @@
 
 															</tr>
 														</tbody>
-														<tfoot>
+														<tfoot class="not-sort">
 															<tr>
 																<td colspan="2" class="td-tbody1">всего</td>
 																<td></td>
@@ -1798,21 +1888,33 @@
 								</div>
 								<!-- TABS GAME PROGRESS -->
 								<div class="tabs-hor-menu__tabs-body">
-									<!-- <div class="section__container"> -->
-									<h2 class="section-title section-title-h3 section-title-black element-animation">ход игры
-									</h2>
+									<div class="team-compare__teams team-compare__teams-hidden">
+										<div class="team-compare__team-title-box">
+											<div class="team-compare__team-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/team-logo/runa.webp" type="image/webp"><img src="img/RUNA/LOGO/team-logo/runa.png" alt=""></picture>
+											</div>
+											<h4 class="team-compare__team-title">Руна</h4>
+										</div>
+
+										<div class="team-compare__team-title-box">
+											<div class="team-compare__team-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/team-logo/uralmash.webp" type="image/webp"><img src="img/RUNA/LOGO/team-logo/uralmash.png" alt=""></picture>
+											</div>
+											<h4 class="team-compare__team-title">Уралмаш</h4>
+										</div>
+									</div>
 									<!-- GAME PROGRESS -->
 									<div data-tabs class="tabs-mini-buttons__tabs">
 										<nav data-tabs-titles class="tabs-mini-buttons__tabs-navigation">
-											<button type="submit" class="tabs-mini-buttons__tabs-title">игра</button>
+											<button type="submit" class="tabs-mini-buttons__tabs-title tabs-mini-buttons__tabs-mini-title">игра</button>
 											<button type="submit" class="tabs-mini-buttons__tabs-title game-progress__tabs-active _tab-active">1
 												<span>четверть</span></button>
 											<button type="submit" class="tabs-mini-buttons__tabs-title">2 <span>четверть</span></button>
 											<button type="submit" class="tabs-mini-buttons__tabs-title">3 <span>четверть</span></button>
 											<button type="submit" class="tabs-mini-buttons__tabs-title">4 <span>четверть</span></button>
-											<button type="submit" class="tabs-mini-buttons__tabs-title">от<span></span></button>
-											<!-- <button type="submit" class="tabs-mini-buttons__tabs-title"><span>2 от</span></button>
-		<button type="submit" class="tabs-mini-buttons__tabs-title"><span>3 от</span></button> -->
+											<button type="submit" class="tabs-mini-buttons__tabs-title tabs-mini-buttons__tabs-mini-title">от<span></span></button>
+											<!-- <button type="submit" class="tabs-mini-buttons__tabs-title tabs-mini-buttons__tabs-mini-title"><span>2 от</span></button>
+		<button type="submit" class="tabs-mini-buttons__tabs-title tabs-mini-buttons__tabs-mini-title"><span>3 от</span></button> -->
 
 										</nav>
 										<div data-tabs-body class="tabs-mini-buttons__tabs-content">
@@ -2090,18 +2192,102 @@
 		</div> -->
 										</div>
 									</div>
-									<!-- </div> -->
 								</div>
-
+								<!-- TABS COMPARE TEAMS -->
 								<div class="tabs-hor-menu__tabs-body">
+									<div class="team-compare__teams">
+										<div class="team-compare__team-title-box">
+											<div class="team-compare__team-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/team-logo/runa.webp" type="image/webp"><img src="img/RUNA/LOGO/team-logo/runa.png" alt=""></picture>
+											</div>
+											<h4 class="team-compare__team-title">Руна</h4>
+										</div>
+										<div class="team-compare__team-title-box">
+											<div class="team-compare__team-logo -ibg">
+												<picture><source srcset="img/RUNA/LOGO/team-logo/uralmash.webp" type="image/webp"><img src="img/RUNA/LOGO/team-logo/uralmash.png" alt=""></picture>
+											</div>
+											<h4 class="team-compare__team-title">Уралмаш</h4>
+										</div>
+									</div>
+									<!-- TEAM COMPARE -->
 
-									<h2 class="section-title section-title-h3 section-title-black element-animation">сравнение
-										команд
-									</h2>
-
-
+									<div class="table__block">
+										<table class="table__compare-teams">
+											<tbody>
+												<tr>
+													<td class="text-right digital-font">19</td>
+													<td class="text-center text-uppercase center-col">игры</td>
+													<td class="text-left digital-font">23</td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 74,6 </td>
+													<td class="text-center text-uppercase center-col">очки</td>
+													<td class="text-left digital-font"> 84,4 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 47,2% </td>
+													<td class="text-center text-uppercase center-col">2-х очковые</td>
+													<td class="text-left digital-font"> 49,8% </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 30,6% </td>
+													<td class="text-center text-uppercase center-col">3-х очковые</td>
+													<td class="text-left digital-font"> 35,4% </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 69,7% </td>
+													<td class="text-center text-uppercase center-col">штрафные</td>
+													<td class="text-left digital-font"> 65,8% </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 38,3 </td>
+													<td class="text-center text-uppercase center-col">подборы всего</td>
+													<td class="text-left digital-font"> 39,8 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 11,1 </td>
+													<td class="text-center text-uppercase center-col">подборы нап</td>
+													<td class="text-left digital-font"> 14,1 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 27,2 </td>
+													<td class="text-center text-uppercase center-col">подборы защ</td>
+													<td class="text-left digital-font"> 25,7 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 16,7 </td>
+													<td class="text-center text-uppercase center-col">передачи</td>
+													<td class="text-left digital-font"> 19,9 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 8,4 </td>
+													<td class="text-center text-uppercase center-col">перехваты</td>
+													<td class="text-left digital-font"> 9,1 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 1,0 </td>
+													<td class="text-center text-uppercase center-col">блокшоты</td>
+													<td class="text-left digital-font"> 1,8 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 17,1 </td>
+													<td class="text-center text-uppercase center-col">потери</td>
+													<td class="text-left digital-font"> 14,3 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 18,1 </td>
+													<td class="text-center text-uppercase center-col">фолы</td>
+													<td class="text-left digital-font"> 17,0 </td>
+												</tr>
+												<tr>
+													<td class="text-right digital-font"> 19,4 </td>
+													<td class="text-center text-uppercase center-col">фолы соперника</td>
+													<td class="text-left digital-font"> 16,5 </td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
 								</div>
-
 							</div>
 
 						</div>
@@ -2358,175 +2544,10 @@
 			</div>
 		</footer>
 	</div>
-	<div id="go-to-game" aria-hidden="true" class="popup game-popup">
-		<div class="popup__wrapper game-popup__wrapper">
-			<div class="popup__content game-popup__content">
 
-				<div class="popup__header game-popup__header">
-					<div class="game-popup__logo element-animation -ibg">
-						<img src="img/UBA/UBA.svg" alt="">
-					</div>
-					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
-						<h3 class="time-count__title">до матча</h3>
-						<div class="time-count__content">
-							<div class="time-count__item time-count__days">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">дней</span>
-							</div>
-							<div class="time-count__separator">:</div>
-							<div class="time-count__item time-count__hours">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">часов</span>
-							</div>
-							<div class="time-count__separator">:</div>
-							<div class="time-count__item time-count__minutes">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">минут</span>
-							</div>
-							<div class="time-count__separator">:</div>
-							<div class="time-count__item time-count__seconds">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">секунд</span>
-							</div>
-						</div>
-					</div>
-					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
-						<img src="img/icon/x-main.svg" alt="">
-					</button>
-				</div>
-
-
-
-				<div class="popup__text game-popup__text">
-				</div>
-
-				<div class="game-card__body">
-					<h3 class="game-card__time">19:30</h3>
-					<div class="game-card__date">
-						<h4 class="game-card__day">24</h4>
-						<div class="game-card__label">
-							<div class="game-card__months">августа</div>
-							<div class="game-card__months-1">фев</div>
-							<div class="game-card__week">суббота</div>
-							<div class="game-card__week-1">сб</div>
-						</div>
-
-					</div>
-					<div class="game-card__team-name">
-						<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
-						<h3 class="game-card__title">-</h3>
-						<h3 class="game-card__title game-card__title-l">БК Московский</h3>
-					</div>
-					<div class="game-card__teams">
-						<div class="game-card__team -ibg">
-							<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
-						</div>
-						<div class="game-card__score">
-							<h3 class="game-card__team-score game-card__title-r">0</h3>
-							<p class="game-card__team-score-1">-</p>
-							<h3 class="game-card__team-score game-card__title-l">0</h3>
-						</div>
-						<div class="game-card__team -ibg">
-							<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
-						</div>
-					</div>
-					<div class="game-card__content">
-						<span>UBA</span>
-						<p>Playground Савеловская</p>
-						<p>Москва, Россия</p>
-						<button type="button" class="game-card__btn">статистика</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div id="go-to-video" aria-hidden="true" class="popup game-popup">
-		<div class="popup__wrapper game-popup__wrapper">
-			<div class="popup__content game-popup__content">
-
-				<div class="popup__header game-popup__header">
-					<div class="game-popup__logo element-animation -ibg">
-						<img src="img/UBA/UBA.svg" alt="">
-					</div>
-					<div data-da=".game-popup__content, 365,2" class="time-count calendar-slider__timer element-animation">
-						<h3 class="time-count__title">до матча</h3>
-						<div class="time-count__content">
-							<div class="time-count__item time-count__days">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">дней</span>
-							</div>
-							<div class="time-count__separator">:</div>
-							<div class="time-count__item time-count__hours">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">часов</span>
-							</div>
-							<div class="time-count__separator">:</div>
-							<div class="time-count__item time-count__minutes">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">минут</span>
-							</div>
-							<div class="time-count__separator">:</div>
-							<div class="time-count__item time-count__seconds">
-								<div class="time-count__val">00</div>
-								<span class="time-count__text">секунд</span>
-							</div>
-						</div>
-					</div>
-					<button data-close type="button" class="popup__close game-popup__close element-animation -ibg">
-						<img src="img/icon/x-main.svg" alt="">
-					</button>
-				</div>
-
-
-
-				<div class="popup__text game-popup__text">
-				</div>
-
-				<!-- <div class="game-card__body">
-				<h3 class="game-card__time">19:30</h3>
-				<div class="game-card__date">
-					<h4 class="game-card__day">24</h4>
-					<div class="game-card__label">
-						<div class="game-card__months">августа</div>
-						<div class="game-card__months-1">фев</div>
-						<div class="game-card__week">суббота</div>
-						<div class="game-card__week-1">сб</div>
-					</div>
-
-				</div>
-				<div class="game-card__team-name">
-					<h3 class="game-card__title game-card__title-r">ЦСКА-Юниор</h3>
-					<h3 class="game-card__title">-</h3>
-					<h3 class="game-card__title game-card__title-l">БК Московский</h3>
-				</div>
-				<div class="game-card__teams">
-					<div class="game-card__team -ibg">
-						<picture><source data-srcset="img/UBA/uba_team-logo/10.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/10.png" alt=""></picture>
-					</div>
-					<div class="game-card__score">
-						<h3 class="game-card__team-score game-card__title-r">0</h3>
-						<p class="game-card__team-score-1">-</p>
-						<h3 class="game-card__team-score game-card__title-l">0</h3>
-					</div>
-					<div class="game-card__team -ibg">
-						<picture><source data-srcset="img/UBA/uba_team-logo/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/UBA/uba_team-logo/1.png" alt=""></picture>
-					</div>
-				</div>
-				<div class="game-card__content">
-					<span>UBA</span>
-					<p>Playground Савеловская</p>
-					<p>Москва, Россия</p>
-					<button type="button" class="game-card__btn">статистика</button>
-				</div>
-			</div> -->
-			</div>
-		</div>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230302022539"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230302022539"></script>
-	<script src="js/app.min.js?_v=20230302022539"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230303033505"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230303033505"></script>
+	<script src="js/app.min.js?_v=20230303033505"></script>
 </body>
 
 </html>

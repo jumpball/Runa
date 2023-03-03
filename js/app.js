@@ -15786,41 +15786,45 @@ PERFORMANCE OF THIS SOFTWARE.
         let menu = document.querySelector(".roster-selector__menu");
         let btns = document.querySelectorAll(".rst-selector-button");
         if (menu && btns) {
+            let firstBtn = btns[0];
+            let firstTarget = firstBtn.dataset["view"];
+            boxs.forEach((el => {
+                if (!el.classList.contains(firstTarget)) el.classList.add("hide");
+            }));
             btns.forEach((elem => {
                 elem.addEventListener("click", (function(event) {
                     btns.forEach((btn => {
                         btn.classList.remove("rst-selector-button-active");
                     }));
                     elem.classList.add("rst-selector-button-active");
-                }));
-            }));
-            menu.addEventListener("click", (function(event) {
-                if ("BUTTON" != event.target.tagName) return false;
-                let target = event.target.dataset["view"];
-                if (boxs) boxs.forEach((function(el) {
-                    el.classList.remove("hide");
-                    if (!el.classList.contains(target) && "all-players" != target) el.classList.add("hide");
+                    let target = event.target.dataset["view"];
+                    boxs.forEach((el => {
+                        el.classList.add("hide");
+                        if (el.classList.contains(target) || "all-players" == target) el.classList.remove("hide");
+                    }));
                 }));
             }));
         }
-        let person_selector_boxs = document.querySelectorAll(".person-selector__item");
-        let person_selector_menu = document.querySelector(".person-selector__menu");
-        let person_selector_btns = document.querySelectorAll(".person-selector__btn");
-        if (person_selector_menu && person_selector_btns) {
-            person_selector_btns.forEach((elem => {
-                elem.addEventListener("click", (function(event) {
-                    person_selector_btns.forEach((btn => {
-                        btn.classList.remove("person-selector__btn-active");
-                    }));
-                    elem.classList.add("person-selector__btn-active");
-                }));
+        let team_lead_selector_boxs = document.querySelectorAll(".team-lead-selector__item");
+        let team_lead_selector_menu = document.querySelector(".team-lead-selector__menu");
+        let team_lead_selector_btns = document.querySelectorAll(".team-lead-selector-button");
+        if (team_lead_selector_menu && team_lead_selector_btns) {
+            let firstBtn = team_lead_selector_btns[0];
+            let firstTarget = firstBtn.dataset["view"];
+            team_lead_selector_boxs.forEach((el => {
+                if (!el.classList.contains(firstTarget)) el.classList.add("hide");
             }));
-            person_selector_menu.addEventListener("click", (function(event) {
-                if ("BUTTON" != event.target.tagName) return false;
-                let target = event.target.dataset["view"];
-                if (person_selector_boxs) person_selector_boxs.forEach((function(el) {
-                    el.classList.remove("hide");
-                    if (!el.classList.contains(target) && "all-persons" != target) el.classList.add("hide");
+            team_lead_selector_btns.forEach((elem => {
+                elem.addEventListener("click", (function(event) {
+                    team_lead_selector_btns.forEach((btn => {
+                        btn.classList.remove("team-lead-selector-button-active");
+                    }));
+                    elem.classList.add("team-lead-selector-button-active");
+                    let target = event.target.dataset["view"];
+                    team_lead_selector_boxs.forEach((el => {
+                        el.classList.add("hide");
+                        if (el.classList.contains(target) || "all-leaders" == target) el.classList.remove("hide");
+                    }));
                 }));
             }));
         }
@@ -16065,6 +16069,41 @@ PERFORMANCE OF THIS SOFTWARE.
                 1499.98: {
                     slidesPerView: 6,
                     spaceBetween: 20
+                }
+            }
+        });
+        new Swiper(".team-lead-menu-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            nested: true,
+            navigation: {
+                prevEl: ".team-lead-menu-slider__nav-prev",
+                nextEl: ".team-lead-menu-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2
+                },
+                449.98: {
+                    slidesPerView: 3
+                },
+                767.98: {
+                    slidesPerView: 4
+                },
+                991.98: {
+                    slidesPerView: 5
+                },
+                1199.98: {
+                    slidesPerView: 6
+                },
+                1399.98: {
+                    slidesPerView: 7
+                },
+                1499.98: {
+                    slidesPerView: 8
                 }
             }
         });
@@ -16401,42 +16440,6 @@ PERFORMANCE OF THIS SOFTWARE.
         let observer = new IntersectionObserver(onEntry, options);
         let animation_scroll_elements = document.querySelectorAll(".element-animation");
         for (let elm of animation_scroll_elements) observer.observe(elm);
-        document.addEventListener("DOMContentLoaded", (() => {
-            const this_data = new Date;
-            this_data.setDate(this_data.getDate() + 7);
-            const daysVal = document.querySelector(".time-count__days .time-count__val");
-            const hoursVal = document.querySelector(".time-count__hours .time-count__val");
-            const minutesVal = document.querySelector(".time-count__minutes .time-count__val");
-            const secondsVal = document.querySelector(".time-count__seconds .time-count__val");
-            const daysText = document.querySelector(".time-count__days .time-count__text");
-            const hoursText = document.querySelector(".time-count__hours .time-count__text");
-            const minutesText = document.querySelector(".time-count__minutes .time-count__text");
-            const secondsText = document.querySelector(".time-count__seconds .time-count__text");
-            function declOfNum(number, titles) {
-                let cases = [ 2, 0, 1, 1, 1, 2 ];
-                return titles[number % 100 > 4 && number % 100 < 20 ? 2 : cases[number % 10 < 5 ? number % 10 : 5]];
-            }
-            if (daysVal && hoursVal) {
-                const timeCount = () => {
-                    let now = new Date;
-                    let leftUntil = this_data - now;
-                    let days = Math.floor(leftUntil / 1e3 / 60 / 60 / 24);
-                    let hours = Math.floor(leftUntil / 1e3 / 60 / 60) % 24;
-                    let minutes = Math.floor(leftUntil / 1e3 / 60) % 60;
-                    let seconds = Math.floor(leftUntil / 1e3) % 60;
-                    daysVal.textContent = days;
-                    hoursVal.textContent = hours;
-                    minutesVal.textContent = minutes;
-                    secondsVal.textContent = seconds;
-                    daysText.textContent = declOfNum(days, [ "день", "дня", "дней" ]);
-                    hoursText.textContent = declOfNum(hours, [ "час", "часа", "часов" ]);
-                    minutesText.textContent = declOfNum(minutes, [ "минута", "минуты", "минут" ]);
-                    secondsText.textContent = declOfNum(seconds, [ "секунда", "секунды", "секунд" ]);
-                };
-                timeCount();
-                setInterval(timeCount, 1e3);
-            }
-        }));
         const $jsChart1 = document.querySelector("#jsChart1");
         const jsChart1Y = {
             labels: "% 2-х очковых",
@@ -16522,18 +16525,25 @@ PERFORMANCE OF THIS SOFTWARE.
         });
         (function() {
             const second = 1e3, minute = 60 * second, hour = 60 * minute, day = 24 * hour;
-            let today = new Date, dd = String(today.getDate()).padStart(2, "0"), mm = String(today.getMonth() + 1).padStart(2, "0"), yyyy = today.getFullYear(), nextYear = yyyy + 1, dayMonth = "03/12/", birthday = dayMonth + yyyy;
+            let countdownElement = document.getElementById("countdown");
+            if (!countdownElement) return;
+            let daysElement = document.getElementById("days");
+            let hoursElement = document.getElementById("hours");
+            let minutesElement = document.getElementById("minutes");
+            let secondsElement = document.getElementById("seconds");
+            let today = new Date, dd = String(today.getDate()).padStart(2, "0"), mm = String(today.getMonth() + 1).padStart(2, "0"), yyyy = today.getFullYear(), nextYear = yyyy + 1, dayMonth = "03/19/", birthday = dayMonth + yyyy;
             today = mm + "/" + dd + "/" + yyyy;
             if (today > birthday) birthday = dayMonth + nextYear;
-            const countDown = new Date(birthday).getTime(), x = setInterval((function() {
-                const now = (new Date).getTime(), distance = countDown - now;
-                document.getElementById("days").innerText = Math.floor(distance / day), document.getElementById("hours").innerText = Math.floor(distance % day / hour), 
-                document.getElementById("minutes").innerText = Math.floor(distance % hour / minute), 
-                document.getElementById("seconds").innerText = Math.floor(distance % minute / second);
+            const countDown = new Date(birthday).getTime();
+            let x = setInterval((function() {
+                const now = (new Date).getTime();
+                const distance = countDown - now;
+                daysElement.innerText = Math.floor(distance / day);
+                hoursElement.innerText = Math.floor(distance % day / hour);
+                minutesElement.innerText = Math.floor(distance % hour / minute);
+                secondsElement.innerText = Math.floor(distance % minute / second);
                 if (distance < 0) {
-                    document.getElementById("headline").innerText = "Время игры!";
-                    document.getElementById("countdown").style.display = "none";
-                    document.getElementById("content").style.display = "block";
+                    countdownElement.style.display = "none";
                     clearInterval(x);
                 }
             }), 0);
