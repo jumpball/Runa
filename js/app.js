@@ -16107,6 +16107,48 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
+        new Swiper(".team1-leaders-game-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            direction: "vertical",
+            centeredSlides: false,
+            navigation: {
+                prevEl: ".team1-leaders-game-slider__nav-prev",
+                nextEl: ".team1-leaders-game-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                767.98: {
+                    slidesPerView: 5
+                }
+            }
+        });
+        new Swiper(".team2-leaders-game-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 10,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            direction: "vertical",
+            centeredSlides: false,
+            navigation: {
+                prevEl: ".team2-leaders-game-slider__nav-prev",
+                nextEl: ".team2-leaders-game-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1
+                },
+                767.98: {
+                    slidesPerView: 5
+                }
+            }
+        });
         new Swiper(".person-menu-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
