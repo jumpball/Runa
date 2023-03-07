@@ -16482,10 +16482,6 @@ PERFORMANCE OF THIS SOFTWARE.
         let observer = new IntersectionObserver(onEntry, options);
         let animation_scroll_elements = document.querySelectorAll(".element-animation");
         for (let elm of animation_scroll_elements) observer.observe(elm);
-        $(".option").click((function() {
-            $(".option").removeClass("active");
-            $(this).addClass("active");
-        }));
         (function() {
             const second = 1e3, minute = 60 * second, hour = 60 * minute, day = 24 * hour;
             let countdownElement = document.getElementById("countdown");
