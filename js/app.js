@@ -16482,89 +16482,10 @@ PERFORMANCE OF THIS SOFTWARE.
         let observer = new IntersectionObserver(onEntry, options);
         let animation_scroll_elements = document.querySelectorAll(".element-animation");
         for (let elm of animation_scroll_elements) observer.observe(elm);
-        const $jsChart1 = document.querySelector("#jsChart1");
-        const jsChart1Y = {
-            labels: "% 2-х очковых",
-            data: [ 55.6, 44.4 ],
-            borderColor: "rgba(255, 255, 255, 1)",
-            borderWidth: 1,
-            backgroundColor: [ "#c0cb9b", "#ffffff" ]
-        };
-        if ($jsChart1) new Chart($jsChart1, {
-            type: "doughnut",
-            data: {
-                datasets: [ jsChart1Y ]
-            },
-            options: {}
-        });
-        const $jsChart2 = document.querySelector("#jsChart2");
-        const jsChart2Y = {
-            labels: "% 3-х очковых",
-            data: [ 37.9, 62.1 ],
-            borderColor: "rgba(255, 255, 255, 1)",
-            borderWidth: 1,
-            backgroundColor: [ "#ff9191", "#ffffff" ]
-        };
-        if ($jsChart2) new Chart($jsChart2, {
-            type: "doughnut",
-            data: {
-                datasets: [ jsChart2Y ]
-            },
-            options: {}
-        });
-        const $jsChart3 = document.querySelector("#jsChart3");
-        const jsChart3Y = {
-            labels: "% штрафных",
-            data: [ 79.5, 21.5 ],
-            borderColor: "rgba(255, 255, 255, 1)",
-            borderWidth: 1,
-            backgroundColor: [ "#ffd28f", "#ffffff" ]
-        };
-        if ($jsChart3) new Chart($jsChart3, {
-            type: "doughnut",
-            data: {
-                datasets: [ jsChart3Y ]
-            },
-            options: {}
-        });
-        const $box = document.querySelector("#box");
-        const boxX = [ "03.04", "08.04", "14.04", "19.04", "22.04" ];
-        const boxY1 = {
-            label: "2-х",
-            data: [ 55.6, 32.8, 35.6, 41.8, 20.6 ],
-            backgroundColor: "#c0cb9b",
-            borderColor: "rgba(255, 255, 255, 1)",
-            borderWidth: 1
-        };
-        const boxY2 = {
-            label: "3-х",
-            data: [ 35.2, 42.8, 32.5, 22.8, 23.8 ],
-            backgroundColor: "#ff9191",
-            borderColor: "rgba(255, 255, 255, 1)",
-            borderWidth: 1
-        };
-        const boxY3 = {
-            label: "шт",
-            data: [ 87.2, 66.8, 72.5, 69.5, 77.2 ],
-            backgroundColor: " #ffd28f",
-            borderColor: "rgba(255, 255, 255, 1)",
-            borderWidth: 1
-        };
-        if ($box) new Chart($box, {
-            type: "bar",
-            data: {
-                labels: boxX,
-                datasets: [ boxY1, boxY2, boxY3 ]
-            },
-            options: {
-                scales: {
-                    y: {
-                        suggestedMin: 0,
-                        suggestedMax: 100
-                    }
-                }
-            }
-        });
+        $(".option").click((function() {
+            $(".option").removeClass("active");
+            $(this).addClass("active");
+        }));
         (function() {
             const second = 1e3, minute = 60 * second, hour = 60 * minute, day = 24 * hour;
             let countdownElement = document.getElementById("countdown");
