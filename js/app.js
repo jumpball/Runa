@@ -16295,6 +16295,50 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
+        new Swiper(".store-slider", {
+            slidesPerView: "auto",
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            loop: true,
+            autoplay: {
+                delay: 7e3,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                type: "bullets",
+                clickable: true,
+                dynamicBullets: true
+            },
+            navigation: {
+                prevEl: ".store-slider__nav-prev",
+                nextEl: ".store-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 10
+                },
+                650: {
+                    slidesPerView: 2,
+                    spaceBetween: 20
+                },
+                950: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                1279.98: {
+                    slidesPerView: 4,
+                    spaceBetween: 20
+                },
+                1600: {
+                    slidesPerView: 5,
+                    spaceBetween: 20
+                }
+            }
+        });
         new Swiper(".partners-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,

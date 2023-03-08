@@ -5,11 +5,11 @@
 	<title>Главная</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230307110510">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230309020057">
 	<link rel="shortcut icon" href="favicon.ico">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230307110510">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230307110510"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css?_v=20230309020057">
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js?_v=20230309020057"></script>
 </head>
 <!-- BODY -->
 
@@ -922,58 +922,25 @@
 				<div class="section__container">
 					<div class="title-block">
 						<h2 class="section-title section-title-h2 section-title-green element-animation">Новости</h2>
-						<div class="pub-menu-slider__navigation">
+						<!-- <div class="pub-menu-slider__navigation">
 							<div class="pub-menu-slider__nav-prev -ibg">
 								<img src="img/RUNA/icons/arrow-mini-left-green.svg" alt="">
 							</div>
 							<div class="pub-menu-slider__nav-next -ibg">
 								<img src="img/RUNA/icons/arrow-mini-right-green.svg" alt="">
 							</div>
-						</div>
-					</div>
-					<!-- === PUBLICATION SELECTOR === -->
-
-					<div class="pub-menu-slider__box">
-
-						<!-- === PUB-MENU SLIDER === -->
-						<div class="pub-menu-slider">
-							<div class="swiper-wrapper pub-menu-slider__wrapper publication-selector__menu">
-								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="pub-selector-button pub-selector-button-active" data-view="pub-all">Все</button>
-								</div>
-								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="pub-selector-button" data-view="pub-news">Новости</button>
-								</div>
-								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="pub-selector-button" data-view="pub-interview">Интервью</button>
-								</div>
-								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="pub-selector-button" data-view="pub-article">Статьи</button>
-								</div>
-								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="pub-selector-button" data-view="pub-video">Видео</button>
-								</div>
-								<div class="pub-menu-slider__item swiper-slide">
-									<button type="button" class="pub-selector-button" data-view="pub-event">События</button>
-								</div>
-
+						</div> -->
+						<div class="pub-cards-slider__navigation">
+							<div class="pub-cards-slider__nav-prev -ibg">
+								<img src="img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
+							</div>
+							<div class="pub-cards-slider__nav-next -ibg">
+								<img src="img/RUNA/icons/arrow-mini-right-green.svg" alt="стрелка вперед">
 							</div>
 						</div>
 					</div>
 					<!-- === SLIDER - PUBLICATION CARDS === -->
 					<div class="pub-cards-slider__box">
-						<div class="pub-cards-slider__navigation">
-
-							<div class="pub-cards-slider__nav-prev -ibg">
-								<img src="img/RUNA/icons/arrow-mini-left-green.svg" alt="стрелка назад">
-							</div>
-
-
-							<div class="pub-cards-slider__nav-next -ibg">
-								<img src="img/RUNA/icons/arrow-mini-right-green.svg" alt="стрелка вперед">
-							</div>
-
-						</div>
 						<div class="pub-cards-slider swiper">
 							<div class="pub-cards-slider__wrapper swiper-wrapper">
 								<!-- Слайд -->
@@ -985,7 +952,8 @@
 											</div>
 											<div class="card__body">
 												<div class="card__category"><a href="#">Интервью</a></div>
-												<h5 class="card__title"><a href="#">Сергей Юхневич: «Главная цель – «Финал четырех» Евролиги».</a>
+												<h5 class="card__title"><a href="#">Сергей Юхневич: «Главная цель – «Финал четырех»
+														Евролиги».</a>
 												</h5>
 												<div class="card__subtitle">ПБК Руна</div>
 												<p class="card__description">Наш генеральный менеджер – самый молодой руководитель
@@ -993,13 +961,6 @@
 													баскетбольного клуба в России. Сергей Юхневич
 													уже несколько лет возглавляет структуры «Руны».
 												</p>
-												<!-- <ul class="card__tags-list">
-								<li class="card__tags-item"><a href="#">ПБК Руна</a></li>
-								<li class="card__tags-item"><a href="#">Сергей Юхневич</a></li>
-								<li class="card__tags-item"><a href="#">kraftway</a></li>
-								<li class="card__tags-item"><a href="#">мужская суперлига</a></li>
-								<li class="card__tags-item"><a href="#">единая лига втб</a></li>
-							</ul> -->
 											</div>
 											<footer class="card__footer">
 												<span class="date">23 января 2023</span>
@@ -1018,7 +979,8 @@
 												<h5 class="card__title"><a href="#">Камбэк и победа в овертайме</a></h5>
 												<div class="card__subtitle">Женская суперлига</div>
 
-												<p class="card__description">«Руна» одержала волевую победу над «Ставропольчанкой-СКФУ». Наши
+												<p class="card__description">«Руна» одержала волевую победу над
+													«Ставропольчанкой-СКФУ». Наши
 													девушки
 													выиграли в дополнительное время и закрепились в
 													зоне плей-офф Суперлиги.
@@ -1043,7 +1005,8 @@
 												</h5>
 												<div class="card__subtitle">сборная россии</div>
 
-												<p class="card__description">Форвард «Руны-2» Павел Ганькевич (19 лет, 201 см) вошел в расширенный
+												<p class="card__description">Форвард «Руны-2» Павел Ганькевич (19 лет, 201 см) вошел
+													в расширенный
 													состав
 													сборной России.
 												</p>
@@ -1062,10 +1025,12 @@
 											</div>
 											<div class="card__body">
 												<div class="card__category"><a href="#">Видео</a></div>
-												<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
+												<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов
+														продолжается</a></h5>
 												<div class="card__subtitle">мужская суперлига</div>
 
-												<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке.
+												<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на
+													своей площадке.
 													Это
 													10-я
 													победа подряд в Суперлиге для викингов.
@@ -1086,10 +1051,12 @@
 											</div>
 											<div class="card__body">
 												<div class="card__category"><a href="#">Видео</a></div>
-												<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
+												<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов
+														продолжается</a></h5>
 												<div class="card__subtitle">мужская суперлига</div>
 
-												<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке.
+												<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на
+													своей площадке.
 													Это
 													10-я
 													победа подряд в Суперлиге для викингов.
@@ -1108,92 +1075,6 @@
 						<!-- === BUTTON - ALL PUBLICATION === -->
 						<button type="button" class="pub-selector-button">лента публикаций</button>
 					</div>
-
-
-
-					<!-- <ul class="publication-selector__list">
-	<li class="publication-selector__item pub-nterview">
-		<article class="card">
-			<div class="card__thumb">
-				<a href="#"><picture><source data-srcset="img/RUNA/publications/1.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/1.webp" alt=""></picture></a>
-			</div>
-			<div class="card__body">
-				<div class="card__category"><a href="#">Интервью</a></div>
-				<h5 class="card__title"><a href="#">Сергей Юхневич: «Главная цель – «Финал четырех» Евролиги».</a></h5>
-				<div class="card__subtitle">ПБК Руна</div>
-				<p class="card__description">Наш генеральный менеджер – самый молодой руководитель профессионального
-					баскетбольного клуба в России. Сергей Юхневич
-					уже несколько лет возглавляет структуры «Руны».
-				</p>
-				
-			</div>
-			<footer class="card__footer">
-				<span class="date">23 января 2023</span>
-			</footer>
-		</article>
-	</li>
-	<li class="publication-selector__item pub-article">
-		<article class="card">
-			<div class="card__thumb">
-				<a href="#"><picture><source data-srcset="img/RUNA/publications/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/3.webp" alt=""></picture></a>
-			</div>
-			<div class="card__body">
-				<div class="card__category"><a href="#">Статьи</a></div>
-				<h5 class="card__title"><a href="#">Камбэк и победа в овертайме</a></h5>
-				<div class="card__subtitle">Женская суперлига</div>
-
-				<p class="card__description">«Руна» одержала волевую победу над «Ставропольчанкой-СКФУ». Наши девушки
-					выиграли в дополнительное время и закрепились в
-					зоне плей-офф Суперлиги.
-				</p>
-
-			</div>
-			<footer class="card__footer">
-				<span class="card__pub-date">22 января 2023</span>
-			</footer>
-		</article>
-	</li>
-	<li class="publication-selector__item pub-news">
-		<article class="card">
-			<div class="card__thumb">
-				<a href="#"><picture><source data-srcset="img/RUNA/publications/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/4.webp" alt=""></picture></a>
-			</div>
-			<div class="card__body">
-				<div class="card__category"><a href="#">Новости</a></div>
-				<h5 class="card__title"><a href="#">Павел Ганькевич – в сборной России!</a>
-				</h5>
-				<div class="card__subtitle">сборная россии</div>
-
-				<p class="card__description">Форвард «Руны-2» Павел Ганькевич (19 лет, 201 см) вошел в расширенный состав
-					сборной России.
-				</p>
-			</div>
-			<footer class="card__footer">
-				<span class="date">20 января 2023</span>
-			</footer>
-		</article>
-	</li>
-	<li class="publication-selector__item pub-video">
-		<article class="card">
-			<div class="card__thumb">
-				<a href="#"><picture><source data-srcset="img/RUNA/publications/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/publications/8.webp" alt=""></picture></a>
-			</div>
-			<div class="card__body">
-				<div class="card__category"><a href="#">Видео</a></div>
-				<h5 class="card__title"><a href="#">10-я победа подряд! Серия викингов продолжается</a></h5>
-				<div class="card__subtitle">мужская суперлига</div>
-
-				<p class="card__description">Наша мужская команда уверенно обыграла «Барнаул» на своей площадке. Это 10-я
-					победа подряд в Суперлиге для викингов.
-				</p>
-
-			</div>
-			<footer class="card__footer">
-				<span class="date">24 августа 2022</span>
-			</footer>
-		</article>
-	</li>
-</ul> -->
 				</div>
 				<div class="site-bg-img-1">
 					<img src="img/RUNA/LOGO/runa-mini-green.svg" alt="">
@@ -1874,14 +1755,133 @@
 				</div>
 			</section>
 
-			<!-- TOURNAMENT STANDING -->
+			<!-- STORE -->
 			<section class="site-bg-1 section-offset-border">
 				<div class="section__container">
 					<div class="title-block">
-						<h2 class="section-title section-title-h2 section-title-white element-animation">турниры</h2>
+						<h2 class="section-title section-title-h2 section-title-white element-animation">магазин</h2>
+						<div class="store-slider__navigation">
+							<div class="store-slider__nav-prev -ibg">
+								<img src="img/RUNA/icons/arrow-mini-left-white.svg" alt="">
+							</div>
+							<div class="store-slider__nav-next -ibg">
+								<img src="img/RUNA/icons/arrow-mini-right-white.svg" alt="">
+							</div>
+						</div>
 					</div>
-
-
+					<!-- STORE SLIDER -->
+					<div class="store-slider__box">
+						<div class="store-slider">
+							<div class="swiper-wrapper store-slider__wrapper">
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1200</h3>
+												<span>50</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<picture><source data-srcset="img/RUNA/store/6.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/store/6.jpg" alt=""></picture>
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Майка компрессионная</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 2400 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1300</h3>
+												<span>50</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<picture><source data-srcset="img/RUNA/store/7.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/store/7.jpg" alt=""></picture>
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Худи</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 2600 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1600</h3>
+												<span>20</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<picture><source data-srcset="img/RUNA/store/3.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/store/3.jpg" alt=""></picture>
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Накидка разминочная</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 2000 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>910</h3>
+												<span>30</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<picture><source data-srcset="img/RUNA/store/4.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/store/4.jpg" alt=""></picture>
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">штаны спортивные</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 1300 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="store-slider__item swiper-slide">
+									<div class="store-card">
+										<div class="store-card__body">
+											<div class="store-card__header">
+												<h3>1050</h3>
+												<span>30</span>
+											</div>
+											<div class="store-card__photo -ibg">
+												<picture><source data-srcset="img/RUNA/store/8.webp" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" type="image/webp"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="  data-src="img/RUNA/store/8.jpg" alt=""></picture>
+											</div>
+											<div class="store-card__product">
+												<a href="#" class="store-card__title">Шорты</a>
+												<div class="store-card__subtitle">коллекция "Викинг"</div>
+											</div>
+											<div class="store-card__content">
+												<span>Старая цена 1500 ₽</span>
+												<button class="base-button average-button purple-button">купить</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="store-slider__pagination swiper-pagination"></div>
+						</div>
+					</div>
 				</div>
 			</section>
 
@@ -1974,29 +1974,6 @@
 					<img src="img/RUNA/LOGO/runa-mini-green.svg" alt="">
 				</div>
 			</section>
-
-			<!-- <section class="partners-slider__section section-offset">
-				<div class="section__container partners-slider__box content__box">
-					<h2 class="section-title section-title-h2-green partners-slider__title element-animation">партнеры
-					</h2>
-
-					<div class="partners-slider__duo">
-						<a href="#" class="partners-slider__image -ibg">
-							<img class="partners-slider__img" src="img/partners/rfb-mono.svg" alt="">
-							<img class="partners-slider__img-hover" src="img/partners/rfb-color.svg" alt="">
-						</a>
-						<a href="#" class="partners-slider__image -ibg">
-							<img class="partners-slider__img" src="img/partners/vtb-mono.svg" alt="">
-							<img class="partners-slider__img-hover" src="img/partners/vtb-colour.svg" alt="">
-						</a>
-					</div>
-					<div class="team-roster__partner-1 element-animation -ibg">
-						<img src="img/UBA/UBA_white-1.svg" alt="">
-					</div>
-				
-				</div>
-			</section> -->
-
 		</main>
 		<!-- FOOTER -->
 		<!-- FOOTER -->
@@ -2156,9 +2133,9 @@
 		</footer>
 	</div>
 
-	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230307110510"></script>
-	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230307110510"></script>
-	<script src="js/app.min.js?_v=20230307110510"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js?_v=20230309020057"></script>
+	<script src="https://cdn.jsdelivr.net/npm/chart.js?_v=20230309020057"></script>
+	<script src="js/app.min.js?_v=20230309020057"></script>
 </body>
 
 </html>
