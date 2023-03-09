@@ -2833,6 +2833,27 @@ td {
   border: none;
 }
 
+.tabs-selector__tabs-body {
+  overflow: hidden;
+}
+
+.button__box-center {
+  margin: 20px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .base-button {
   border-radius: 0.1875rem;
   text-transform: uppercase;
@@ -2902,7 +2923,7 @@ td {
   border-radius: 0.1875rem;
   min-width: 205px;
   color: #0f524d;
-  border: 0.0625rem solid #0f524d;
+  border: 0.0625rem solid #c4cdd3;
   text-decoration: none;
   font-weight: 500;
   -webkit-box-pack: center;
@@ -2974,6 +2995,37 @@ td {
 }
 
 .pub-selector-button-active {
+  background-color: #0f524d;
+  color: #ffffff;
+}
+
+.store-button {
+  margin: 20px 0px 20px 0px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  max-width: 18.4375rem;
+  font-size: 0.9375rem;
+  background-color: #ffffff;
+  padding: 1.5625rem 2.1875rem;
+  border-radius: 0.1875rem;
+  min-width: 205px;
+  color: #0f524d;
+  border: 0.0625rem solid #c4cdd3;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.store-button-active {
   background-color: #0f524d;
   color: #ffffff;
 }
@@ -3364,8 +3416,9 @@ td {
   -webkit-transition: all 0.8s ease 0s;
   -o-transition: all 0.8s ease 0s;
   transition: all 0.8s ease 0s;
+  border: 0.0625rem solid #c4cdd3;
   background-color: #ffffff;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
 }
 
 .player-card-roster:hover {
@@ -4640,7 +4693,7 @@ td {
 }
 
 .store-card:hover .store-card__header h3 {
-  color: #3d308e;
+  color: #3a3a3a;
 }
 
 .store-card:hover .store-card__photo {
@@ -4672,7 +4725,7 @@ td {
   width: 100%;
   height: 48px;
   padding: 8px 10px 0px 10px;
-  background: #3d308e;
+  background: #3a3a3a;
   border-radius: 0.1875rem 0.1875rem 0px 0px;
   -webkit-transition: all 0.5s ease 0s;
   -o-transition: all 0.5s ease 0s;
@@ -5172,6 +5225,7 @@ td {
 }
 
 .pub-cards-slider {
+  margin: 20px 0px 0px 0px;
   position: relative;
 }
 
@@ -5924,6 +5978,7 @@ td {
 }
 
 .store-slider {
+  margin: 20px 0px 0px 0px;
   overflow: hidden;
 }
 
@@ -14349,6 +14404,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: none;
   }
 
+  .store-button {
+    max-width: none;
+  }
+
 @supports (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
     .player-card-roster__photo {
       width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
@@ -15886,6 +15945,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .pub-selector-button:hover {
+    background-color: #3d308e;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+  }
+
+  .store-button:hover {
     background-color: #3d308e;
     color: #ffffff;
     -webkit-transition: all 0.5s ease 0s;
