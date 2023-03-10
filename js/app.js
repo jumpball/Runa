@@ -15936,41 +15936,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
-        new Swiper(".sidebar-calendar-slider", {
-            slidesPerView: "auto",
-            spaceBetween: 20,
-            observer: true,
-            observeParents: true,
-            observeSlideChildren: true,
-            loop: true,
-            autoplay: {
-                delay: 9e3,
-                stopOnLastSlide: false,
-                disableOnInteraction: false
-            },
-            navigation: {
-                prevEl: ".team-slider__nav-prev",
-                nextEl: ".team-slider__nav-next"
-            },
-            breakpoints: {
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                },
-                650: {
-                    slidesPerView: 2,
-                    spaceBetween: 20
-                },
-                880: {
-                    slidesPerView: 3,
-                    spaceBetween: 20
-                },
-                991.98: {
-                    slidesPerView: 1,
-                    spaceBetween: 20
-                }
-            }
-        });
         new Swiper(".head-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
@@ -16373,10 +16338,9 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         });
-        new Swiper(".banner-slider-vert", {
+        new Swiper(".sidebar-banner-slider", {
             slidesPerView: "auto",
             spaceBetween: 20,
-            direction: "vertical",
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
@@ -16387,27 +16351,59 @@ PERFORMANCE OF THIS SOFTWARE.
                 stopOnLastSlide: false,
                 disableOnInteraction: false
             },
-            pagination: {
-                el: ".swiper-pagination",
-                type: "bullets",
-                clickable: true
+            navigation: {
+                prevEl: ".sidebar-banner-slider__nav-prev",
+                nextEl: ".sidebar-banner-slider__nav-next"
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 20,
+                    direction: "horizontal"
+                },
+                599.98: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                    direction: "horizontal"
+                },
+                991.98: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                    direction: "vertical"
+                }
+            }
+        });
+        new Swiper(".sidebar-store-slider", {
+            slidesPerView: "auto",
+            spaceBetween: 20,
+            observer: true,
+            observeParents: true,
+            observeSlideChildren: true,
+            loop: true,
+            autoplay: {
+                delay: 9e3,
+                stopOnLastSlide: false,
+                disableOnInteraction: false
             },
             navigation: {
-                prevEl: ".banner-slider__nav-prev",
-                nextEl: ".banner-slider__nav-next"
+                prevEl: ".sidebar-store-slider__nav-prev",
+                nextEl: ".sidebar-store-slider__nav-next"
             },
             breakpoints: {
                 320: {
                     slidesPerView: 1,
                     spaceBetween: 20
                 },
-                600: {
+                650: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
-                    direction: "horizontal"
+                    spaceBetween: 20
                 },
-                992: {
-                    slidesPerView: 2,
+                880: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                991.98: {
+                    slidesPerView: 1,
                     spaceBetween: 20
                 }
             }
