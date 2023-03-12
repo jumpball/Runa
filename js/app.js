@@ -16340,14 +16340,14 @@ PERFORMANCE OF THIS SOFTWARE.
         });
         new Swiper(".sidebar-banner-slider", {
             slidesPerView: "auto",
-            spaceBetween: 20,
+            spaceBetween: 16,
             observer: true,
             observeParents: true,
             observeSlideChildren: true,
             loop: true,
             slideToClickedSlide: true,
             autoplay: {
-                delay: 12e3,
+                delay: 6e3,
                 stopOnLastSlide: false,
                 disableOnInteraction: false
             },
@@ -16358,17 +16358,27 @@ PERFORMANCE OF THIS SOFTWARE.
             breakpoints: {
                 320: {
                     slidesPerView: 1,
-                    spaceBetween: 20,
+                    spaceBetween: 16,
                     direction: "horizontal"
                 },
                 599.98: {
                     slidesPerView: 2,
-                    spaceBetween: 20,
+                    spaceBetween: 16,
                     direction: "horizontal"
                 },
                 991.98: {
+                    slidesPerView: 5,
+                    spaceBetween: 16,
+                    direction: "vertical"
+                },
+                1149.98: {
+                    slidesPerView: 4,
+                    spaceBetween: 16,
+                    direction: "vertical"
+                },
+                1249.98: {
                     slidesPerView: 3,
-                    spaceBetween: 20,
+                    spaceBetween: 16,
                     direction: "vertical"
                 }
             }
