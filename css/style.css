@@ -838,6 +838,49 @@ body::after {
   padding: 0px 0px 20px 0px;
 }
 
+.text-style__publication p {
+  font-size: 1.375rem;
+  line-height: 1.6;
+  padding: 8px 0px 8px 0px;
+}
+
+.text-style__publication p span {
+  font-weight: 900;
+}
+
+.text-style__publication p a {
+  color: #146eb4;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.text-style__content-block p {
+  font-size: 1.3125rem;
+  line-height: 1.5;
+  padding: 8px 0px 8px 0px;
+}
+
+.text-style__content-block p span {
+  font-weight: 600;
+}
+
+.text-style__content-block p a {
+  color: #146eb4;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.text-style-indent h1,
+.text-style-indent h2,
+.text-style-indent h3,
+.text-style-indent h4 {
+  text-indent: 0rem;
+}
+
+.text-style-indent p {
+  text-indent: 1.25rem;
+}
+
 .game-timer__block {
   position: relative;
   margin: 30px 0px 0px 0px;
@@ -8717,24 +8760,6 @@ td {
   grid-column: 2/span 1;
 }
 
-.publication__content p {
-  font-size: 1.375rem;
-  line-height: 1.6;
-  text-indent: 1.25rem;
-  /* Отступ первой строки */
-  padding: 10px 0px 5px 0px;
-}
-
-.publication__content p span {
-  font-weight: 900;
-}
-
-.publication__content p a {
-  color: #146eb4;
-  font-weight: 600;
-  cursor: pointer;
-}
-
 .publication__subtitle {
   font-size: 1.5rem;
   font-weight: 700;
@@ -12169,6 +12194,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-weight: 400;
   }
 
+  .text-style-align__992 p {
+    text-align: justify;
+  }
+
+  .text-style-align__992 p {
+    text-align: justify;
+  }
+
 @supports (font-size: clamp( 1rem , -0.5001339405rem  +  3.1252790428vw , 1.4375rem )) {
     .game-timer__title {
       font-size: clamp( 1rem , -0.5001339405rem  +  3.1252790428vw , 1.4375rem );
@@ -13395,6 +13428,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .page-two-columns__spollers-list {
     font-size: 1rem;
+  }
+
+  .text-style-align__768 p {
+    text-align: justify;
   }
 
   .game-timer__block {
@@ -14746,6 +14783,34 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 40.62375rem) {
+@supports (font-size: clamp( 1.25rem , 1.1128943803rem  +  0.6452029163vw , 1.375rem )) {
+    .text-style__publication p {
+      font-size: clamp( 1.25rem , 1.1128943803rem  +  0.6452029163vw , 1.375rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.25rem , 1.1128943803rem  +  0.6452029163vw , 1.375rem )) {
+    .text-style__publication p {
+      font-size: calc(1.25rem + 0.125 * (100vw - 21.25rem) / 19.37375);
+    }
+}
+
+@supports (font-size: clamp( 1.1875rem , 1.0503943803rem  +  0.6452029163vw , 1.3125rem )) {
+    .text-style__content-block p {
+      font-size: clamp( 1.1875rem , 1.0503943803rem  +  0.6452029163vw , 1.3125rem );
+    }
+}
+
+@supports not (font-size: clamp( 1.1875rem , 1.0503943803rem  +  0.6452029163vw , 1.3125rem )) {
+    .text-style__content-block p {
+      font-size: calc(1.1875rem + 0.125 * (100vw - 21.25rem) / 19.37375);
+    }
+}
+
+  .text-style-align__650 p {
+    text-align: justify;
+  }
+
   .table__block .center-col {
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -14967,18 +15032,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .team-compare__team-title {
     display: none;
   }
-
-@supports (font-size: clamp( 1.25rem , 1.1128943803rem  +  0.6452029163vw , 1.375rem )) {
-    .publication__content p {
-      font-size: clamp( 1.25rem , 1.1128943803rem  +  0.6452029163vw , 1.375rem );
-    }
-}
-
-@supports not (font-size: clamp( 1.25rem , 1.1128943803rem  +  0.6452029163vw , 1.375rem )) {
-    .publication__content p {
-      font-size: calc(1.25rem + 0.125 * (100vw - 21.25rem) / 19.37375);
-    }
-}
 
 @supports (font-size: clamp( 1.375rem , 1.2378943803rem  +  0.6452029163vw , 1.5rem )) {
     .publication__subtitle {
@@ -16322,6 +16375,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     text-decoration: underline;
   }
 
+  .text-style__publication p a:hover {
+    text-decoration: underline;
+  }
+
+  .text-style__content-block p a:hover {
+    text-decoration: underline;
+  }
+
   .publication-selector__btn:hover {
     background-color: #3d308e;
     color: #ffffff;
@@ -16704,10 +16765,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
-  }
-
-  .publication__content p a:hover {
-    text-decoration: underline;
   }
 
   .header__icons-item:hover {
