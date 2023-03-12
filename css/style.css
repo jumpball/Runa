@@ -7796,6 +7796,232 @@ td {
   }
 }
 
+.person-card-roster {
+  position: relative;
+  padding: 0px 0px 15px 0px;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  border: 0.0625rem solid #c4cdd3;
+  background-color: #ffffff;
+  border-radius: 0.1875rem;
+  height: 100%;
+}
+
+.person-card-roster:hover {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.person-card-roster:hover .person-card-roster__name {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  color: #0f524d;
+}
+
+.person-card-roster:hover .person-card-roster__tournament-logo {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  opacity: 0.5;
+}
+
+.person-card-roster:hover .person-card-roster__image {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-transform: scale(1.02);
+      -ms-transform: scale(1.02);
+          transform: scale(1.02);
+}
+
+.person-card-roster__body {
+  position: relative;
+  min-width: 270px;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 1;
+}
+
+.person-card-roster__corner {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-left: 60px solid #3d308e;
+  border-bottom: 60px solid transparent;
+}
+
+.person-card-roster__tournament-logo {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  width: 4.375rem;
+  height: 4.375rem;
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  opacity: 0.1;
+  z-index: 2;
+}
+
+.person-card-roster__logo {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  display: block;
+  width: 2.275rem;
+  height: 1.875rem;
+  position: relative;
+}
+
+.person-card-roster__logo img {
+  padding: 0.125rem;
+}
+
+.person-card-roster__photo {
+  position: relative;
+  margin: 20px 0px 0px 0px;
+  height: 16.875rem;
+  width: 16.875rem;
+  overflow: hidden;
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+}
+
+.person-card-roster__photo::after {
+  content: "";
+  background: #ffffff;
+  background-image: url("../img/RUNA/border/border-270-20-green.svg");
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 1.25rem;
+}
+
+.person-card-roster__image {
+  -webkit-transition: all 0.8s ease 0s;
+  -o-transition: all 0.8s ease 0s;
+  transition: all 0.8s ease 0s;
+  -webkit-filter: drop-shadow(-5px 13px 15px rgba(5, 5, 5, 0.5019607843));
+  filter: drop-shadow(-5px 13px 14px rgba(5, 5, 5, 0.5));
+}
+
+.person-card-roster__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0px 20px 0px;
+}
+
+.person-card-roster__info {
+  margin: 8px 0px 0px 0px;
+  padding: 0px 10px 0px 10px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  color: #3a3a3a;
+  z-index: 1;
+}
+
+.person-card-roster__name {
+  color: #3a3a3a;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.person-card-roster__name span {
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 1px;
+}
+
+.person-card-roster__name h3 {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.person-card-roster__desc {
+  margin: 6px 0px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+}
+
+.person-card-roster__desc span {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.125rem;
+}
+
+.person-card-roster__desc p {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.125rem;
+}
+
+.person-card-roster__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 0.25rem;
+}
+
 .calendar-slider__item.swiper-slide > div > div .game-profile-header__body {
   position: relative;
   margin: 0px 0px 20px 0px;
@@ -8845,7 +9071,6 @@ td {
   font-size: 1rem;
   text-transform: uppercase;
   text-align: right;
-  font-weight: 900;
   letter-spacing: 0.125rem;
   padding: 8px 5px 8px 5px;
 }
@@ -14434,6 +14659,75 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     }
 }
 
+  .person-card-roster__photo {
+    height: 15.625rem;
+    width: 15.625rem;
+  }
+
+@supports (font-size: clamp( 0.75rem , 0.5416521981rem  +  0.6944926731vw , 0.875rem )) {
+    .person-card-roster__name span {
+      font-size: clamp( 0.75rem , 0.5416521981rem  +  0.6944926731vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.75rem , 0.5416521981rem  +  0.6944926731vw , 0.875rem )) {
+    .person-card-roster__name span {
+      font-size: calc(0.75rem + 0.125 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+@supports (font-size: clamp( 0.875rem , 0.6666521981rem  +  0.6944926731vw , 1rem )) {
+    .person-card-roster__name h3 {
+      font-size: clamp( 0.875rem , 0.6666521981rem  +  0.6944926731vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.6666521981rem  +  0.6944926731vw , 1rem )) {
+    .person-card-roster__name h3 {
+      font-size: calc(0.875rem + 0.125 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+@supports (line-height: clamp( 1rem , 0.5833043961rem  +  1.3889853462vw , 1.25rem )) {
+    .person-card-roster__name h3 {
+      line-height: clamp( 1rem , 0.5833043961rem  +  1.3889853462vw , 1.25rem );
+    }
+}
+
+@supports not (line-height: clamp( 1rem , 0.5833043961rem  +  1.3889853462vw , 1.25rem )) {
+    .person-card-roster__name h3 {
+      line-height: calc(1rem + 0.25 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+  .person-card-roster__desc span {
+    letter-spacing: 0.0625rem;
+  }
+
+@supports (font-size: clamp( 0.625rem , 0.4166521981rem  +  0.6944926731vw , 0.75rem )) {
+    .person-card-roster__desc span {
+      font-size: clamp( 0.625rem , 0.4166521981rem  +  0.6944926731vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.625rem , 0.4166521981rem  +  0.6944926731vw , 0.75rem )) {
+    .person-card-roster__desc span {
+      font-size: calc(0.625rem + 0.125 * (100vw - 30rem) / 17.99875);
+    }
+}
+
+@supports (font-size: clamp( 0.5625rem , 0.2499782971rem  +  1.0417390097vw , 0.75rem )) {
+    .person-card-roster__desc p {
+      font-size: clamp( 0.5625rem , 0.2499782971rem  +  1.0417390097vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , 0.2499782971rem  +  1.0417390097vw , 0.75rem )) {
+    .person-card-roster__desc p {
+      font-size: calc(0.5625rem + 0.1875 * (100vw - 30rem) / 17.99875);
+    }
+}
+
   .game-profile-header__team {
     min-width: 10.625rem;
   }
@@ -14589,6 +14883,11 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 
   .head-slider .swiper-pagination {
     display: none;
+  }
+
+  .person-card-roster__info {
+    margin: 5px 0px 0px 0px;
+    padding: 0px 5px 0px 5px;
   }
 
   .game-progress__item-1 {
@@ -15033,6 +15332,30 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     display: none;
   }
 
+@supports (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .person-card-roster__photo {
+      width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
+    }
+}
+
+@supports not (width: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .person-card-roster__photo {
+      width: calc(12.5rem + 2.5 * (100vw - 30rem) / 10.62375);
+    }
+}
+
+@supports (height: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .person-card-roster__photo {
+      height: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem );
+    }
+}
+
+@supports not (height: clamp( 12.5rem , 5.440345923rem  +  23.5321802565vw , 15rem )) {
+    .person-card-roster__photo {
+      height: calc(12.5rem + 2.5 * (100vw - 30rem) / 10.62375);
+    }
+}
+
 @supports (font-size: clamp( 1.375rem , 1.2378943803rem  +  0.6452029163vw , 1.5rem )) {
     .publication__subtitle {
       font-size: clamp( 1.375rem , 1.2378943803rem  +  0.6452029163vw , 1.5rem );
@@ -15422,6 +15745,20 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
     font-size: 1.25rem;
   }
 
+  .person-card-roster__corner {
+    border-left: 40px solid #3d308e;
+    border-bottom: 40px solid transparent;
+  }
+
+  .person-card-roster__tournament-logo {
+    width: 3.75rem;
+    height: 3.75rem;
+  }
+
+  .person-card-roster__logo {
+    display: none;
+  }
+
 @supports (font-size: clamp( 1rem , 0.39065625rem  +  2.5vw , 1.25rem )) {
     .game-progress__item-title {
       font-size: clamp( 1rem , 0.39065625rem  +  2.5vw , 1.25rem );
@@ -15638,6 +15975,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 }
 
 @media (max-width: 29.99875rem) {
+  .section-title-green::before {
+    display: none;
+  }
+
+  .section-title-white::before {
+    display: none;
+  }
+
   .player-card-roster__photo {
     border-bottom: 3px solid #0f524d;
   }
@@ -15871,6 +16216,102 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .profile-team__header-cards-grid {
     gap: 0.625rem;
   }
+
+  .person-card-roster__photo {
+    border-bottom: 3px solid #0f524d;
+  }
+
+@supports (width: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .person-card-roster__photo {
+      width: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem );
+    }
+}
+
+@supports not (width: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .person-card-roster__photo {
+      width: calc(8.625rem + 3.875 * (100vw - 20rem) / 9.99875);
+    }
+}
+
+@supports (height: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .person-card-roster__photo {
+      height: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem );
+    }
+}
+
+@supports not (height: clamp( 8.625rem , 0.8740311289rem  +  38.7548443555vw , 12.5rem )) {
+    .person-card-roster__photo {
+      height: calc(8.625rem + 3.875 * (100vw - 20rem) / 9.99875);
+    }
+}
+
+  .person-card-roster__photo::after {
+    display: none;
+  }
+
+@supports (font-size: clamp( 0.5625rem , 0.1070777968rem  +  2.143163309vw , 0.75rem )) {
+    .person-card-roster__name span {
+      font-size: clamp( 0.5625rem , 0.1070777968rem  +  2.143163309vw , 0.75rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , 0.1070777968rem  +  2.143163309vw , 0.75rem )) {
+    .person-card-roster__name span {
+      font-size: calc(0.5625rem + 0.1875 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.5625rem , -0.1965370053rem  +  3.5719388484vw , 0.875rem )) {
+    .person-card-roster__name h3 {
+      font-size: clamp( 0.5625rem , -0.1965370053rem  +  3.5719388484vw , 0.875rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , -0.1965370053rem  +  3.5719388484vw , 0.875rem )) {
+    .person-card-roster__name h3 {
+      font-size: calc(0.5625rem + 0.3125 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (line-height: clamp( 0.75rem , 0.1427703958rem  +  2.8575510787vw , 1rem )) {
+    .person-card-roster__name h3 {
+      line-height: clamp( 0.75rem , 0.1427703958rem  +  2.8575510787vw , 1rem );
+    }
+}
+
+@supports not (line-height: clamp( 0.75rem , 0.1427703958rem  +  2.8575510787vw , 1rem )) {
+    .person-card-roster__name h3 {
+      line-height: calc(0.75rem + 0.25 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+  .person-card-roster__desc {
+    min-height: 2.5rem;
+  }
+
+@supports (font-size: clamp( 0.5625rem , 0.4106925989rem  +  0.7143877697vw , 0.625rem )) {
+    .person-card-roster__desc span {
+      font-size: clamp( 0.5625rem , 0.4106925989rem  +  0.7143877697vw , 0.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5625rem , 0.4106925989rem  +  0.7143877697vw , 0.625rem )) {
+    .person-card-roster__desc span {
+      font-size: calc(0.5625rem + 0.0625 * (100vw - 21.25rem) / 8.74875);
+    }
+}
+
+@supports (font-size: clamp( 0.5rem , -0.0417870638rem  +  2.2227161591vw , 0.625rem )) {
+    .person-card-roster__desc p {
+      font-size: clamp( 0.5rem , -0.0417870638rem  +  2.2227161591vw , 0.625rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.5rem , -0.0417870638rem  +  2.2227161591vw , 0.625rem )) {
+    .person-card-roster__desc p {
+      font-size: calc(0.5rem + 0.125 * (100vw - 24.375rem) / 5.62375);
+    }
+}
 }
 
 @media (max-width: 28.12375rem) {
@@ -15883,14 +16324,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   }
 
   .section-title-logo::before {
-    display: none;
-  }
-
-  .section-title-green::before {
-    display: none;
-  }
-
-  .section-title-white::before {
     display: none;
   }
 
@@ -16315,11 +16748,35 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .month-calendar__day {
     min-height: 0;
   }
+
+  .person-card-roster__corner {
+    border-left: 50px solid #3d308e;
+    border-bottom: 50px solid transparent;
+  }
+
+  .person-card-roster__tournament-logo {
+    top: 0.3125rem;
+    right: 0.3125rem;
+    width: 3.125rem;
+    height: 3.125rem;
+  }
 }
 
 @media (max-width: 26.24875rem) {
   .game-card-calendar__content {
     margin: 0px 0px 0px 0px;
+  }
+}
+
+@media (max-width: 25.93625rem) {
+  .tabs-selector__tabs-navigation {
+    position: relative;
+    gap: 0.9375rem;
+    top: -0.625rem;
+  }
+
+  .person-card-roster__photo {
+    margin: 5px 0px 0px 0px;
   }
 }
 
@@ -16332,13 +16789,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
 @media (max-width: 24.99875em) {
   .page-two-columns__spollers-list {
     font-size: 0.875rem;
-  }
-}
-
-@media (max-width: 23.74875rem) {
-  .tabs-selector__tabs-navigation {
-    position: relative;
-    top: -0.625rem;
   }
 }
 
@@ -16366,6 +16816,12 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item:not(.lg-zoomable).lg-co
   .game-progress__event-label {
     font-size: 0.5rem;
     line-height: 1rem;
+  }
+}
+
+@media (max-width: 21.24875rem) {
+  .person-card-roster__photo {
+    margin: 0px 0px 0px 0px;
   }
 }
 
